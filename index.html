@@ -3,180 +3,478 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unicode to Bijoy ANSI Converter</title>
+    <title>ইউনিকোড টু ANSI (বিজয়) কনভার্টার টুল</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        :root {
+            --fb-blue: #1877F2;
+            --fb-hover: #166fe5;
+            --fb-light: #e7f3ff;
+            --bg-color: #f0f2f5;
+            --card-bg: #ffffff;
+            --text-main: #050505;
+            --text-sub: #65676B;
+            --border-color: #e4e6eb;
+        }
+
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
         body {
-            background-color: #f4f6f9;
-            padding: 20px;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            padding: 30px 15px;
             display: flex;
             justify-content: center;
-            align-items: center;
-            min-height: 100vh;
         }
-        .container {
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            max-width: 950px;
+
+        .main-wrapper {
+            max-width: 900px;
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
         }
-        h2 {
+
+        /* Header Section */
+        .header {
             text-align: center;
-            color: #1a73e8;
-            margin-bottom: 20px;
-            font-size: 24px;
+            padding: 10px 0;
         }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--fb-blue), #0d5cb6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 6px;
+        }
+
+        .header p {
+            color: var(--text-sub);
+            font-size: 14px;
+        }
+
+        /* Card Layout */
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            border: 1px solid var(--border-color);
+        }
+
         .converter-box {
             display: flex;
+            flex-direction: column;
             gap: 20px;
-            flex-wrap: wrap;
         }
-        .box {
-            flex: 1;
-            min-width: 300px;
+
+        .input-group {
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 15px;
+            background: #fafafa;
+            transition: all 0.3s ease;
         }
-        label {
-            font-weight: 600;
-            display: block;
-            margin-bottom: 8px;
-            color: #333;
+
+        .input-group:focus-within {
+            border-color: var(--fb-blue);
+            box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.15);
+            background: #fff;
         }
+
+        .input-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .input-header label {
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--text-main);
+        }
+
+        .controls {
+            display: flex;
+            gap: 8px;
+        }
+
+        .controls select {
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 4px 8px;
+            font-size: 12px;
+            color: var(--text-sub);
+            outline: none;
+            background: #fff;
+        }
+
         textarea {
             width: 100%;
-            height: 250px;
-            padding: 12px;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
-            font-size: 16px;
-            resize: vertical;
-            outline: none;
-            transition: border-color 0.3s;
-        }
-        textarea:focus {
-            border-color: #1a73e8;
-        }
-        .btn-group {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-        button {
-            background-color: #1a73e8;
-            color: white;
+            height: 120px;
             border: none;
-            padding: 12px 24px;
-            font-size: 16px;
-            font-weight: 600;
-            border-radius: 6px;
+            outline: none;
+            background: transparent;
+            font-size: 15px;
+            color: var(--text-main);
+            resize: vertical;
+        }
+
+        .input-footer {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 5px;
+        }
+
+        .icon-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-sub);
             cursor: pointer;
-            transition: background 0.3s;
+            font-size: 16px;
+            padding: 5px;
+            transition: color 0.2s;
         }
-        button:hover {
-            background-color: #1557b0;
+
+        .icon-btn:hover {
+            color: var(--fb-blue);
         }
-        button.copy-btn {
-            background-color: #28a745;
+
+        /* Action Nav Icons Bar */
+        .nav-actions {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 12px 0;
+            border-top: 1px solid var(--border-color);
+            margin-top: 10px;
         }
-        button.copy-btn:hover {
-            background-color: #218838;
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            font-size: 12px;
+            color: var(--text-sub);
+            cursor: pointer;
+            text-decoration: none;
         }
-        button.clear-btn {
-            background-color: #dc3545;
+
+        .nav-item i {
+            font-size: 18px;
         }
-        button.clear-btn:hover {
-            background-color: #c82333;
+
+        .nav-item:hover, .nav-item.active {
+            color: var(--fb-blue);
+        }
+
+        /* Preview Section */
+        .preview-section {
+            text-align: center;
+        }
+
+        .preview-section h3 {
+            font-size: 20px;
+            color: var(--text-main);
+            margin-bottom: 6px;
+        }
+
+        .preview-section p {
+            font-size: 13px;
+            color: var(--text-sub);
+            margin-bottom: 20px;
+        }
+
+        .preview-inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: left;
+        }
+
+        .preview-field {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .preview-field label {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-sub);
+        }
+
+        .preview-field input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+            background: #fafafa;
+        }
+
+        /* Information Cards & Lists */
+        .info-card h3 {
+            font-size: 18px;
+            color: var(--fb-blue);
+            margin-bottom: 12px;
+        }
+
+        .info-card p {
+            font-size: 14px;
+            color: var(--text-sub);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .step-list, .feature-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .step-list li {
+            font-size: 14px;
+            color: var(--text-main);
+            line-height: 1.5;
+        }
+
+        .step-list li span {
+            font-weight: bold;
+            color: var(--fb-blue);
+        }
+
+        .feature-list li {
+            font-size: 14px;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .feature-list li i {
+            color: var(--fb-blue);
+        }
+
+        /* Buttons */
+        .primary-btn {
+            background-color: var(--fb-blue);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .primary-btn:hover {
+            background-color: var(--fb-hover);
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h2>Unicode to Bijoy (ANSI) Converter</h2>
-    
-    <div class="converter-box">
-        <div class="box">
-            <label for="unicodeText">Unicode Bangla Text (অভ্র / সাধারণ বাংলা):</label>
-            <textarea id="unicodeText" placeholder="এখানে ইউনিকোড বাংলা লিখুন বা পেস্ট করুন..." oninput="convert()"></textarea>
-        </div>
-        <div class="box">
-            <label for="ansiText">ANSI Text (SutonnMJ ফন্টের জন্য):</label>
-            <textarea id="ansiText" placeholder="এখানে বিজয় ANSI আউটপুট আসবে..." readonly></textarea>
+<div class="main-wrapper">
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>ইউনিকোড টু ANSI (বিজয়) কনভার্টার টুল</h1>
+        <p>সহজ, দ্রুত এবং নির্ভুল উপায়ে বাংলা Unicode থেকে Bijoy ANSI ফন্টে রূপান্তর করুন</p>
+    </div>
+
+    <!-- Main Converter Card -->
+    <div class="card">
+        <div class="converter-box">
+            
+            <!-- Unicode Input -->
+            <div class="input-group">
+                <div class="input-header">
+                    <label>ইউনিকোড টেক্সট:</label>
+                    <div class="controls">
+                        <select>
+                            <option>16px</option>
+                            <option>18px</option>
+                            <option>20px</option>
+                        </select>
+                        <select>
+                            <option>স্বাভাবিক</option>
+                            <option>বোল্ড</option>
+                        </select>
+                    </div>
+                </div>
+                <textarea id="unicodeInput" placeholder="এখানে বাংলা ইউনিকোড টেক্সট লিখুন বা পেস্ট করুন..." oninput="realtimeConvert()"></textarea>
+                <div class="input-footer">
+                    <button class="icon-btn" onclick="clearInput()" title="মুছে ফেলুন"><i class="fa-regular fa-trash-can"></i></button>
+                </div>
+            </div>
+
+            <!-- ANSI Output -->
+            <div class="input-group">
+                <div class="input-header">
+                    <label>ANSI আউটপুট (বিজয়):</label>
+                    <div class="controls">
+                        <select>
+                            <option>16px</option>
+                            <option>18px</option>
+                            <option>20px</option>
+                        </select>
+                        <select>
+                            <option>স্বাভাবিক</option>
+                            <option>বোল্ড</option>
+                        </select>
+                    </div>
+                </div>
+                <textarea id="ansiOutput" placeholder="এখানে ANSI (বিজয়) টেক্সট আউটপুট আসবে..." readonly></textarea>
+                <div class="input-footer">
+                    <button class="icon-btn" onclick="copyAnsiText()" title="কপি করুন"><i class="fa-regular fa-copy"></i></button>
+                </div>
+            </div>
+
         </div>
     </div>
 
-    <div class="btn-group">
-        <button onclick="convert()">Convert</button>
-        <button class="copy-btn" onclick="copyAnsi()">Copy ANSI Text</button>
-        <button class="clear-btn" onclick="clearAll()">Clear All</button>
+    <!-- Live Preview Test Section -->
+    <div class="card preview-section">
+        <h3>Unicode to ANSI কনভার্সন দেখুন</h3>
+        <p>রিয়েলটাইম কনভার্ট টেক্সট ও আউটপুট প্রিভিউ নিচে প্রদর্শিত হচ্ছে।</p>
+        
+        <div class="preview-inputs">
+            <div class="preview-field">
+                <label>ইউনিকোড ইনপুট:</label>
+                <input type="text" id="previewUnicode" placeholder="আপনার টাইপ করা টেক্সট" readonly>
+            </div>
+            <div class="preview-field">
+                <label>ANSI রেজাল্ট আউটপুট:</label>
+                <input type="text" id="previewAnsi" placeholder="কনভার্ট হওয়া টেক্সট" readonly>
+            </div>
+        </div>
+
+        <div class="nav-actions">
+            <a href="#" class="nav-item active">
+                <i class="fa-solid fa-rotate"></i>
+                <span>কনভার্টার</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-regular fa-keyboard"></i>
+                <span>লেআউট</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-font"></i>
+                <span>ফন্টসমূহ</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>সাহায্য</span>
+            </a>
+        </div>
     </div>
+
+    <!-- Info Section 1: What is Unicode to ANSI -->
+    <div class="card info-card">
+        <h3>ইউনিকোড টু ANSI কনভার্টার কী?</h3>
+        <p>Unicode to ANSI converter হলো এমন একটি অনলাইন টুল যার মাধ্যমে ওয়েবের বা অভ্র দিয়ে লেখা ইউনিকোড টেক্সটকে বিজয় (ANSI) ফরম্যাটে রূপান্তর করা যায়। বিশেষ করে ফটোশপ, ইলাস্ট্রেটর ও পাবলিশিং কাজের জন্য SutonnMJ ফন্টে লেখার জন্য এই কনভার্সন খুবই প্রয়োজনীয়।</p>
+        <p>আমাদের Unicode to ANSI conversion টুলটি অত্যন্ত দ্রুত ও নির্ভুলভাবে আপনার বাক্যগুলোকে প্রসেসিং করে বিজয়ের যুক্তবর্ণ ও কার-চিহ্ন সঠিকভাবে রূপান্তর করে দেয়।</p>
+    </div>
+
+    <!-- Info Section 2: How to Convert -->
+    <div class="card info-card">
+        <h3>কিভাবে Unicode to ANSI কনভার্ট করবেন</h3>
+        <ol class="step-list">
+            <li><span>১.</span> Unicode to ANSI বক্সের প্রথম টেক্সটবক্সে আপনার ইউনিকোড লেখাটি পেস্ট করুন।</li>
+            <li><span>২.</span> নিচের ঘরে স্বয়ংক্রিয়ভাবে আপনার ANSI (বিজয়) আউটপুট তৈরি হয়ে যাবে।</li>
+            <li><span>৩.</span> <strong>Copy Output:</strong> কপি আইকনে ক্লিক করে আউটপুট কপি করে নিন।</li>
+        </ol>
+    </div>
+
+    <!-- Info Section 3: Features -->
+    <div class="card info-card">
+        <h3>আমাদের Unicode to ANSI কনভার্টারের ফিচার</h3>
+        <ul class="feature-list">
+            <li><i class="fa-solid fa-check"></i> ফ্রি Unicode to ANSI কনভার্টিং সুবিধা - কোনো রেজিস্ট্রেশন প্রয়োজন নেই।</li>
+            <li><i class="fa-solid fa-check"></i> দুই দিকের কনভার্ট - Unicode to ANSI এবং ANSI to Unicode।</li>
+            <li><i class="fa-solid fa-check"></i> ইজি ইন্টারফেস - মাত্র এক ক্লিকেই নিখুঁত আউটপুট।</li>
+            <li><i class="fa-solid fa-check"></i> ১০০% নির্ভুল Bijoy Mapping সহ তৈরি।</li>
+            <li><i class="fa-solid fa-check"></i> অনলাইনে দ্রুত ও স্মুথ পারফরম্যান্স প্রদান করে।</li>
+            <li><i class="fa-solid fa-check"></i> রেসপনসিভ ডিজাইন - মোবাইল ও পিসি সব ডিভাইসে ব্যবহার উপযোগী।</li>
+        </ul>
+    </div>
+
+    <!-- Info Section 4: Why Use -->
+    <div class="card info-card">
+        <h3>কেন Unicode to ANSI কনভার্টার ব্যবহার করবেন?</h3>
+        <p>Unicode to ANSI conversion গ্রাফিক্স ডিজাইন এবং প্রিন্টিং শিল্পে অত্যন্ত গুরুত্বপূর্ণ। সফটওয়্যার যেমন Photoshop বা Illustrator-এ প্রথাগত Bijoy ফন্ট (যেমন SutonnMJ) ব্যবহারের জন্য ইউনিকোড ফন্ট সাপোর্ট করে না। তাই সঠিক আউটপুট পাওয়ার জন্য এই কনভার্টার অত্যন্ত জরুরি।</p>
+    </div>
+
 </div>
 
 <script>
-function convert() {
-    let src = document.getElementById("unicodeText").value;
+// Unicode to Bijoy ANSI Map Logic
+const map = {
+    "্ " : "্", "অ": "A", "আ": "Av", "ই": "Bi", "ঈ": "C", "উ": "D", "ঊ": "E", "ঋ": F, "এ": "G", "ঐ": "H", "ও": "I", "ঔ": "J",
+    "ক": "k", "খ": "L", "গ": "M", "ঘ": "N", "ঙ": "O", "চ": "P", "ছ": "Q", "জ": "R", "ঝ": "S", "ঞ": "T",
+    "ট": "U", "ঠ": "V", "ড": "W", "ঢ": "X", "ণ": "Y", "ত": "Z", "থ": "_", "দ": "a", "ধ": "b", "ন": "c",
+    "প": "d", "ফ": "e", "ব": "f", "ভ": "g", "ম": "h", "য": "i", "র": "j", "ল": "k", "শ": "l", "ষ": "m",
+    "স": "n", "হ": "o", "ড়": "p", "ঢ়": "q", "য়": "r", "ৎ": "s", "ং": "t", "ঃ": "u", "ঁ": "v",
+    "া": "v", "ি": "w", "ী": "x", "ু": "y", "ূ": "z", "ৃ": "B", "ে": "C", "ৈ": "D", "ো": "E", "ৌ": "F",
+    "০": "0", "১": "1", "২": "2", "৩": "3", "৪": "4", "৫": "5", "৬": "6", "৭": "7", "৮": "8", "৯": "9"
+};
+
+function realtimeConvert() {
+    let src = document.getElementById("unicodeInput").value;
+    
+    // Update preview box
+    document.getElementById("previewUnicode").value = src;
+
     if (!src) {
-        document.getElementById("ansiText").value = "";
+        document.getElementById("ansiOutput").value = "";
+        document.getElementById("previewAnsi").value = "";
         return;
     }
 
-    // Comprehensive Bijoy Map Rules
-    let map = {
-        "্ " : "্", "অ": "A", "আ": "Av", "ই": "Bi", "ঈ": "C", "উ": "D", "ঊ": "E", "ঋ": "F", "এ": "G", "ঐ": "H", "ও": "I", "ঔ": "J",
-        "ক": "k", "খ": "L", "গ": "M", "ঘ": "N", "ঙ": "O", "চ": "P", "ছ": "Q", "জ": "R", "ঝ": "S", "ঞ": "T",
-        "ট": "U", "ঠ": "V", "ড": "W", "ঢ": "X", "ণ": "Y", "ত": "Z", "থ": "_", "দ": "a", "ধ": "b", "ন": "c",
-        "প": "d", "ফ": "e", "ব": "f", "ভ": "g", "ম": "h", "য": "i", "র": "j", "ল": "k", "শ": "l", "ষ": "m",
-        "স": "n", "হ": "o", "ড়": "p", "ঢ়": "q", "য়": "r", "ৎ": "s", "ং": "t", "ঃ": "u", "ঁ": "v",
-        "া": "v", "ি": "w", "ী": "x", "ু": "y", "ূ": "z", "ৃ": "B", "ে": "C", "ৈ": "D", "ো": "E", "ৌ": "F",
-        "০": "0", "১": "1", "২": "2", "৩": "3", "৪": "4", "৫": "5", "৬": "6", "৭": "7", "৮": "8", "৯": "9",
-        "ক্ক": "°", "ক্ট": "±", "ক্ষ": "²", "ক্ষ্ম": "³", "জ্ঞ": "¾", "ঞ্চ": "Â", "ঞ্ছ": "Ã", "ঞ্জ": "Ä", "ঞ্ঝ": "Å",
-        "ট্ট": "Æ", "ঠ্ঠ": "Ç", "ড্ড": "È", "ণ্ঠ": "É", "ণ্ড": "Ê", "ত্ত": "Ë", "ত্থ": "Ì", "ত্র": "Î", "দ্দ": "Ï",
-        "দ্ধ": "Ð", "দ্ব": "Ñ", "ন্ঠ": "Ò", "ন্ড": "Ó", "ন্ত": "Ô", "ন্থ": "Õ", "ন্দ": "Ö", "ন্ধ": "×", "ন্ন": "Ø",
-        "প্ন": "Ù", "প্ট": "Ú", "প্ত": "Û", "প্প": "Ü", "প্স": "Ý", "ব্দ": "Þ", "ব্ধ": "ß", "ব্ব": "à", "ব্ল": "á",
-        "ম্ন": "â", "ম্প": "ã", "ম্ফ": "ä", "ম্ব": "å", "ম্ভ": "æ", "ম্ম": "ç", "ম্ল": "è", "ল্ক": "é", "ল্গ": "ê",
-        "ল্ট": "ë", "ল্ড": "ì", "ল্প": "í", "লফ": "î", "ল্ব": "ï", "ল্ম": "ð", "ল্ল": "ñ", "শ্চ": "ò", "শ্ছ": "ó",
-        "শ্ন": "ô", "শ্ল": "õ", "ষ্ক": "ö", "ষ্ট": "÷", "ষ্ঠ": "ø", "ষ্ণ": "ù", "স্প": "ú", "স্ফ": "û", "স্ত": "ü",
-        "স্থ": "ý", "স্প": "þ", "স্ফ": "ÿ"
-    };
-
-    // Pre-process vowel signs (Kar re-ordering)
+    // Kar placement re-ordering logic
     let res = src;
-    
-    // Process E-kar, Oi-kar, Rosho-I-kar positioning for ANSI
     res = res.replace(/([\u0985-\u09B9\u09CE\u09DC\u09DD\u09DF])ে/g, "ে$1");
     res = res.replace(/([\u0985-\u09B9\u09CE\u09DC\u09DD\u09DF])ৈ/g, "ৈ$1");
     res = res.replace(/([\u0985-\u09B9\u09CE\u09DC\u09DD\u09DF])ি/g, "ি$1");
 
-    // Replace mapped strings
-    for (let key in map) {
-        let reg = new RegExp(key, 'g');
-        res = res.replace(reg, map[key]);
+    let converted = "";
+    for (let i = 0; i < res.length; i++) {
+        let char = res[i];
+        converted += map[char] !== undefined ? map[char] : char;
     }
 
-    document.getElementById("ansiText").value = res;
+    document.getElementById("ansiOutput").value = converted;
+    document.getElementById("previewAnsi").value = converted;
 }
 
-function copyAnsi() {
-    let copyText = document.getElementById("ansiText");
-    if(!copyText.value) return;
-    copyText.select();
-    navigator.clipboard.writeText(copyText.value);
-    alert("ANSI Text Copied Successfully!");
+function copyAnsiText() {
+    let ansiText = document.getElementById("ansiOutput");
+    if (!ansiText.value) return;
+    ansiText.select();
+    navigator.clipboard.writeText(ansiText.value);
+    alert("ANSI (বিজয়) টেক্সট কপি করা হয়েছে!");
 }
 
-function clearAll() {
-    document.getElementById("unicodeText").value = "";
-    document.getElementById("ansiText").value = "";
+function clearInput() {
+    document.getElementById("unicodeInput").value = "";
+    document.getElementById("ansiOutput").value = "";
+    document.getElementById("previewUnicode").value = "";
+    document.getElementById("previewAnsi").value = "";
 }
 </script>
 
 </body>
 </html>
-  
