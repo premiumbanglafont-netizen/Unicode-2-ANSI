@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unicode to Bijoy ANSI Converter</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f4f6f9;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            max-width: 950px;
+            width: 100%;
+        }
+        h2 {
+            text-align: center;
+            color: #1a73e8;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .converter-box {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .box {
+            flex: 1;
+            min-width: 300px;
+        }
+        label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        textarea {
+            width: 100%;
+            height: 250px;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            resize: vertical;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        textarea:focus {
+            border-color: #1a73e8;
+        }
+        .btn-group {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        button {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #1557b0;
+        }
+        button.copy-btn {
+            background-color: #28a745;
+        }
+        button.copy-btn:hover {
+            background-color: #218838;
+        }
+        button.clear-btn {
+            background-color: #dc3545;
+        }
+        button.clear-btn:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Unicode to Bijoy (ANSI) Converter</h2>
+    
+    <div class="converter-box">
+        <div class="box">
+            <label for="unicodeText">Unicode Bangla Text (অভ্র / সাধারণ বাংলা):</label>
+            <textarea id="unicodeText" placeholder="এখানে ইউনিকোড বাংলা লিখুন বা পেস্ট করুন..." oninput="convert()"></textarea>
+        </div>
+        <div class="box">
+            <label for="ansiText">ANSI Text (SutonnMJ ফন্টের জন্য):</label>
+            <textarea id="ansiText" placeholder="এখানে বিজয় ANSI আউটপুট আসবে..." readonly></textarea>
+        </div>
+    </div>
+
+    <div class="btn-group">
+        <button onclick="convert()">Convert</button>
+        <button class="copy-btn" onclick="copyAnsi()">Copy ANSI Text</button>
+        <button class="clear-btn" onclick="clearAll()">Clear All</button>
+    </div>
+</div>
+
+<script>
+function convert() {
+    let src = document.getElementById("unicodeText").value;
+    if (!src) {
+        document.getElementById("ansiText").value = "";
+        return;
+    }
+
+    // Comprehensive Bijoy Map Rules
+    let map = {
+        "্ " : "্", "অ": "A", "আ": "Av", "ই": "Bi", "ঈ": "C", "উ": "D", "ঊ": "E", "ঋ": "F", "এ": "G", "ঐ": "H", "ও": "I", "ঔ": "J",
+        "ক": "k", "খ": "L", "গ": "M", "ঘ": "N", "ঙ": "O", "চ": "P", "ছ": "Q", "জ": "R", "ঝ": "S", "ঞ": "T",
+        "ট": "U", "ঠ": "V", "ড": "W", "ঢ": "X", "ণ": "Y", "ত": "Z", "থ": "_", "দ": "a", "ধ": "b", "ন": "c",
+        "প": "d", "ফ": "e", "ব": "f", "ভ": "g", "ম": "h", "য": "i", "র": "j", "ল": "k", "শ": "l", "ষ": "m",
+        "স": "n", "হ": "o", "ড়": "p", "ঢ়": "q", "য়": "r", "ৎ": "s", "ং": "t", "ঃ": "u", "ঁ": "v",
+        "া": "v", "ি": "w", "ী": "x", "ু": "y", "ূ": "z", "ৃ": "B", "ে": "C", "ৈ": "D", "ো": "E", "ৌ": "F",
+        "০": "0", "১": "1", "২": "2", "৩": "3", "৪": "4", "৫": "5", "৬": "6", "৭": "7", "৮": "8", "৯": "9",
+        "ক্ক": "°", "ক্ট": "±", "ক্ষ": "²", "ক্ষ্ম": "³", "জ্ঞ": "¾", "ঞ্চ": "Â", "ঞ্ছ": "Ã", "ঞ্জ": "Ä", "ঞ্ঝ": "Å",
+        "ট্ট": "Æ", "ঠ্ঠ": "Ç", "ড্ড": "È", "ণ্ঠ": "É", "ণ্ড": "Ê", "ত্ত": "Ë", "ত্থ": "Ì", "ত্র": "Î", "দ্দ": "Ï",
+        "দ্ধ": "Ð", "দ্ব": "Ñ", "ন্ঠ": "Ò", "ন্ড": "Ó", "ন্ত": "Ô", "ন্থ": "Õ", "ন্দ": "Ö", "ন্ধ": "×", "ন্ন": "Ø",
+        "প্ন": "Ù", "প্ট": "Ú", "প্ত": "Û", "প্প": "Ü", "প্স": "Ý", "ব্দ": "Þ", "ব্ধ": "ß", "ব্ব": "à", "ব্ল": "á",
+        "ম্ন": "â", "ম্প": "ã", "ম্ফ": "ä", "ম্ব": "å", "ম্ভ": "æ", "ম্ম": "ç", "ম্ল": "è", "ল্ক": "é", "ল্গ": "ê",
+        "ল্ট": "ë", "ল্ড": "ì", "ল্প": "í", "লফ": "î", "ল্ব": "ï", "ল্ম": "ð", "ল্ল": "ñ", "শ্চ": "ò", "শ্ছ": "ó",
+        "শ্ন": "ô", "শ্ল": "õ", "ষ্ক": "ö", "ষ্ট": "÷", "ষ্ঠ": "ø", "ষ্ণ": "ù", "স্প": "ú", "স্ফ": "û", "স্ত": "ü",
+        "স্থ": "ý", "স্প": "þ", "স্ফ": "ÿ"
+    };
+
+    // Pre-process vowel signs (Kar re-ordering)
+    let res = src;
+    
+    // Process E-kar, Oi-kar, Rosho-I-kar positioning for ANSI
+    res = res.replace(/([\u0985-\u09B9\u09CE\u09DC\u09DD\u09DF])ে/g, "ে$1");
+    res = res.replace(/([\u0985-\u09B9\u09CE\u09DC\u09DD\u09DF])ৈ/g, "ৈ$1");
+    res = res.replace(/([\u0985-\u09B9\u09CE\u09DC\u09DD\u09DF])ি/g, "ি$1");
+
+    // Replace mapped strings
+    for (let key in map) {
+        let reg = new RegExp(key, 'g');
+        res = res.replace(reg, map[key]);
+    }
+
+    document.getElementById("ansiText").value = res;
+}
+
+function copyAnsi() {
+    let copyText = document.getElementById("ansiText");
+    if(!copyText.value) return;
+    copyText.select();
+    navigator.clipboard.writeText(copyText.value);
+    alert("ANSI Text Copied Successfully!");
+}
+
+function clearAll() {
+    document.getElementById("unicodeText").value = "";
+    document.getElementById("ansiText").value = "";
+}
+</script>
+
+</body>
+</html>
+  
