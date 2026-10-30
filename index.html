@@ -142,16 +142,22 @@ s20 {
 /* Side Nav Bar*/
 
 .sidenav {
-	height: 100%;
-	width: 200px;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	overflow-x: hidden;
-	background: linear-gradient(80deg, var(--colorone), var(--colortwo));
-	padding: 80px 50px 80px 50px;
-	color: #FFFFFF;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: -300px;
+    overflow-x: hidden;
+    background: linear-gradient(80deg, var(--colorone), var(--colortwo));
+    padding: 80px 50px;
+    color: #FFFFFF;
+    transition: left 0.3s ease;
+    box-sizing: border-box;
+}
+
+.sidenav.open {
+    left: 0;
 }
 
 .footer {
@@ -1155,6 +1161,19 @@ s20 {
 		display: none;
 	}
 }
+@media screen and (max-width: 800px) {
+    .sidenav {
+        width: 0;
+        padding: 0;
+        left: 0;
+        transition: width 0.3s ease;
+    }
+
+    .sidenav.open {
+        width: 300px;
+        padding: 60px 20px;
+    }
+}
 </style>
 	<!-- ===== CSS CODE END ===== -->
 		<script src="/js/converter/common.js" defer></script>
@@ -1166,10 +1185,11 @@ s20 {
 	<body>
 
 	<div class="sidenav" id="mySidenav">
+		<a href="javascript:void(0)" class="closem" onclick="closeNav()">&times;</a>
+		<div class="thememenu" onclick="myFunction()"></div>
 		<center>
 			<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEsVm0GeG_oxGfxhSxNAHX6zhw7vs9-VEaV_961L0Bhag1-22WmmIp8KJ3_O88zitQxbpn8tGq6O2KkYl-O4B6qKIGu3cxIfPZo5tTmUMWZFhDZOJkt1enznCNtqLkMBxJ6ipCl0GSafaezvcVXJMcU5ednLtZWHuZ52Mu4-M5isHVzod2NHsSOx2gujs/w300-rw/20260915_115301.png" width="180px">
-			<div class="thememenu" onclick="myFunction()">
-        </div>
+			
 		<div class="footer">
 			<center> 
 				<a href="https://premiumbanglafont.blogspot.com">Home</a> • 
@@ -2685,5 +2705,14 @@ function ConvertToASCII(_0x6840x11, _0x6840xe) {
 </script>
 
 <!-- ===== JAVASCRIPT CODE END ===== -->
+		<script>
+function openNav() {
+    document.getElementById("mySidenav").classList.add("open");
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").classList.remove("open");
+}
+</script>
 </body>
 </html> 
