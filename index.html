@@ -1,11 +1,11 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Unicode to ANSI V1 - Converter</title>
+		<title>Unicode to ANSI V3 - Converter</title>
 		<meta charset="utf-8" />
 		<meta name="theme-color" content="#ff6600" />
 		<meta property="og:image" content="/img/ogimage.png" />
-		<meta property="og:description" content="Welcome to the largest collection of Premium Bangla Fonts" />
+		<meta property="og:description" content="Welcome to the largest collection of Free Bangla Fonts" />
 		<link rel="icon" type="image/png" sizes="192x192"  href="../favicon/android-icon-192x192.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
@@ -17,16 +17,14 @@
 		<script src="https://kit.fontawesome.com/5950a63964.js"></script>
 		<script src="/js/theme.js?messengerPlugin"></script>
 		<link href="/css/style.css?converterStyle" rel="stylesheet">
-		<link rel="stylesheet" href="css/converter-style.css">
 		<link href="/css/webfont.css?ruposhiLetestFile" rel="stylesheet">
 		<!-- ===== CSS CODE START ===== -->
 		 <style>
-			/* তোমার সম্পূর্ণ CSS কোড এখানে থাকবে */
- :root {
-	--colorone: #9900DD;
-	--colortwo: #DD0099;
+		/* তোমার সম্পূর্ণ CSS কোড এখানে থাকবে */
+  :root {
+	--colorone: #0099CC;
+	--colortwo: #ff0274;
 }
-
 body {
 	font-family: 'Saira Semi Condensed', sans-serif;
 	color: #333333;
@@ -80,30 +78,6 @@ s20 {
 	cursor: pointer;
 }
 
-.themeA {
-	background: linear-gradient(80deg, #FF0066, #FF6600);
-}
-
-.themeB {
-	background: linear-gradient(80deg, #009900, #99CC00);
-}
-
-.themeC {
-	background: linear-gradient(80deg, #6600CC, #0099CC);
-}
-
-.themeD {
-	background: linear-gradient(80deg, #9900DD, #DD0099);
-}
-
-.themeE {
-	background: linear-gradient(80deg, #FF6633, #FFCC00);
-}
-
-.themeF {
-	background: linear-gradient(80deg, #00CC99, #0099CC);
-}
-
 .colortitle {
 	display: inline-block; 
 	vertical-align: middle; 
@@ -137,6 +111,21 @@ s20 {
 	padding: 10px;
 	opacity: 1;
 	overflow: none;
+}
+
+/* Side Nav Bar*/
+
+.sidenav {
+	height: 100%;
+	width: 200px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	background: linear-gradient(80deg, var(--colorone), var(--colortwo));
+	padding: 80px 50px 80px 50px;
+	color: #FFFFFF;
 }
 
 .footer {
@@ -1140,95 +1129,34 @@ s20 {
 		display: none;
 	}
 }
-/* ===============================
-   RESPONSIVE SIDEBAR
-================================ */
 
-/* Desktop */
-.sidenav {
-    width: 220px;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 80px 20px;
-    box-sizing: border-box;
-    overflow-y: auto;
-    overflow-x: hidden;
-    z-index: 1000;
-    background: linear-gradient(80deg, var(--colorone), var(--colortwo));
-    transition: width 0.3s ease;
-}
-
-.sidenav.open {
-    left: 0;
-}
-
-/* Main Content */
-.main {
-    margin-left: 220px;
-    transition: margin-left 0.3s ease;
-}
-
-/* Tablet */
-@media screen and (max-width: 1024px) {
-    .sidenav {
-        width: 200px;
-    }
-
-    .main {
-        margin-left: 200px;
-    }
-}
-
-/* Mobile */
-@media screen and (max-width: 800px) {
-    .sidenav {
-        width: 0;
-        height: 100vh;
-        left: 0;
-        padding: 0;
-        overflow: hidden;
-        transition: width 0.3s ease;
-    }
-
-    .sidenav.open {
-        width: min(280px, 85vw);
-        padding: 60px 20px;
-    }
-
-    .main {
-        margin-left: 0;
-        width: 100%;
-    }
-
-    .closem {
-        display: block;
-    }
-}
-
-/* Desktop Close Button Hidden */
-@media screen and (min-width: 801px) {
-    .closem {
-        display: none;
-    }
-}
 </style>
-	<!-- ===== CSS CODE END ===== -->
+		<!-- ===== CSS CODE END ===== -->
 		<script src="/js/converter/common.js" defer></script>
-		<script src="/js/converter/uni2ansiv1/defualt.js?ansiInput__fixed" defer></script>
-	    <script src="/js/converter/uni2ansiv1/converter.js?newAnsiInput_fixed" defer></script>
-	    <script src="/js/converter/uni2ansiv1/rconverter.js?ansiInput_fixed" defer></script>
-	    <script data-ad-client="ca-pub-9213624182321474" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script src="/js/converter/uni2ansiv3/defualt.js?kryo_tryo_fixed" defer></script>
+	    <script src="/js/converter/uni2ansiv3/converter.js?s_to_bn_fixed" defer></script>
+	    <script src="/js/converter/uni2ansiv3/rconverter.js?s_to_bn_fixed" defer></script>
+	   
 	</head>
 	<body>
 
 	<div class="sidenav" id="mySidenav">
 		<a href="javascript:void(0)" class="closem" onclick="closeNav()">&times;</a>
-		<div class="thememenu" onclick="myFunction()"></div>
 		<center>
 			<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEsVm0GeG_oxGfxhSxNAHX6zhw7vs9-VEaV_961L0Bhag1-22WmmIp8KJ3_O88zitQxbpn8tGq6O2KkYl-O4B6qKIGu3cxIfPZo5tTmUMWZFhDZOJkt1enznCNtqLkMBxJ6ipCl0GSafaezvcVXJMcU5ednLtZWHuZ52Mu4-M5isHVzod2NHsSOx2gujs/w300-rw/20260915_115301.png" width="180px">
-			
+			<div class="thememenu" onclick="myFunction()">
+				
+				<div class="themebox" id="themeBOX">
+					
+				</div>
+			</div>
+		</center>
+		<a href="https://premiumbanglafont-netizen.github.io/Font-Preview/"><div class="menu">Font Preview</div></a>
+		<a href="https://premiumbanglafont-netizen.github.io/font-metadata-editor/"><div class="menu">Font Metadata Editor</div></a>
+		<a href="https://premiumbanglafont-netizen.github.io/Font-Merger/"><div class="menu">Font Merger</div></a>
+		<a href="https://premiumbanglafont-netizen.github.io/Font-Format-Converter/"><div class="menu">Font Format Converter</div></a>
+		<a href="https://premiumbanglafont-netizen.github.io/Glyph-Remover/"><div class="menu">Glyph Remover</div></a>
+		
 		<div class="footer">
 			<center> 
 				<a href="https://premiumbanglafont.blogspot.com">Home</a> • 
@@ -1246,13 +1174,15 @@ s20 {
 				<td><b>FONT </b><b>CONVERTER</b></td>
 			</tr>
 		</table>
-		
 
-		<div class="title">Converter V1</div>
+		
+		<br/>
+
+		<div class="title">Converter V3</div>
 		<div style="height: 15px"></div>
-		<div class="convertMode activeMode"><div>Unicode</div><div class="material-icons">code</div><div>ANSI V1</div></div>
+		<a href="UnicodeToANSIV1.html"><div class="convertMode"><div>Unicode</div><div class="material-icons">code</div><div>ANSI V1</div></div></a>
 		<a href="UnicodeToANSIV2.html"><div class="convertMode"><div>Unicode</div><div class="material-icons">code</div><div>ANSI V2</div></div></a>
-		<a href="UnicodeToANSIV3.html"><div class="convertMode"><div>Unicode</div><div class="material-icons">code</div><div>ANSI V3</div></div></a>
+		<div class="convertMode activeMode"><div>Unicode</div><div class="material-icons">code</div><div>ANSI V3</div></div>
 		<div style="height: 15px"></div>
 		<center>
 			<div class="textareaContainer">
@@ -1267,25 +1197,50 @@ s20 {
 			<span class="material-icons convertIcon">code</span>
 			<div class="textareaContainer">
 				<div class="textareaTitle">
-					<div class="textareaName">ANSI V1</div>
+					<div class="textareaName">ANSI V3</div>
 					<div class="clrButton" onclick="clearText()"><div class="material-icons">clear</div><div class="btnName">Clear</div></div>
 					<div class="clrButton" id="pasteAnsi"><div class="material-icons">content_paste</div><div class="btnName">Paste</div></div>
 					<div class="clrButton" onclick="doCopy('ansiText')"><div class="material-icons">content_copy</div><div class="btnName">Copy</div></div>
 				</div>
-				<textarea id="ansiText" class="textarea" placeholder="GLv‡b GGbGmAvB wjLyb" style="font-family: RuposhiANSIV1;"></textarea>
+				<textarea id="ansiText" class="textarea" placeholder="~…yöì˜ ~~˜~¢xy£z !œ…%˜" style="font-family: RuposhiANSIV3;"></textarea>
 			</div>
 
 		</center>
 
 		<br/>
 		
+
 	</div>
+
 	<div id="copySuccess" class="toast">Successfully Copied to Clipboard</div>
 	<div id="pasteSuccess" class="toast">Successfully Pasted in Textbox</div>
 	<div id="clearSuccess" class="toast">Textbox is Cleared Successfully</div>
 	<div id="funcFailed" class="toast">Textbox is Empty!</div>
 	<div id="pasteFailed" class="toast">Clipboard Permission Denied!</div>
 	<div id="pasteEmpty" class="toast">Clipboard is Empty!</div>
+
+	<!-- Load Facebook SDK for JavaScript Start-->
+	<div id="fb-root"></div>
+	<script>
+	window.fbAsyncInit = function() {
+	  FB.init({
+	    xfbml            : true,
+	    version          : 'v8.0'
+	  });
+	};
+
+	(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+	fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<script type="text/javascript">
+		document.write(messengerPlugin);
+	</script>
+	<!-- Load Facebook SDK for JavaScript End-->
 
 	<script src="/js/menum.js"></script>
 	<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"bf45b8cd9def4589a4a7dd20fc48b3ee","r":1,"spa":2}' crossorigin="anonymous"></script>
@@ -1595,1163 +1550,1082 @@ function MapSorbornoToKar(_0x304790) {
         _0x338837 = '\u09cc';
     return _0x338837;
 }
+
 </script>
 
 <script>
 /* defualt.js ফাইলের সম্পূর্ণ কোড এখানে */
-var _0x9c43 = ["\x76\x61\x6C\x75\x65", "\x61\x6E\x73\x69\x54\x65\x78\x74", "\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64", "\x20\u2020", "\x72\x65\x70\x6C\x61\x63\x65", "\x4B\x7A", "\xB0\x7A", "\xB1\x7A", "\x4B\xE8\x7A", "\xB5\x7A", "\x4B\xAC\x7A", "\xFF\x7A", "\xB3\x7A", "\xFF\xE8\x7A", "\xBB\x7A", "\x4F\x7A", "\xBC\x7A", "\xBC\xAB\x7A", "\u2022\xFF\x7A", "\u201D\x50\x7A", "\u201D\x51\x7A", "\u201D\x54\x7A", "\x51\x7A", "\xC0\x7A", "\xC1\x7A", "\x53\x7A", "\xC2\x7A", "\xC3\x7A", "\x55\x7A", "\xC6\x7A", "\x57\x7A", "\xC7\x7A", "\x58\x7A", "\xC8\x7A", "\xC9\x7A", "\xD0\x7A", "\x5A\x7A", "\xCB\x7A", "\xD7\x7A", "\u2122\xA2\x7A", "\u203A\x55\x7A", "\xDB\x7A", "\xDA\x7A", "\u0161\u2019\x7A", "\xDC\x7A", "\xDC\xAB\x7A", "\xDF\x7A", "\xDE\x7A", "\x64\x7A", "\x64\xAB\x7A", "\x64\xAC\x7A", "\xE4\x7A", "\x66\x7A", "\xE7\x7A", "\xE9\x7A", "\xEE\x7A", "\xF0\x7A", "\xF1\x7A", "\xAE\u2039\x7A", "\xF3\x7A", "\xF4\x7A", "\xAE\u0152\x7A", "\xF2\x7A", "\xAF\u2039\x7A", "\xAF\u2019\x7A", "\xF9\x7A", "\xF9\xAB\x7A", "\xAF\u2039\xAC\x7A", "\xAF\u0152\x7A", "\xFE\x7A", "\xF7\x7A", "\xEB\x7A", "\x4B\u201A", "\x50\u201A", "\x51\u201A", "\x53\u201A", "\x55\u201A", "\x56\u201A", "\x57\u201A", "\x58\u201A", "\x5A\u201A", "\x64\u201A", "\x66\u201A", "\xA4\xA2\u201A", "\xB5\u201A", "\u2122\xA2\u201A", "\xAF\u2019\u201A", "\u0161\u2019\u201A", "\x4B\u2026", "\x4C\u2026", "\x51\u2026", "\x53\u2026", "\x55\u2026", "\x56\u2026", "\x57\u2026", "\x58\u2026", "\x5A\u2026", "\x64\u2026", "\x66\u2026", "\x79\xA8", "\x56\x7A", "\x50\x7A", "\xB6\x7A", "\xCA\x7A", "\x64\xAB", "\x4D\xD6", "\x63\xD6", "\x6B\xD6", "\xFA\xD6", "\x4D\xD6\u201C", "\x4D\xD6\u0192", "\x60\xAA\u201C", "\x60\xAA\u0192", "\x61\xAA\u201C", "\x61\xAA\u0192", "\x63\xD6\u201C", "\x63\xD6\u0192", "\x65\xAA\u201C", "\x65\xAA\u0192", "\xE5\u201C", "\xE5\u0192", "\x6B\xD6\u201C", "\x6B\xD6\u0192", "\x6D\xAA\u201C", "\x6D\xAA\u0192", "\xDC\xAB", "\xB0\u201A", "\xB1\u201A", "\x4B\xE8\u201A", "\x4B\xAC\u201A", "\xFF\u201A", "\xB3\u201A", "\xFF\xE8\u201A", "\xBB\u201A", "\x4F\u201A", "\xBC\u201A", "\xBC\xAB\u201A", "\u2022\xFF\u201A", "\u201D\x50\u201A", "\u201D\x51\u201A", "\u201D\x54\u201A", "\xC0\u201A", "\xC1\u201A", "\xC2\u201A", "\xC3\u201A", "\xC6\u201A", "\xC7\u201A", "\xC8\u201A", "\xC9\u201A", "\xD0\u201A", "\xCB\u201A", "\xD7\u201A", "\u203A\x55\u201A", "\xDB\u201A", "\xDA\u201A", "\xDC\u201A", "\xDC\xAB\u201A", "\xDF\u201A", "\xDE\u201A", "\x64\xAB\u201A", "\x64\xAC\u201A", "\xE4\u201A", "\xE7\u201A", "\xE9\u201A", "\xEE\u201A", "\xF0\u201A", "\xF1\u201A", "\xAE\u2039\u201A", "\xF3\u201A", "\xF4\u201A", "\xAE\u0152\u201A", "\xF2\u201A", "\xAF\u2039\u201A", "\xF9\u201A", "\xF9\xAB\u201A", "\xAF\u2039\xAC\u201A", "\xAF\u0152\u201A", "\xFE\u201A", "\xF7\u201A", "\xEB\u201A", "\xA4\xA2\x7A", "\xB6\u201A", "\xCA\u201A", "\xB0\u2026", "\xB1\u2026", "\x4B\xE8\u2026", "\xB5\u2026", "\x4B\xAC\u2026", "\xFF\u2026", "\xB3\u2026", "\xFF\xE8\u2026", "\xBB\u2026", "\x4F\u2026", "\xBC\u2026", "\xBC\xAB\u2026", "\u2022\xFF\u2026", "\u201D\x50\u2026", "\u201D\x51\u2026", "\u201D\x54\u2026", "\xC0\u2026", "\xC1\u2026", "\xC2\u2026", "\xC3\u2026", "\xC6\u2026", "\xC7\u2026", "\xC8\u2026", "\xC9\u2026", "\xD0\u2026", "\xCB\u2026", "\xD7\u2026", "\u2122\xA2\u2026", "\u203A\x55\u2026", "\xDB\u2026", "\xDA\u2026", "\u0161\u2019\u2026", "\xDC\u2026", "\xDC\xAB\u2026", "\xDF\u2026", "\xDE\u2026", "\x64\xAB\u2026", "\x64\xAC\u2026", "\xE4\u2026", "\xE7\u2026", "\xE9\u2026", "\xEE\u2026", "\xF0\u2026", "\xF1\u2026", "\xAE\u2039\u2026", "\xF3\u2026", "\xF4\u2026", "\xAE\u0152\u2026", "\xF2\u2026", "\xAF\u2039\u2026", "\xAF\u2019\u2026", "\xF9\u2026", "\xF9\xAB\u2026", "\xAF\u2039\xAC\u2026", "\xAF\u0152\u2026", "\xFE\u2026", "\xF7\u2026", "\xEB\u2026", "\x50\u2026", "\xB6\u2026", "\xCA\u2026", "\x6E\xAB", "\xB3\xAB", "\x51\xAB", "\xEE\xAB", "\xF9\xAB", "\x20\u02C6", "\x77\x6F", "\u2021\x6F", "\u2030\x6F", "\x77\x70", "\u2021\x70", "\u2030\x70", "\x77\x71", "\u2021\x71", "\u2030\x71", "\x6F\u2013", "\x5F\xAA\u201C", "\x5F\xAA\u0192", "\x69\u201C", "\x69\u0192", "\x27\u2020", "\x27\u02C6", "\xD2\u2020", "\xD2\u02C6", "\x22\u2020", "\x22\u02C6", "\xD4\u2020", "\xD4\u02C6", "\x0A\u2020", "\x0A\u02C6", "\xB5", "\xCE", "\x63\x68\x61\x72\x41\x74", "\u2021", "\u2020", "\u2030", "\u02C6", "\x6F\x6E\x69\x6E\x70\x75\x74", "\x75\x6E\x69\x54\x65\x78\x74", "\x62\x69\x6A\x6F\x79", "", "\x66\x75\x6E\x63\x46\x61\x69\x6C\x65\x64", "\x74\x6F\x61\x73\x74\x53\x68\x6F\x77", "\x61\x64\x64", "\x63\x6C\x61\x73\x73\x4C\x69\x73\x74", "\x72\x65\x6D\x6F\x76\x65", "\x63\x6C\x65\x61\x72\x53\x75\x63\x63\x65\x73\x73", "\x63\x6F\x70\x79\x53\x75\x63\x63\x65\x73\x73", "\x73\x65\x6C\x65\x63\x74", "\x73\x65\x74\x53\x65\x6C\x65\x63\x74\x69\x6F\x6E\x52\x61\x6E\x67\x65", "\x63\x6F\x70\x79", "\x65\x78\x65\x63\x43\x6F\x6D\x6D\x61\x6E\x64", "\x63\x6C\x69\x63\x6B", "\x70\x61\x73\x74\x65\x46\x61\x69\x6C\x65\x64", "\x63\x61\x74\x63\x68", "\x70\x61\x73\x74\x65\x45\x6D\x70\x74\x79", "\x70\x61\x73\x74\x65\x53\x75\x63\x63\x65\x73\x73", "\x74\x68\x65\x6E", "\x72\x65\x61\x64\x54\x65\x78\x74", "\x63\x6C\x69\x70\x62\x6F\x61\x72\x64", "\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72", "\x70\x61\x73\x74\x65\x55\x6E\x69", "\x70\x61\x73\x74\x65\x41\x6E\x73\x69"];
+var _0xe2ca = ["\x76\x61\x6C\x75\x65", "\x61\x6E\x73\x69\x54\x65\x78\x74", "\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64", "\x25\xC4", "\x72\x65\x70\x6C\x61\x63\x65", "\x20\xF6", "\x20\xF7", "\x25\xFE", "\x29\xFE", "\x2C\xFE", "\xCA\xFE", "\xA4\xFE", "\xC5\xFE", "\xE4\xFE", "\x76\xC8", "\x75\xC8", "\xD3\xC8", "\x25\xFE\xE9", "\x29\xFE\xE9", "\x2C\xFE\xE9", "\xE4\xFE\xE9", "\x25\xE9", "\x29\xE9", "\x2C\xE9", "\xE4\xE9", "\x76\xFE\x59", "\u2018\xFE\x59", "\xCF\x24", "\xB4\x24", "\u2030\xFE\xC6", "\xDD\xFE\xC6", "\xE0\xFE\xC6", "\u2018\xFE\xC6", "\xD8\xFE\xC6", "\u0160\xE9\xC9", "\xA3\xC9", "\xD9\u0160\xE9\xC9", "\x51\xC9", "\x5F\xC9", "\x5F\xC9\xAB", "\x73\xFE\x69\xC9", "\x54\xC9", "\xDF\xFE\x3C\xC9", "\x5B\xC8", "\xCA\x25\xFE", "\xCA\x29\xFE", "\xCA\x2C\xFE", "\xC9\x24", "\xC6\x24", "\xC8\xFE\x24", "\x69\x24", "\x69\x28", "\x71\x24", "\x71\x28", "\x40\xF9\xCC\x26", "\x40\xF9\xCC\x2A", "\u2026\xCA\x26", "\u2026\xCA\x2A", "\xED\xCA\x26", "\xED\xCA\x2A", "\u201D\xCA\x26", "\u201D\xCA\x2A", "\u2022\xCA\x26", "\u2022\xCA\x2A", "\xB2\xCC\x26", "\xB2\xCC\x2A", "\xEE\xCA\x26", "\xEE\xCA\x2A", "\xEE\xFB\x26", "\xEE\xFB\x2A", "\x20\xF2", "\x21\x76\xFE\xFC", "\xF6\xEC\x76\xFE\xFC", "\xF7\xEC\x76\xFE\xFC", "\x21\u2018\xFE\xFC", "\xF6\xEC\u2018\xFE\xFC", "\xF7\xEC\u2018\xFE\xFC", "\x21\xEB\xFB", "\xF6\xEC\xEB\xFB", "\xF7\xEC\xEB\xFB", "\x25\xAB", "\x29\xAB", "\x2C\xAB", "\x25\xF1", "\x29\xF1", "\x2C\xF1", "\xCF\x28", "\xCF\x2B", "\xB4\x28", "\xB4\x2B", "\xC9\x28", "\xC9\x2B", "\xC6\x28", "\xC6\x2B", "\xC8\xFE\x28", "\xC8\xFE\x2B", "\x69\x2B", "\x71\x2B", "\u2021\xCA\x26", "\u2021\xCA\x2A", "\u2019\xCA\x26", "\u2019\xCA\x2A", "\x65\x26", "\x65\x2A", "\xBC\x26", "\xBC\x2A", "\xCB\x26", "\xCB\x2A", "\xD7\x26", "\xD7\x2A", "\xA1\xEC\xCA\x26", "\xA1\xEC\xCA\x2A", "\x0A\xF6", "\x0A\xF7", "\xF2\xF6", "\xF2\xF7", "\x65\xAB", "\x65", "\x63\x68\x61\x72\x41\x74", "\xF6", "\xF6\xEC", "\xF7", "\xF7\xEC", "\x6F\x6E\x69\x6E\x70\x75\x74", "\x75\x6E\x69\x54\x65\x78\x74", "\x62\x69\x6A\x6F\x79", "", "\x66\x75\x6E\x63\x46\x61\x69\x6C\x65\x64", "\x74\x6F\x61\x73\x74\x53\x68\x6F\x77", "\x61\x64\x64", "\x63\x6C\x61\x73\x73\x4C\x69\x73\x74", "\x72\x65\x6D\x6F\x76\x65", "\x63\x6C\x65\x61\x72\x53\x75\x63\x63\x65\x73\x73", "\x63\x6F\x70\x79\x53\x75\x63\x63\x65\x73\x73", "\x73\x65\x6C\x65\x63\x74", "\x73\x65\x74\x53\x65\x6C\x65\x63\x74\x69\x6F\x6E\x52\x61\x6E\x67\x65", "\x63\x6F\x70\x79", "\x65\x78\x65\x63\x43\x6F\x6D\x6D\x61\x6E\x64", "\x63\x6C\x69\x63\x6B", "\x70\x61\x73\x74\x65\x46\x61\x69\x6C\x65\x64", "\x63\x61\x74\x63\x68", "\x70\x61\x73\x74\x65\x45\x6D\x70\x74\x79", "\x70\x61\x73\x74\x65\x53\x75\x63\x63\x65\x73\x73", "\x74\x68\x65\x6E", "\x72\x65\x61\x64\x54\x65\x78\x74", "\x63\x6C\x69\x70\x62\x6F\x61\x72\x64", "\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72", "\x70\x61\x73\x74\x65\x55\x6E\x69", "\x70\x61\x73\x74\x65\x41\x6E\x73\x69"];
 function finishingTouch() {
-    var _0xb552x2 = document[_0x9c43[2]](_0x9c43[1])[_0x9c43[0]];
-    var _0xb552x3 = _0xb552x2[_0x9c43[4]](/ ‡/g, _0x9c43[3]);
-    var _0xb552x4 = _0xb552x3[_0x9c43[4]](/Ky/g, _0x9c43[5]);
-    var _0xb552x5 = _0xb552x4[_0x9c43[4]](/°y/g, _0x9c43[6]);
-    var _0xb552x6 = _0xb552x5[_0x9c43[4]](/±y/g, _0x9c43[7]);
-    var _0xb552x7 = _0xb552x6[_0x9c43[4]](/Kèy/g, _0x9c43[8]);
-    var _0xb552x8 = _0xb552x7[_0x9c43[4]](/µy/g, _0x9c43[9]);
-    var _0xb552x9 = _0xb552x8[_0x9c43[4]](/K¬y/g, _0x9c43[10]);
-    var _0xb552xa = _0xb552x9[_0x9c43[4]](/ÿy/g, _0x9c43[11]);
-    var _0xb552xb = _0xb552xa[_0x9c43[4]](/³y/g, _0x9c43[12]);
-    var _0xb552xc = _0xb552xb[_0x9c43[4]](/ÿèy/g, _0x9c43[13]);
-    var _0xb552xd = _0xb552xc[_0x9c43[4]](/»y/g, _0x9c43[14]);
-    var _0xb552xe = _0xb552xd[_0x9c43[4]](/Oy/g, _0x9c43[15]);
-    var _0xb552xf = _0xb552xe[_0x9c43[4]](/¼y/g, _0x9c43[16]);
-    var _0xb552x10 = _0xb552xf[_0x9c43[4]](/¼«y/g, _0x9c43[17]);
-    var _0xb552x11 = _0xb552x10[_0x9c43[4]](/•ÿy/g, _0x9c43[18]);
-    var _0xb552x12 = _0xb552x11[_0x9c43[4]](/”Py/g, _0x9c43[19]);
-    var _0xb552x13 = _0xb552x12[_0x9c43[4]](/”Qy/g, _0x9c43[20]);
-    var _0xb552x14 = _0xb552x13[_0x9c43[4]](/”Ty/g, _0x9c43[21]);
-    var _0xb552x15 = _0xb552x14[_0x9c43[4]](/Qy/g, _0x9c43[22]);
-    var _0xb552x16 = _0xb552x15[_0x9c43[4]](/Ày/g, _0x9c43[23]);
-    var _0xb552x17 = _0xb552x16[_0x9c43[4]](/Áy/g, _0x9c43[24]);
-    var _0xb552x18 = _0xb552x17[_0x9c43[4]](/Sy/g, _0x9c43[25]);
-    var _0xb552x19 = _0xb552x18[_0x9c43[4]](/Ây/g, _0x9c43[26]);
-    var _0xb552x1a = _0xb552x19[_0x9c43[4]](/Ãy/g, _0x9c43[27]);
-    var _0xb552x1b = _0xb552x1a[_0x9c43[4]](/Uy/g, _0x9c43[28]);
-    var _0xb552x1c = _0xb552x1b[_0x9c43[4]](/Æy/g, _0x9c43[29]);
-    var _0xb552x1d = _0xb552x1c[_0x9c43[4]](/Wy/g, _0x9c43[30]);
-    var _0xb552x1e = _0xb552x1d[_0x9c43[4]](/Çy/g, _0x9c43[31]);
-    var _0xb552x1f = _0xb552x1e[_0x9c43[4]](/Xy/g, _0x9c43[32]);
-    var _0xb552x20 = _0xb552x1f[_0x9c43[4]](/Èy/g, _0x9c43[33]);
-    var _0xb552x21 = _0xb552x20[_0x9c43[4]](/Éy/g, _0x9c43[34]);
-    var _0xb552x22 = _0xb552x21[_0x9c43[4]](/Ðy/g, _0x9c43[35]);
-    var _0xb552x23 = _0xb552x22[_0x9c43[4]](/Zy/g, _0x9c43[36]);
-    var _0xb552x24 = _0xb552x23[_0x9c43[4]](/Ëy/g, _0x9c43[37]);
-    var _0xb552x25 = _0xb552x24[_0x9c43[4]](/×y/g, _0x9c43[38]);
-    var _0xb552x26 = _0xb552x25[_0x9c43[4]](/™¢y/g, _0x9c43[39]);
-    var _0xb552x27 = _0xb552x26[_0x9c43[4]](/›Uy/g, _0x9c43[40]);
-    var _0xb552x28 = _0xb552x27[_0x9c43[4]](/Ûy/g, _0x9c43[41]);
-    var _0xb552x29 = _0xb552x28[_0x9c43[4]](/Úy/g, _0x9c43[42]);
-    var _0xb552x2a = _0xb552x29[_0x9c43[4]](/š’y/g, _0x9c43[43]);
-    var _0xb552x2b = _0xb552x2a[_0x9c43[4]](/Üy/g, _0x9c43[44]);
-    var _0xb552x2c = _0xb552x2b[_0x9c43[4]](/Ü«y/g, _0x9c43[45]);
-    var _0xb552x2d = _0xb552x2c[_0x9c43[4]](/ßy/g, _0x9c43[46]);
-    var _0xb552x2e = _0xb552x2d[_0x9c43[4]](/Þy/g, _0x9c43[47]);
-    var _0xb552x2f = _0xb552x2e[_0x9c43[4]](/dy/g, _0x9c43[48]);
-    var _0xb552x30 = _0xb552x2f[_0x9c43[4]](/d«y/g, _0x9c43[49]);
-    var _0xb552x31 = _0xb552x30[_0x9c43[4]](/d¬y/g, _0x9c43[50]);
-    var _0xb552x32 = _0xb552x31[_0x9c43[4]](/äy/g, _0x9c43[51]);
-    var _0xb552x33 = _0xb552x32[_0x9c43[4]](/fy/g, _0x9c43[52]);
-    var _0xb552x34 = _0xb552x33[_0x9c43[4]](/çy/g, _0x9c43[53]);
-    var _0xb552x35 = _0xb552x34[_0x9c43[4]](/éy/g, _0x9c43[54]);
-    var _0xb552x36 = _0xb552x35[_0x9c43[4]](/îy/g, _0x9c43[55]);
-    var _0xb552x37 = _0xb552x36[_0x9c43[4]](/ðy/g, _0x9c43[56]);
-    var _0xb552x38 = _0xb552x37[_0x9c43[4]](/ñy/g, _0x9c43[57]);
-    var _0xb552x39 = _0xb552x38[_0x9c43[4]](/®‹y/g, _0x9c43[58]);
-    var _0xb552x3a = _0xb552x39[_0x9c43[4]](/óy/g, _0x9c43[59]);
-    var _0xb552x3b = _0xb552x3a[_0x9c43[4]](/ôy/g, _0x9c43[60]);
-    var _0xb552x3c = _0xb552x3b[_0x9c43[4]](/®Œy/g, _0x9c43[61]);
-    var _0xb552x3d = _0xb552x3c[_0x9c43[4]](/òy/g, _0x9c43[62]);
-    var _0xb552x3e = _0xb552x3d[_0x9c43[4]](/¯‹y/g, _0x9c43[63]);
-    var _0xb552x3f = _0xb552x3e[_0x9c43[4]](/¯’y/g, _0x9c43[64]);
-    var _0xb552x40 = _0xb552x3f[_0x9c43[4]](/ùy/g, _0x9c43[65]);
-    var _0xb552x41 = _0xb552x40[_0x9c43[4]](/ù«y/g, _0x9c43[66]);
-    var _0xb552x42 = _0xb552x41[_0x9c43[4]](/¯‹¬y/g, _0x9c43[67]);
-    var _0xb552x43 = _0xb552x42[_0x9c43[4]](/¯Œy/g, _0x9c43[68]);
-    var _0xb552x44 = _0xb552x43[_0x9c43[4]](/þy/g, _0x9c43[69]);
-    var _0xb552x45 = _0xb552x44[_0x9c43[4]](/÷y/g, _0x9c43[70]);
-    var _0xb552x46 = _0xb552x45[_0x9c43[4]](/ëy/g, _0x9c43[71]);
-    var _0xb552x47 = _0xb552x46[_0x9c43[4]](/K~/g, _0x9c43[72]);
-    var _0xb552x48 = _0xb552x47[_0x9c43[4]](/P~/g, _0x9c43[73]);
-    var _0xb552x49 = _0xb552x48[_0x9c43[4]](/Q~/g, _0x9c43[74]);
-    var _0xb552x4a = _0xb552x49[_0x9c43[4]](/S~/g, _0x9c43[75]);
-    var _0xb552x4b = _0xb552x4a[_0x9c43[4]](/U~/g, _0x9c43[76]);
-    var _0xb552x4c = _0xb552x4b[_0x9c43[4]](/V~/g, _0x9c43[77]);
-    var _0xb552x4d = _0xb552x4c[_0x9c43[4]](/W~/g, _0x9c43[78]);
-    var _0xb552x4e = _0xb552x4d[_0x9c43[4]](/X~/g, _0x9c43[79]);
-    var _0xb552x4f = _0xb552x4e[_0x9c43[4]](/Z~/g, _0x9c43[80]);
-    var _0xb552x50 = _0xb552x4f[_0x9c43[4]](/d~/g, _0x9c43[81]);
-    var _0xb552x51 = _0xb552x50[_0x9c43[4]](/f~/g, _0x9c43[82]);
-    var _0xb552x52 = _0xb552x51[_0x9c43[4]](/¤¢~/g, _0x9c43[83]);
-    var _0xb552x53 = _0xb552x52[_0x9c43[4]](/µ~/g, _0x9c43[84]);
-    var _0xb552x54 = _0xb552x53[_0x9c43[4]](/™¢~/g, _0x9c43[85]);
-    var _0xb552x55 = _0xb552x54[_0x9c43[4]](/¯’~/g, _0x9c43[86]);
-    var _0xb552x56 = _0xb552x55[_0x9c43[4]](/š’~/g, _0x9c43[87]);
-    var _0xb552x57 = _0xb552x56[_0x9c43[4]](/K„/g, _0x9c43[88]);
-    var _0xb552x58 = _0xb552x57[_0x9c43[4]](/L„/g, _0x9c43[89]);
-    var _0xb552x59 = _0xb552x58[_0x9c43[4]](/Q„/g, _0x9c43[90]);
-    var _0xb552x5a = _0xb552x59[_0x9c43[4]](/S„/g, _0x9c43[91]);
-    var _0xb552x5b = _0xb552x5a[_0x9c43[4]](/U„/g, _0x9c43[92]);
-    var _0xb552x5c = _0xb552x5b[_0x9c43[4]](/V„/g, _0x9c43[93]);
-    var _0xb552x5d = _0xb552x5c[_0x9c43[4]](/W„/g, _0x9c43[94]);
-    var _0xb552x5e = _0xb552x5d[_0x9c43[4]](/X„/g, _0x9c43[95]);
-    var _0xb552x5f = _0xb552x5e[_0x9c43[4]](/Z„/g, _0x9c43[96]);
-    var _0xb552x60 = _0xb552x5f[_0x9c43[4]](/d„/g, _0x9c43[97]);
-    var _0xb552x61 = _0xb552x60[_0x9c43[4]](/f„/g, _0x9c43[98]);
-    var _0xb552x62 = _0xb552x61[_0x9c43[4]](/¨y/g, _0x9c43[99]);
-    var _0xb552x63 = _0xb552x62[_0x9c43[4]](/Vy/g, _0x9c43[100]);
-    var _0xb552x64 = _0xb552x63[_0x9c43[4]](/Py/g, _0x9c43[101]);
-    var _0xb552x65 = _0xb552x64[_0x9c43[4]](/¶y/g, _0x9c43[102]);
-    var _0xb552x66 = _0xb552x65[_0x9c43[4]](/Êy/g, _0x9c43[103]);
-    var _0xb552x67 = _0xb552x66[_0x9c43[4]](/dª/g, _0x9c43[104]);
-    var _0xb552x68 = _0xb552x67[_0x9c43[4]](/d«y/g, _0x9c43[49]);
-    var _0xb552x69 = _0xb552x68[_0x9c43[4]](/Mª/g, _0x9c43[105]);
-    var _0xb552x6a = _0xb552x69[_0x9c43[4]](/cª/g, _0x9c43[106]);
-    var _0xb552x6b = _0xb552x6a[_0x9c43[4]](/kª/g, _0x9c43[107]);
-    var _0xb552x6c = _0xb552x6b[_0x9c43[4]](/úª/g, _0x9c43[108]);
-    var _0xb552x6d = _0xb552x6c[_0x9c43[4]](/MÖy/g, _0x9c43[109]);
-    var _0xb552x6e = _0xb552x6d[_0x9c43[4]](/MÖ~/g, _0x9c43[110]);
-    var _0xb552x6f = _0xb552x6e[_0x9c43[4]](/`ªy/g, _0x9c43[111]);
-    var _0xb552x70 = _0xb552x6f[_0x9c43[4]](/`ª~/g, _0x9c43[112]);
-    var _0xb552x71 = _0xb552x70[_0x9c43[4]](/aªy/g, _0x9c43[113]);
-    var _0xb552x72 = _0xb552x71[_0x9c43[4]](/aª~/g, _0x9c43[114]);
-    var _0xb552x73 = _0xb552x72[_0x9c43[4]](/cÖy/g, _0x9c43[115]);
-    var _0xb552x74 = _0xb552x73[_0x9c43[4]](/cÖ~/g, _0x9c43[116]);
-    var _0xb552x75 = _0xb552x74[_0x9c43[4]](/eªy/g, _0x9c43[117]);
-    var _0xb552x76 = _0xb552x75[_0x9c43[4]](/eª~/g, _0x9c43[118]);
-    var _0xb552x77 = _0xb552x76[_0x9c43[4]](/åy/g, _0x9c43[119]);
-    var _0xb552x78 = _0xb552x77[_0x9c43[4]](/å~/g, _0x9c43[120]);
-    var _0xb552x79 = _0xb552x78[_0x9c43[4]](/kÖy/g, _0x9c43[121]);
-    var _0xb552x7a = _0xb552x79[_0x9c43[4]](/kÖ~/g, _0x9c43[122]);
-    var _0xb552x7b = _0xb552x7a[_0x9c43[4]](/mªy/g, _0x9c43[123]);
-    var _0xb552x7c = _0xb552x7b[_0x9c43[4]](/mª~/g, _0x9c43[124]);
-    var _0xb552x7d = _0xb552x7c[_0x9c43[4]](/Üª/g, _0x9c43[125]);
-    var _0xb552x7e = _0xb552x7d[_0x9c43[4]](/°~/g, _0x9c43[126]);
-    var _0xb552x7f = _0xb552x7e[_0x9c43[4]](/±~/g, _0x9c43[127]);
-    var _0xb552x80 = _0xb552x7f[_0x9c43[4]](/Kè~/g, _0x9c43[128]);
-    var _0xb552x81 = _0xb552x80[_0x9c43[4]](/K¬~/g, _0x9c43[129]);
-    var _0xb552x82 = _0xb552x81[_0x9c43[4]](/ÿ~/g, _0x9c43[130]);
-    var _0xb552x83 = _0xb552x82[_0x9c43[4]](/³~/g, _0x9c43[131]);
-    var _0xb552x84 = _0xb552x83[_0x9c43[4]](/ÿè~/g, _0x9c43[132]);
-    var _0xb552x85 = _0xb552x84[_0x9c43[4]](/»~/g, _0x9c43[133]);
-    var _0xb552x86 = _0xb552x85[_0x9c43[4]](/O~/g, _0x9c43[134]);
-    var _0xb552x87 = _0xb552x86[_0x9c43[4]](/¼~/g, _0x9c43[135]);
-    var _0xb552x88 = _0xb552x87[_0x9c43[4]](/¼«~/g, _0x9c43[136]);
-    var _0xb552x89 = _0xb552x88[_0x9c43[4]](/•ÿ~/g, _0x9c43[137]);
-    var _0xb552x8a = _0xb552x89[_0x9c43[4]](/”P~/g, _0x9c43[138]);
-    var _0xb552x8b = _0xb552x8a[_0x9c43[4]](/”Q~/g, _0x9c43[139]);
-    var _0xb552x8c = _0xb552x8b[_0x9c43[4]](/”T~/g, _0x9c43[140]);
-    var _0xb552x8d = _0xb552x8c[_0x9c43[4]](/À~/g, _0x9c43[141]);
-    var _0xb552x8e = _0xb552x8d[_0x9c43[4]](/Á~/g, _0x9c43[142]);
-    var _0xb552x8f = _0xb552x8e[_0x9c43[4]](/Â~/g, _0x9c43[143]);
-    var _0xb552x90 = _0xb552x8f[_0x9c43[4]](/Ã~/g, _0x9c43[144]);
-    var _0xb552x91 = _0xb552x90[_0x9c43[4]](/Æ~/g, _0x9c43[145]);
-    var _0xb552x92 = _0xb552x91[_0x9c43[4]](/Ç~/g, _0x9c43[146]);
-    var _0xb552x93 = _0xb552x92[_0x9c43[4]](/È~/g, _0x9c43[147]);
-    var _0xb552x94 = _0xb552x93[_0x9c43[4]](/É~/g, _0x9c43[148]);
-    var _0xb552x95 = _0xb552x94[_0x9c43[4]](/Ð~/g, _0x9c43[149]);
-    var _0xb552x96 = _0xb552x95[_0x9c43[4]](/Ë~/g, _0x9c43[150]);
-    var _0xb552x97 = _0xb552x96[_0x9c43[4]](/×~/g, _0x9c43[151]);
-    var _0xb552x98 = _0xb552x97[_0x9c43[4]](/›U~/g, _0x9c43[152]);
-    var _0xb552x99 = _0xb552x98[_0x9c43[4]](/Û~/g, _0x9c43[153]);
-    var _0xb552x9a = _0xb552x99[_0x9c43[4]](/Ú~/g, _0x9c43[154]);
-    var _0xb552x9b = _0xb552x9a[_0x9c43[4]](/Ü~/g, _0x9c43[155]);
-    var _0xb552x9c = _0xb552x9b[_0x9c43[4]](/Ü«~/g, _0x9c43[156]);
-    var _0xb552x9d = _0xb552x9c[_0x9c43[4]](/ß~/g, _0x9c43[157]);
-    var _0xb552x9e = _0xb552x9d[_0x9c43[4]](/Þ~/g, _0x9c43[158]);
-    var _0xb552x9f = _0xb552x9e[_0x9c43[4]](/d«~/g, _0x9c43[159]);
-    var _0xb552xa0 = _0xb552x9f[_0x9c43[4]](/d¬~/g, _0x9c43[160]);
-    var _0xb552xa1 = _0xb552xa0[_0x9c43[4]](/ä~/g, _0x9c43[161]);
-    var _0xb552xa2 = _0xb552xa1[_0x9c43[4]](/ç~/g, _0x9c43[162]);
-    var _0xb552xa3 = _0xb552xa2[_0x9c43[4]](/é~/g, _0x9c43[163]);
-    var _0xb552xa4 = _0xb552xa3[_0x9c43[4]](/î~/g, _0x9c43[164]);
-    var _0xb552xa5 = _0xb552xa4[_0x9c43[4]](/ð~/g, _0x9c43[165]);
-    var _0xb552xa6 = _0xb552xa5[_0x9c43[4]](/ñ~/g, _0x9c43[166]);
-    var _0xb552xa7 = _0xb552xa6[_0x9c43[4]](/®‹~/g, _0x9c43[167]);
-    var _0xb552xa8 = _0xb552xa7[_0x9c43[4]](/ó~/g, _0x9c43[168]);
-    var _0xb552xa9 = _0xb552xa8[_0x9c43[4]](/ô~/g, _0x9c43[169]);
-    var _0xb552xaa = _0xb552xa9[_0x9c43[4]](/®Œ~/g, _0x9c43[170]);
-    var _0xb552xab = _0xb552xaa[_0x9c43[4]](/ò~/g, _0x9c43[171]);
-    var _0xb552xac = _0xb552xab[_0x9c43[4]](/¯‹~/g, _0x9c43[172]);
-    var _0xb552xad = _0xb552xac[_0x9c43[4]](/ù~/g, _0x9c43[173]);
-    var _0xb552xae = _0xb552xad[_0x9c43[4]](/ù«~/g, _0x9c43[174]);
-    var _0xb552xaf = _0xb552xae[_0x9c43[4]](/¯‹¬~/g, _0x9c43[175]);
-    var _0xb552xb0 = _0xb552xaf[_0x9c43[4]](/¯Œ~/g, _0x9c43[176]);
-    var _0xb552xb1 = _0xb552xb0[_0x9c43[4]](/þ~/g, _0x9c43[177]);
-    var _0xb552xb2 = _0xb552xb1[_0x9c43[4]](/÷~/g, _0x9c43[178]);
-    var _0xb552xb3 = _0xb552xb2[_0x9c43[4]](/ë~/g, _0x9c43[179]);
-    var _0xb552xb4 = _0xb552xb3[_0x9c43[4]](/¤¢y/g, _0x9c43[180]);
-    var _0xb552xb5 = _0xb552xb4[_0x9c43[4]](/¶~/g, _0x9c43[181]);
-    var _0xb552xb6 = _0xb552xb5[_0x9c43[4]](/Ê~/g, _0x9c43[182]);
-    var _0xb552xb7 = _0xb552xb6[_0x9c43[4]](/°„/g, _0x9c43[183]);
-    var _0xb552xb8 = _0xb552xb7[_0x9c43[4]](/±„/g, _0x9c43[184]);
-    var _0xb552xb9 = _0xb552xb8[_0x9c43[4]](/Kè„/g, _0x9c43[185]);
-    var _0xb552xba = _0xb552xb9[_0x9c43[4]](/µ„/g, _0x9c43[186]);
-    var _0xb552xbb = _0xb552xba[_0x9c43[4]](/K¬„/g, _0x9c43[187]);
-    var _0xb552xbc = _0xb552xbb[_0x9c43[4]](/ÿ„/g, _0x9c43[188]);
-    var _0xb552xbd = _0xb552xbc[_0x9c43[4]](/³„/g, _0x9c43[189]);
-    var _0xb552xbe = _0xb552xbd[_0x9c43[4]](/ÿè„/g, _0x9c43[190]);
-    var _0xb552xbf = _0xb552xbe[_0x9c43[4]](/»„/g, _0x9c43[191]);
-    var _0xb552xc0 = _0xb552xbf[_0x9c43[4]](/O„/g, _0x9c43[192]);
-    var _0xb552xc1 = _0xb552xc0[_0x9c43[4]](/¼„/g, _0x9c43[193]);
-    var _0xb552xc2 = _0xb552xc1[_0x9c43[4]](/¼«„/g, _0x9c43[194]);
-    var _0xb552xc3 = _0xb552xc2[_0x9c43[4]](/•ÿ„/g, _0x9c43[195]);
-    var _0xb552xc4 = _0xb552xc3[_0x9c43[4]](/”P„/g, _0x9c43[196]);
-    var _0xb552xc5 = _0xb552xc4[_0x9c43[4]](/”Q„/g, _0x9c43[197]);
-    var _0xb552xc6 = _0xb552xc5[_0x9c43[4]](/”T„/g, _0x9c43[198]);
-    var _0xb552xc7 = _0xb552xc6[_0x9c43[4]](/À„/g, _0x9c43[199]);
-    var _0xb552xc8 = _0xb552xc7[_0x9c43[4]](/Á„/g, _0x9c43[200]);
-    var _0xb552xc9 = _0xb552xc8[_0x9c43[4]](/Â„/g, _0x9c43[201]);
-    var _0xb552xca = _0xb552xc9[_0x9c43[4]](/Ã„/g, _0x9c43[202]);
-    var _0xb552xcb = _0xb552xca[_0x9c43[4]](/Æ„/g, _0x9c43[203]);
-    var _0xb552xcc = _0xb552xcb[_0x9c43[4]](/Ç„/g, _0x9c43[204]);
-    var _0xb552xcd = _0xb552xcc[_0x9c43[4]](/È„/g, _0x9c43[205]);
-    var _0xb552xce = _0xb552xcd[_0x9c43[4]](/É„/g, _0x9c43[206]);
-    var _0xb552xcf = _0xb552xce[_0x9c43[4]](/Ð„/g, _0x9c43[207]);
-    var _0xb552xd0 = _0xb552xcf[_0x9c43[4]](/Ë„/g, _0x9c43[208]);
-    var _0xb552xd1 = _0xb552xd0[_0x9c43[4]](/×„/g, _0x9c43[209]);
-    var _0xb552xd2 = _0xb552xd1[_0x9c43[4]](/™¢„/g, _0x9c43[210]);
-    var _0xb552xd3 = _0xb552xd2[_0x9c43[4]](/›U„/g, _0x9c43[211]);
-    var _0xb552xd4 = _0xb552xd3[_0x9c43[4]](/Û„/g, _0x9c43[212]);
-    var _0xb552xd5 = _0xb552xd4[_0x9c43[4]](/Ú„/g, _0x9c43[213]);
-    var _0xb552xd6 = _0xb552xd5[_0x9c43[4]](/š’„/g, _0x9c43[214]);
-    var _0xb552xd7 = _0xb552xd6[_0x9c43[4]](/Ü„/g, _0x9c43[215]);
-    var _0xb552xd8 = _0xb552xd7[_0x9c43[4]](/Ü«„/g, _0x9c43[216]);
-    var _0xb552xd9 = _0xb552xd8[_0x9c43[4]](/ß„/g, _0x9c43[217]);
-    var _0xb552xda = _0xb552xd9[_0x9c43[4]](/Þ„/g, _0x9c43[218]);
-    var _0xb552xdb = _0xb552xda[_0x9c43[4]](/d«„/g, _0x9c43[219]);
-    var _0xb552xdc = _0xb552xdb[_0x9c43[4]](/d¬„/g, _0x9c43[220]);
-    var _0xb552xdd = _0xb552xdc[_0x9c43[4]](/ä„/g, _0x9c43[221]);
-    var _0xb552xde = _0xb552xdd[_0x9c43[4]](/ç„/g, _0x9c43[222]);
-    var _0xb552xdf = _0xb552xde[_0x9c43[4]](/é„/g, _0x9c43[223]);
-    var _0xb552xe0 = _0xb552xdf[_0x9c43[4]](/î„/g, _0x9c43[224]);
-    var _0xb552xe1 = _0xb552xe0[_0x9c43[4]](/ð„/g, _0x9c43[225]);
-    var _0xb552xe2 = _0xb552xe1[_0x9c43[4]](/ñ„/g, _0x9c43[226]);
-    var _0xb552xe3 = _0xb552xe2[_0x9c43[4]](/®‹„/g, _0x9c43[227]);
-    var _0xb552xe4 = _0xb552xe3[_0x9c43[4]](/ó„/g, _0x9c43[228]);
-    var _0xb552xe5 = _0xb552xe4[_0x9c43[4]](/ô„/g, _0x9c43[229]);
-    var _0xb552xe6 = _0xb552xe5[_0x9c43[4]](/®Œ„/g, _0x9c43[230]);
-    var _0xb552xe7 = _0xb552xe6[_0x9c43[4]](/ò„/g, _0x9c43[231]);
-    var _0xb552xe8 = _0xb552xe7[_0x9c43[4]](/¯‹„/g, _0x9c43[232]);
-    var _0xb552xe9 = _0xb552xe8[_0x9c43[4]](/¯’„/g, _0x9c43[233]);
-    var _0xb552xea = _0xb552xe9[_0x9c43[4]](/ù„/g, _0x9c43[234]);
-    var _0xb552xeb = _0xb552xea[_0x9c43[4]](/ù«„/g, _0x9c43[235]);
-    var _0xb552xec = _0xb552xeb[_0x9c43[4]](/¯‹¬„/g, _0x9c43[236]);
-    var _0xb552xed = _0xb552xec[_0x9c43[4]](/¯Œ„/g, _0x9c43[237]);
-    var _0xb552xee = _0xb552xed[_0x9c43[4]](/þ„/g, _0x9c43[238]);
-    var _0xb552xef = _0xb552xee[_0x9c43[4]](/÷„/g, _0x9c43[239]);
-    var _0xb552xf0 = _0xb552xef[_0x9c43[4]](/ë„/g, _0x9c43[240]);
-    var _0xb552xf1 = _0xb552xf0[_0x9c43[4]](/P„/g, _0x9c43[241]);
-    var _0xb552xf2 = _0xb552xf1[_0x9c43[4]](/¶„/g, _0x9c43[242]);
-    var _0xb552xf3 = _0xb552xf2[_0x9c43[4]](/Ê„/g, _0x9c43[243]);
-    var _0xb552xf4 = _0xb552xf3[_0x9c43[4]](/nª/g, _0x9c43[244]);
-    var _0xb552xf5 = _0xb552xf4[_0x9c43[4]](/³ª/g, _0x9c43[245]);
-    var _0xb552xf6 = _0xb552xf5[_0x9c43[4]](/Qª/g, _0x9c43[246]);
-    var _0xb552xf7 = _0xb552xf6[_0x9c43[4]](/îª/g, _0x9c43[247]);
-    var _0xb552xf8 = _0xb552xf7[_0x9c43[4]](/ùª/g, _0x9c43[248]);
-    var _0xb552xf9 = _0xb552xf8[_0x9c43[4]](/ ‰/g, _0x9c43[249]);
-    var _0xb552xfa = _0xb552xf9[_0x9c43[4]](/Ww়/g, _0x9c43[250]);
-    var _0xb552xfb = _0xb552xfa[_0x9c43[4]](/W‡়/g, _0x9c43[251]);
-    var _0xb552xfc = _0xb552xfb[_0x9c43[4]](/W‰়/g, _0x9c43[252]);
-    var _0xb552xfd = _0xb552xfc[_0x9c43[4]](/Xw়/g, _0x9c43[253]);
-    var _0xb552xfe = _0xb552xfd[_0x9c43[4]](/X‡়/g, _0x9c43[254]);
-    var _0xb552xff = _0xb552xfe[_0x9c43[4]](/X‰়/g, _0x9c43[255]);
-    var _0xb552x100 = _0xb552xff[_0x9c43[4]](/hw়/g, _0x9c43[256]);
-    var _0xb552x101 = _0xb552x100[_0x9c43[4]](/h‡়/g, _0x9c43[257]);
-    var _0xb552x102 = _0xb552x101[_0x9c43[4]](/h‰়/g, _0x9c43[258]);
-    var _0xb552x103 = _0xb552x102[_0x9c43[4]](/oy/g, _0x9c43[259]);
-    var _0xb552x104 = _0xb552x103[_0x9c43[4]](/_ªy/g, _0x9c43[260]);
-    var _0xb552x105 = _0xb552x104[_0x9c43[4]](/_ª~/g, _0x9c43[261]);
-    var _0xb552x106 = _0xb552x105[_0x9c43[4]](/iy/g, _0x9c43[262]);
-    var _0xb552x107 = _0xb552x106[_0x9c43[4]](/i~/g, _0x9c43[263]);
-    var _0xb552x108 = _0xb552x107[_0x9c43[4]](/'‡/g, _0x9c43[264]);
-    var _0xb552x109 = _0xb552x108[_0x9c43[4]](/'‰/g, _0x9c43[265]);
-    var _0xb552x10a = _0xb552x109[_0x9c43[4]](/Ò‡/g, _0x9c43[266]);
-    var _0xb552x10b = _0xb552x10a[_0x9c43[4]](/Ò‰/g, _0x9c43[267]);
-    var _0xb552x10c = _0xb552x10b[_0x9c43[4]](/\"‡/g, _0x9c43[268]);
-    var _0xb552x10d = _0xb552x10c[_0x9c43[4]](/\"‰/g, _0x9c43[269]);
-    var _0xb552x10e = _0xb552x10d[_0x9c43[4]](/Ô‡/g, _0x9c43[270]);
-    var _0xb552x10f = _0xb552x10e[_0x9c43[4]](/Ô‰/g, _0x9c43[271]);
-    var _0xb552x110 = _0xb552x10f[_0x9c43[4]](/\n‡/g, _0x9c43[272]);
-    var _0xb552x111 = _0xb552x110[_0x9c43[4]](/\n‰/g, _0x9c43[273]);
-    var _0xb552x112 = _0xb552x111[_0x9c43[4]](/Kª/g, _0x9c43[274]);
-    var _0xb552x113 = _0xb552x112[_0x9c43[4]](/Zª/g, _0x9c43[275]);
-    if (_0xb552x113[_0x9c43[276]](0) == _0x9c43[277]) {
-        var _0xb552x114 = _0xb552x113[_0x9c43[4]](_0x9c43[277], _0x9c43[278])
+    var _0x114ex2 = document[_0xe2ca[2]](_0xe2ca[1])[_0xe2ca[0]];
+    var _0x114ex3 = _0x114ex2[_0xe2ca[4]](/Ä%/g, _0xe2ca[3]);
+    var _0x114ex4 = _0x114ex3[_0xe2ca[4]](/ öì/g, _0xe2ca[5]);
+    var _0x114ex5 = _0x114ex4[_0xe2ca[4]](/ ÷ì/g, _0xe2ca[6]);
+    var _0x114ex6 = _0x114ex5[_0xe2ca[4]](/þ%/g, _0xe2ca[7]);
+    var _0x114ex7 = _0x114ex6[_0xe2ca[4]](/þ\)/g, _0xe2ca[8]);
+    var _0x114ex8 = _0x114ex7[_0xe2ca[4]](/þ,/g, _0xe2ca[9]);
+    var _0x114ex9 = _0x114ex8[_0xe2ca[4]](/þÊ/g, _0xe2ca[10]);
+    var _0x114exa = _0x114ex9[_0xe2ca[4]](/þ¤/g, _0xe2ca[11]);
+    var _0x114exb = _0x114exa[_0xe2ca[4]](/þÅ/g, _0xe2ca[12]);
+    var _0x114exc = _0x114exb[_0xe2ca[4]](/þä/g, _0xe2ca[13]);
+    var _0x114exd = _0x114exc[_0xe2ca[4]](/vÊ/g, _0xe2ca[14]);
+    var _0x114exe = _0x114exd[_0xe2ca[4]](/uÊ/g, _0xe2ca[15]);
+    var _0x114exf = _0x114exe[_0xe2ca[4]](/ÓÊ/g, _0xe2ca[16]);
+    var _0x114ex10 = _0x114exf[_0xe2ca[4]](/þé%/g, _0xe2ca[17]);
+    var _0x114ex11 = _0x114ex10[_0xe2ca[4]](/þé\)/g, _0xe2ca[18]);
+    var _0x114ex12 = _0x114ex11[_0xe2ca[4]](/þé,/g, _0xe2ca[19]);
+    var _0x114ex13 = _0x114ex12[_0xe2ca[4]](/þéä/g, _0xe2ca[20]);
+    var _0x114ex14 = _0x114ex13[_0xe2ca[4]](/é%/g, _0xe2ca[21]);
+    var _0x114ex15 = _0x114ex14[_0xe2ca[4]](/é\)/g, _0xe2ca[22]);
+    var _0x114ex16 = _0x114ex15[_0xe2ca[4]](/é,/g, _0xe2ca[23]);
+    var _0x114ex17 = _0x114ex16[_0xe2ca[4]](/éä/g, _0xe2ca[24]);
+    var _0x114ex18 = _0x114ex17[_0xe2ca[4]](/vþü%/g, _0xe2ca[25]);
+    var _0x114ex19 = _0x114ex18[_0xe2ca[4]](/‘þü%/g, _0xe2ca[26]);
+    var _0x114ex1a = _0x114ex19[_0xe2ca[4]](/Ï%/g, _0xe2ca[27]);
+    var _0x114ex1b = _0x114ex1a[_0xe2ca[4]](/´%/g, _0xe2ca[28]);
+    var _0x114ex1c = _0x114ex1b[_0xe2ca[4]](/‰Êþ/g, _0xe2ca[29]);
+    var _0x114ex1d = _0x114ex1c[_0xe2ca[4]](/ÝÊþ/g, _0xe2ca[30]);
+    var _0x114ex1e = _0x114ex1d[_0xe2ca[4]](/àÊþ/g, _0xe2ca[31]);
+    var _0x114ex1f = _0x114ex1e[_0xe2ca[4]](/‘Êþ/g, _0xe2ca[32]);
+    var _0x114ex20 = _0x114ex1f[_0xe2ca[4]](/ØÊþ/g, _0xe2ca[33]);
+    var _0x114ex21 = _0x114ex20[_0xe2ca[4]](/ŠéÊ/g, _0xe2ca[34]);
+    var _0x114ex22 = _0x114ex21[_0xe2ca[4]](/£Ê/g, _0xe2ca[35]);
+    var _0x114ex23 = _0x114ex22[_0xe2ca[4]](/ÙŠéÊ/g, _0xe2ca[36]);
+    var _0x114ex24 = _0x114ex23[_0xe2ca[4]](/QÊ/g, _0xe2ca[37]);
+    var _0x114ex25 = _0x114ex24[_0xe2ca[4]](/_Ê/g, _0xe2ca[38]);
+    var _0x114ex26 = _0x114ex25[_0xe2ca[4]](/_«Ê/g, _0xe2ca[39]);
+    var _0x114ex27 = _0x114ex26[_0xe2ca[4]](/sþiÊ/g, _0xe2ca[40]);
+    var _0x114ex28 = _0x114ex27[_0xe2ca[4]](/TÊ/g, _0xe2ca[41]);
+    var _0x114ex29 = _0x114ex28[_0xe2ca[4]](/ßþ<Ê/g, _0xe2ca[42]);
+    var _0x114ex2a = _0x114ex29[_0xe2ca[4]](/\[Ê/g, _0xe2ca[43]);
+    var _0x114ex2b = _0x114ex2a[_0xe2ca[4]](/Êþ%/g, _0xe2ca[44]);
+    var _0x114ex2c = _0x114ex2b[_0xe2ca[4]](/Êþ\)/g, _0xe2ca[45]);
+    var _0x114ex2d = _0x114ex2c[_0xe2ca[4]](/Êþ,/g, _0xe2ca[46]);
+    var _0x114ex2e = _0x114ex2d[_0xe2ca[4]](/É%/g, _0xe2ca[47]);
+    var _0x114ex2f = _0x114ex2e[_0xe2ca[4]](/Æ%/g, _0xe2ca[48]);
+    var _0x114ex30 = _0x114ex2f[_0xe2ca[4]](/Èþ%/g, _0xe2ca[49]);
+    var _0x114ex31 = _0x114ex30[_0xe2ca[4]](/i%/g, _0xe2ca[50]);
+    var _0x114ex32 = _0x114ex31[_0xe2ca[4]](/i\)/g, _0xe2ca[51]);
+    var _0x114ex33 = _0x114ex32[_0xe2ca[4]](/q%/g, _0xe2ca[52]);
+    var _0x114ex34 = _0x114ex33[_0xe2ca[4]](/q\)/g, _0xe2ca[53]);
+    var _0x114ex35 = _0x114ex34[_0xe2ca[4]](/@ùÌ%/g, _0xe2ca[54]);
+    var _0x114ex36 = _0x114ex35[_0xe2ca[4]](/@ùÌ\)/g, _0xe2ca[55]);
+    var _0x114ex37 = _0x114ex36[_0xe2ca[4]](/…Ê%/g, _0xe2ca[56]);
+    var _0x114ex38 = _0x114ex37[_0xe2ca[4]](/…Ê\)/g, _0xe2ca[57]);
+    var _0x114ex39 = _0x114ex38[_0xe2ca[4]](/íÊ%/g, _0xe2ca[58]);
+    var _0x114ex3a = _0x114ex39[_0xe2ca[4]](/íÊ\)/g, _0xe2ca[59]);
+    var _0x114ex3b = _0x114ex3a[_0xe2ca[4]](/”Ê%/g, _0xe2ca[60]);
+    var _0x114ex3c = _0x114ex3b[_0xe2ca[4]](/”Ê\)/g, _0xe2ca[61]);
+    var _0x114ex3d = _0x114ex3c[_0xe2ca[4]](/•Ê%/g, _0xe2ca[62]);
+    var _0x114ex3e = _0x114ex3d[_0xe2ca[4]](/•Ê\)/g, _0xe2ca[63]);
+    var _0x114ex3f = _0x114ex3e[_0xe2ca[4]](/²Ì%/g, _0xe2ca[64]);
+    var _0x114ex40 = _0x114ex3f[_0xe2ca[4]](/²Ì\)/g, _0xe2ca[65]);
+    var _0x114ex41 = _0x114ex40[_0xe2ca[4]](/îÊ%/g, _0xe2ca[66]);
+    var _0x114ex42 = _0x114ex41[_0xe2ca[4]](/îÊ\)/g, _0xe2ca[67]);
+    var _0x114ex43 = _0x114ex42[_0xe2ca[4]](/îû%/g, _0xe2ca[68]);
+    var _0x114ex44 = _0x114ex43[_0xe2ca[4]](/îû\)/g, _0xe2ca[69]);
+    var _0x114ex45 = _0x114ex44[_0xe2ca[4]](/ ó/g, _0xe2ca[70]);
+    var _0x114ex46 = _0x114ex45[_0xe2ca[4]](/vþ!়/g, _0xe2ca[71]);
+    var _0x114ex47 = _0x114ex46[_0xe2ca[4]](/vþöì়/g, _0xe2ca[72]);
+    var _0x114ex48 = _0x114ex47[_0xe2ca[4]](/vþ÷ì়/g, _0xe2ca[73]);
+    var _0x114ex49 = _0x114ex48[_0xe2ca[4]](/‘þ!়/g, _0xe2ca[74]);
+    var _0x114ex4a = _0x114ex49[_0xe2ca[4]](/‘þöì়/g, _0xe2ca[75]);
+    var _0x114ex4b = _0x114ex4a[_0xe2ca[4]](/‘þ÷ì়/g, _0xe2ca[76]);
+    var _0x114ex4c = _0x114ex4b[_0xe2ca[4]](/ë!়/g, _0xe2ca[77]);
+    var _0x114ex4d = _0x114ex4c[_0xe2ca[4]](/ëöì়/g, _0xe2ca[78]);
+    var _0x114ex4e = _0x114ex4d[_0xe2ca[4]](/ë÷ì়/g, _0xe2ca[79]);
+    var _0x114ex4f = _0x114ex4e[_0xe2ca[4]](/«%/g, _0xe2ca[80]);
+    var _0x114ex50 = _0x114ex4f[_0xe2ca[4]](/«\)/g, _0xe2ca[81]);
+    var _0x114ex51 = _0x114ex50[_0xe2ca[4]](/«,/g, _0xe2ca[82]);
+    var _0x114ex52 = _0x114ex51[_0xe2ca[4]](/ñ%/g, _0xe2ca[83]);
+    var _0x114ex53 = _0x114ex52[_0xe2ca[4]](/ñ\)/g, _0xe2ca[84]);
+    var _0x114ex54 = _0x114ex53[_0xe2ca[4]](/ñ,/g, _0xe2ca[85]);
+    var _0x114ex55 = _0x114ex54[_0xe2ca[4]](/Ï\)/g, _0xe2ca[86]);
+    var _0x114ex56 = _0x114ex55[_0xe2ca[4]](/Ï,/g, _0xe2ca[87]);
+    var _0x114ex57 = _0x114ex56[_0xe2ca[4]](/´\)/g, _0xe2ca[88]);
+    var _0x114ex58 = _0x114ex57[_0xe2ca[4]](/´,/g, _0xe2ca[89]);
+    var _0x114ex59 = _0x114ex58[_0xe2ca[4]](/É\)/g, _0xe2ca[90]);
+    var _0x114ex5a = _0x114ex59[_0xe2ca[4]](/É,/g, _0xe2ca[91]);
+    var _0x114ex5b = _0x114ex5a[_0xe2ca[4]](/Æ\)/g, _0xe2ca[92]);
+    var _0x114ex5c = _0x114ex5b[_0xe2ca[4]](/Æ,/g, _0xe2ca[93]);
+    var _0x114ex5d = _0x114ex5c[_0xe2ca[4]](/Èþ\)/g, _0xe2ca[94]);
+    var _0x114ex5e = _0x114ex5d[_0xe2ca[4]](/Èþ,/g, _0xe2ca[95]);
+    var _0x114ex5f = _0x114ex5e[_0xe2ca[4]](/i,/g, _0xe2ca[96]);
+    var _0x114ex60 = _0x114ex5f[_0xe2ca[4]](/q,/g, _0xe2ca[97]);
+    var _0x114ex61 = _0x114ex60[_0xe2ca[4]](/‡Ê%/g, _0xe2ca[98]);
+    var _0x114ex62 = _0x114ex61[_0xe2ca[4]](/‡Ê\)/g, _0xe2ca[99]);
+    var _0x114ex63 = _0x114ex62[_0xe2ca[4]](/’Ê%/g, _0xe2ca[100]);
+    var _0x114ex64 = _0x114ex63[_0xe2ca[4]](/’Ê\)/g, _0xe2ca[101]);
+    var _0x114ex65 = _0x114ex64[_0xe2ca[4]](/e%/g, _0xe2ca[102]);
+    var _0x114ex66 = _0x114ex65[_0xe2ca[4]](/e\)/g, _0xe2ca[103]);
+    var _0x114ex67 = _0x114ex66[_0xe2ca[4]](/¼%/g, _0xe2ca[104]);
+    var _0x114ex68 = _0x114ex67[_0xe2ca[4]](/¼\)/g, _0xe2ca[105]);
+    var _0x114ex69 = _0x114ex68[_0xe2ca[4]](/Ë%/g, _0xe2ca[106]);
+    var _0x114ex6a = _0x114ex69[_0xe2ca[4]](/Ë\)/g, _0xe2ca[107]);
+    var _0x114ex6b = _0x114ex6a[_0xe2ca[4]](/×%/g, _0xe2ca[108]);
+    var _0x114ex6c = _0x114ex6b[_0xe2ca[4]](/×\)/g, _0xe2ca[109]);
+    var _0x114ex6d = _0x114ex6c[_0xe2ca[4]](/¡ìÊ%/g, _0xe2ca[110]);
+    var _0x114ex6e = _0x114ex6d[_0xe2ca[4]](/¡ìÊ\)/g, _0xe2ca[111]);
+    var _0x114ex6f = _0x114ex6e[_0xe2ca[4]](/\nöì/g, _0xe2ca[112]);
+    var _0x114ex70 = _0x114ex6f[_0xe2ca[4]](/\n÷ì/g, _0xe2ca[113]);
+    var _0x114ex71 = _0x114ex70[_0xe2ca[4]](/òöì/g, _0xe2ca[114]);
+    var _0x114ex72 = _0x114ex71[_0xe2ca[4]](/òn÷ì/g, _0xe2ca[115]);
+    var _0x114ex73 = _0x114ex72[_0xe2ca[4]](/„Êþ/g, _0xe2ca[116]);
+    var _0x114ex74 = _0x114ex73[_0xe2ca[4]](/“Êþ/g, _0xe2ca[117]);
+    var _0x114ex75 = _0x114ex74;
+    if (_0x114ex75[_0xe2ca[118]](0) == _0xe2ca[119]) {
+        var _0x114ex76 = _0x114ex75[_0xe2ca[4]](_0xe2ca[120], _0xe2ca[119])
     } else {
-        if (_0xb552x113[_0x9c43[276]](0) == _0x9c43[279]) {
-            var _0xb552x114 = _0xb552x113[_0x9c43[4]](_0x9c43[279], _0x9c43[280])
+        if (_0x114ex75[_0xe2ca[118]](0) == _0xe2ca[121]) {
+            var _0x114ex76 = _0x114ex75[_0xe2ca[4]](_0xe2ca[122], _0xe2ca[121])
         } else {
-            var _0xb552x114 = _0xb552x113
+            var _0x114ex76 = _0x114ex75
         }
     }
-    ;document[_0x9c43[2]](_0x9c43[1])[_0x9c43[0]] = _0xb552x114
+    ;document[_0xe2ca[2]](_0xe2ca[1])[_0xe2ca[0]] = _0x114ex76
 }
-document[_0x9c43[2]](_0x9c43[1])[_0x9c43[281]] = function() {
-    var _0xb552x115 = document[_0x9c43[2]](_0x9c43[1])[_0x9c43[0]];
-    document[_0x9c43[2]](_0x9c43[282])[_0x9c43[0]] = ConvertToUnicode(_0x9c43[283], _0xb552x115)
+document[_0xe2ca[2]](_0xe2ca[1])[_0xe2ca[123]] = function() {
+    var _0x114ex77 = document[_0xe2ca[2]](_0xe2ca[1])[_0xe2ca[0]];
+    document[_0xe2ca[2]](_0xe2ca[124])[_0xe2ca[0]] = ConvertToUnicode(_0xe2ca[125], _0x114ex77)
 }
 ;
-document[_0x9c43[2]](_0x9c43[282])[_0x9c43[281]] = function() {
-    var _0xb552x115 = document[_0x9c43[2]](_0x9c43[282])[_0x9c43[0]];
-    document[_0x9c43[2]](_0x9c43[1])[_0x9c43[0]] = ConvertToASCII(_0x9c43[283], _0xb552x115);
+document[_0xe2ca[2]](_0xe2ca[124])[_0xe2ca[123]] = function() {
+    var _0x114ex77 = document[_0xe2ca[2]](_0xe2ca[124])[_0xe2ca[0]];
+    document[_0xe2ca[2]](_0xe2ca[1])[_0xe2ca[0]] = ConvertToASCII(_0xe2ca[125], _0x114ex77);
     finishingTouch()
 }
 ;
 function clearText() {
-    textTest = document[_0x9c43[2]](_0x9c43[282])[_0x9c43[0]];
-    if (textTest == _0x9c43[284]) {
-        var _0xb552x117 = document[_0x9c43[2]](_0x9c43[285]);
-        _0xb552x117[_0x9c43[288]][_0x9c43[287]](_0x9c43[286]);
+    textTest = document[_0xe2ca[2]](_0xe2ca[124])[_0xe2ca[0]];
+    if (textTest == _0xe2ca[126]) {
+        var _0x114ex79 = document[_0xe2ca[2]](_0xe2ca[127]);
+        _0x114ex79[_0xe2ca[130]][_0xe2ca[129]](_0xe2ca[128]);
         setTimeout(function() {
-            _0xb552x117[_0x9c43[288]][_0x9c43[289]](_0x9c43[286])
+            _0x114ex79[_0xe2ca[130]][_0xe2ca[131]](_0xe2ca[128])
         }, 3000)
     } else {
-        var _0xb552x117 = document[_0x9c43[2]](_0x9c43[290]);
-        _0xb552x117[_0x9c43[288]][_0x9c43[287]](_0x9c43[286]);
+        var _0x114ex79 = document[_0xe2ca[2]](_0xe2ca[132]);
+        _0x114ex79[_0xe2ca[130]][_0xe2ca[129]](_0xe2ca[128]);
         setTimeout(function() {
-            _0xb552x117[_0x9c43[288]][_0x9c43[289]](_0x9c43[286])
+            _0x114ex79[_0xe2ca[130]][_0xe2ca[131]](_0xe2ca[128])
         }, 3000);
-        document[_0x9c43[2]](_0x9c43[282])[_0x9c43[0]] = _0x9c43[284];
-        document[_0x9c43[2]](_0x9c43[1])[_0x9c43[0]] = _0x9c43[284]
+        document[_0xe2ca[2]](_0xe2ca[124])[_0xe2ca[0]] = _0xe2ca[126];
+        document[_0xe2ca[2]](_0xe2ca[1])[_0xe2ca[0]] = _0xe2ca[126]
     }
 }
-function doCopy(_0xb552x119) {
-    textTest = document[_0x9c43[2]](_0x9c43[282])[_0x9c43[0]];
-    if (textTest == _0x9c43[284]) {
-        var _0xb552x117 = document[_0x9c43[2]](_0x9c43[285]);
-        _0xb552x117[_0x9c43[288]][_0x9c43[287]](_0x9c43[286]);
+function doCopy(_0x114ex7b) {
+    textTest = document[_0xe2ca[2]](_0xe2ca[124])[_0xe2ca[0]];
+    if (textTest == _0xe2ca[126]) {
+        var _0x114ex79 = document[_0xe2ca[2]](_0xe2ca[127]);
+        _0x114ex79[_0xe2ca[130]][_0xe2ca[129]](_0xe2ca[128]);
         setTimeout(function() {
-            _0xb552x117[_0x9c43[288]][_0x9c43[289]](_0x9c43[286])
+            _0x114ex79[_0xe2ca[130]][_0xe2ca[131]](_0xe2ca[128])
         }, 3000)
     } else {
-        var _0xb552x117 = document[_0x9c43[2]](_0x9c43[291]);
-        _0xb552x117[_0x9c43[288]][_0x9c43[287]](_0x9c43[286]);
+        var _0x114ex79 = document[_0xe2ca[2]](_0xe2ca[133]);
+        _0x114ex79[_0xe2ca[130]][_0xe2ca[129]](_0xe2ca[128]);
         setTimeout(function() {
-            _0xb552x117[_0x9c43[288]][_0x9c43[289]](_0x9c43[286])
+            _0x114ex79[_0xe2ca[130]][_0xe2ca[131]](_0xe2ca[128])
         }, 3000);
-        var _0xb552x11a = document[_0x9c43[2]](_0xb552x119);
-        _0xb552x11a[_0x9c43[292]]();
-        _0xb552x11a[_0x9c43[293]](0, 99999);
-        document[_0x9c43[295]](_0x9c43[294])
+        var _0x114ex7c = document[_0xe2ca[2]](_0x114ex7b);
+        _0x114ex7c[_0xe2ca[134]]();
+        _0x114ex7c[_0xe2ca[135]](0, 99999);
+        document[_0xe2ca[137]](_0xe2ca[136])
     }
 }
-document[_0x9c43[2]](_0x9c43[305])[_0x9c43[304]](_0x9c43[296], () => {
-    navigator[_0x9c43[303]][_0x9c43[302]]()[_0x9c43[301]]( (_0xb552x115) => {
-        if (_0xb552x115 == _0x9c43[284]) {
-            var _0xb552x117 = document[_0x9c43[2]](_0x9c43[299]);
-            _0xb552x117[_0x9c43[288]][_0x9c43[287]](_0x9c43[286]);
+document[_0xe2ca[2]](_0xe2ca[147])[_0xe2ca[146]](_0xe2ca[138], () => {
+    navigator[_0xe2ca[145]][_0xe2ca[144]]()[_0xe2ca[143]]( (_0x114ex77) => {
+        if (_0x114ex77 == _0xe2ca[126]) {
+            var _0x114ex79 = document[_0xe2ca[2]](_0xe2ca[141]);
+            _0x114ex79[_0xe2ca[130]][_0xe2ca[129]](_0xe2ca[128]);
             setTimeout(function() {
-                _0xb552x117[_0x9c43[288]][_0x9c43[289]](_0x9c43[286])
+                _0x114ex79[_0xe2ca[130]][_0xe2ca[131]](_0xe2ca[128])
             }, 3000)
         } else {
-            let _0xb552x11c = document[_0x9c43[2]](_0x9c43[282]);
-            _0xb552x11c[_0x9c43[0]] = _0xb552x115;
-            document[_0x9c43[2]](_0x9c43[1])[_0x9c43[0]] = ConvertToASCII(_0x9c43[283], _0xb552x115);
+            let _0x114ex7e = document[_0xe2ca[2]](_0xe2ca[124]);
+            _0x114ex7e[_0xe2ca[0]] = _0x114ex77;
+            document[_0xe2ca[2]](_0xe2ca[1])[_0xe2ca[0]] = ConvertToASCII(_0xe2ca[125], _0x114ex77);
             finishingTouch();
-            var _0xb552x117 = document[_0x9c43[2]](_0x9c43[300]);
-            _0xb552x117[_0x9c43[288]][_0x9c43[287]](_0x9c43[286]);
+            var _0x114ex79 = document[_0xe2ca[2]](_0xe2ca[142]);
+            _0x114ex79[_0xe2ca[130]][_0xe2ca[129]](_0xe2ca[128]);
             setTimeout(function() {
-                _0xb552x117[_0x9c43[288]][_0x9c43[289]](_0x9c43[286])
+                _0x114ex79[_0xe2ca[130]][_0xe2ca[131]](_0xe2ca[128])
             }, 3000)
         }
     }
-    )[_0x9c43[298]]( (_0xb552x11b) => {
-        var _0xb552x117 = document[_0x9c43[2]](_0x9c43[297]);
-        _0xb552x117[_0x9c43[288]][_0x9c43[287]](_0x9c43[286]);
+    )[_0xe2ca[140]]( (_0x114ex7d) => {
+        var _0x114ex79 = document[_0xe2ca[2]](_0xe2ca[139]);
+        _0x114ex79[_0xe2ca[130]][_0xe2ca[129]](_0xe2ca[128]);
         setTimeout(function() {
-            _0xb552x117[_0x9c43[288]][_0x9c43[289]](_0x9c43[286])
+            _0x114ex79[_0xe2ca[130]][_0xe2ca[131]](_0xe2ca[128])
         }, 3000)
     }
     )
 }
 );
-document[_0x9c43[2]](_0x9c43[306])[_0x9c43[304]](_0x9c43[296], () => {
-    navigator[_0x9c43[303]][_0x9c43[302]]()[_0x9c43[301]]( (_0xb552x115) => {
-        if (_0xb552x115 == _0x9c43[284]) {
-            var _0xb552x117 = document[_0x9c43[2]](_0x9c43[299]);
-            _0xb552x117[_0x9c43[288]][_0x9c43[287]](_0x9c43[286]);
+document[_0xe2ca[2]](_0xe2ca[148])[_0xe2ca[146]](_0xe2ca[138], () => {
+    navigator[_0xe2ca[145]][_0xe2ca[144]]()[_0xe2ca[143]]( (_0x114ex77) => {
+        if (_0x114ex77 == _0xe2ca[126]) {
+            var _0x114ex79 = document[_0xe2ca[2]](_0xe2ca[141]);
+            _0x114ex79[_0xe2ca[130]][_0xe2ca[129]](_0xe2ca[128]);
             setTimeout(function() {
-                _0xb552x117[_0x9c43[288]][_0x9c43[289]](_0x9c43[286])
+                _0x114ex79[_0xe2ca[130]][_0xe2ca[131]](_0xe2ca[128])
             }, 3000)
         } else {
-            let _0xb552x11c = document[_0x9c43[2]](_0x9c43[1]);
-            _0xb552x11c[_0x9c43[0]] = _0xb552x115;
-            document[_0x9c43[2]](_0x9c43[282])[_0x9c43[0]] = ConvertToUnicode(_0x9c43[283], _0xb552x115);
-            var _0xb552x117 = document[_0x9c43[2]](_0x9c43[300]);
-            _0xb552x117[_0x9c43[288]][_0x9c43[287]](_0x9c43[286]);
+            let _0x114ex7e = document[_0xe2ca[2]](_0xe2ca[1]);
+            _0x114ex7e[_0xe2ca[0]] = _0x114ex77;
+            document[_0xe2ca[2]](_0xe2ca[124])[_0xe2ca[0]] = ConvertToUnicode(_0xe2ca[125], _0x114ex77);
+            var _0x114ex79 = document[_0xe2ca[2]](_0xe2ca[142]);
+            _0x114ex79[_0xe2ca[130]][_0xe2ca[129]](_0xe2ca[128]);
             setTimeout(function() {
-                _0xb552x117[_0x9c43[288]][_0x9c43[289]](_0x9c43[286])
+                _0x114ex79[_0xe2ca[130]][_0xe2ca[131]](_0xe2ca[128])
             }, 3000)
         }
     }
-    )[_0x9c43[298]]( (_0xb552x11b) => {
-        var _0xb552x117 = document[_0x9c43[2]](_0x9c43[297]);
-        _0xb552x117[_0x9c43[288]][_0x9c43[287]](_0x9c43[286]);
+    )[_0xe2ca[140]]( (_0x114ex7d) => {
+        var _0x114ex79 = document[_0xe2ca[2]](_0xe2ca[139]);
+        _0x114ex79[_0xe2ca[130]][_0xe2ca[129]](_0xe2ca[128]);
         setTimeout(function() {
-            _0xb552x117[_0x9c43[288]][_0x9c43[289]](_0x9c43[286])
+            _0x114ex79[_0xe2ca[130]][_0xe2ca[131]](_0xe2ca[128])
         }, 3000)
     }
     )
 }
 )
+
 </script>
 
 <script>
 /* converter.js ফাইলের সম্পূর্ণ কোড এখানে */
-var _0xe759 = ["\u09B0\u200C\u09CD\u09AF", "\u09CD\u09B0\u09CD\u09AF", "\u0995\u09CD\u09B7\u09CD\u09AE", "\u0995\u09CD\u0995", "\u0995\u09CD\u099F", "\u0995\u09CD\u09A4\u09CD\u09AC", "\u0995\u09CD\u09A4", "\u0995\u09CD\u09AC", "\u09B8\u09CD\u0995\u09CD\u09B0", "\u0995\u09CD\u09B0", "\u09B8\u09CD\u0995\u09CD\u09B2", "\u0995\u09CD\u09B2", "\u0995\u09CD\u09A8", "\u0995\u09CD\u09AE", "\u0995\u09CD\u09B7\u09CD\u09A3", "\u0995\u09CD\u09B7\u09CD\u09AC", "\u0999\u09CD\u0995\u09CD\u09B7", "\u0995\u09CD\u09B7", "\u0995\u09CD\u09B8", "\u0996\u09CD\u09AC", "\u0997\u09C1", "\u0997\u09CD\u09A6", "\u0997\u09CD\u09AC", "\u0997\u09CD\u09A7", "\u0997\u09CD\u09A8", "\u0997\u09CD\u09AE", "\u0997\u09CD\u09B2", "\u0998\u09CD\u09AC", "\u0998\u09CD\u09A8", "\u0999\u09CD\u0995", "\u0999\u09CD\u09AE", "\u0999\u09CD\u0996", "\u0999\u09CD\u0997", "\u0999\u09CD\u0998", "\u099A\u09CD\u099B\u09CD\u09AC", "\u099A\u09CD\u099A", "\u099A\u09CD\u099B", "\u099A\u09CD\u099E", "\u099B\u09CD\u09AC", "\u099C\u09CD\u099C\u09CD\u09AC", "\u099C\u09CD\u099C", "\u099C\u09CD\u099D", "\u099C\u09CD\u099E", "\u099C\u09CD\u09AC", "\u099E\u09CD\u099A", "\u099E\u09CD\u099B", "\u099E\u09CD\u099C", "\u099E\u09CD\u099D", "\u099F\u09CD\u099F", "\u099F\u09CD\u09AC", "\u099F\u09CD\u09AE", "\u09A1\u09CD\u09A1", "\u09A3\u09CD\u099F", "\u09A3\u09CD\u09A0", "\u09A3\u09CD\u09A2", "\u09A3\u09CD\u09A3", "\u09A3\u09CD\u09AE", "\u09A8\u09CD\u09B8", "\u09A3\u09CD\u09A1", "\u09A8\u09CD\u09A4\u09C1", "\u09A3\u09CD\u09AC", "\u09A4\u09CD\u09A4\u09CD\u09AC", "\u09A4\u09CD\u09A4", "\u09A4\u09CD\u09A5", "\u09A4\u09CD\u09A8", "\u09A4\u09CD\u09AE", "\u09A4\u09CD\u09B2", "\u09A8\u09CD\u09A4\u09CD\u09AC", "\u09B8\u09CD\u09A4\u09CD\u09AC", "\u09A4\u09CD\u09AC", "\u09A4\u09CD\u09B0", "\u09A5\u09CD\u09B2", "\u09A5\u09CD\u09AC", "\u09A8\u09CD\u09A6\u09CD\u09AC", "\u09A6\u09CD\u0997", "\u09A6\u09CD\u0998", "\u09A6\u09CD\u09A6\u09CD\u09AC", "\u09A6\u09CD\u09A6", "\u09A6\u09CD\u09A7\u09CD\u09AC", "\u09A6\u09CD\u09A7", "\u09A6\u09CD\u09A8", "\u09A6\u09CD\u09AC", "\u09A6\u09CD\u09AD\u09CD\u09B0", "\u09A6\u09CD\u09AD", "\u09A6\u09CD\u09AE", "\u09A7\u09CD\u09A8", "\u09A7\u09CD\u09AC", "\u09A7\u09CD\u09AE", "\u09A8\u09CD\u099F", "\u09A8\u09CD\u09A0", "\u09A8\u09CD\u09A1", "\u09A8\u09CD\u09A4", "\u09A8\u09CD\u09A4\u09CD\u09B0", "\u09A8\u09CD\u09A5", "\u09A8\u09CD\u09A6", "\u09A8\u09CD\u09A7", "\u09A8\u09CD\u09A8", "\u09A8\u09CD\u09AC", "\u09A8\u09CD\u09AE", "\u09AA\u09CD\u099F", "\u09AA\u09CD\u09A4", "\u09AA\u09CD\u09A8", "\u09AA\u09CD\u09AA", "\u09AA\u09CD\u09AE", "\u09AA\u09CD\u09B2", "\u09AA\u09CD\u09B8", "\u09AB\u09CD\u09B2", "\u09AC\u09CD\u099C", "\u09AC\u09CD\u09A6", "\u09AC\u09CD\u09A7", "\u09AC\u09CD\u09AC", "\u09AC\u09CD\u09B2", "\u09AD\u09CD\u09B2", "\u09AD\u09CD\u09B0", "\u09AE\u09CD\u09A8", "\u09AE\u09CD\u09AA", "\u09AE\u09CD\u09AB", "\u09B7\u09CD\u09AC", "\u09AE\u09CD\u09AC", "\u09AE\u09CD\u09AD", "\u09AE\u09CD\u09AD\u09CD\u09B0", "\u09AE\u09CD\u09AE", "\u09AE\u09CD\u09B0", "\u09AE\u09CD\u09B2", "\u09B2\u09CD\u0995", "\u09B2\u09CD\u0997", "\u09B2\u09CD\u099F", "\u09B2\u09CD\u09A1", "\u09B2\u09CD\u09AA", "\u09B2\u09CD\u09AB", "\u09B2\u09CD\u09AC", "\u09B2\u09CD\u09AE", "\u09B2\u09CD\u09B2", "\u09B6\u09C1", "\u09B6\u09CD\u099A", "\u09B6\u09CD\u099B", "\u09B6\u09CD\u09A8", "\u09B6\u09CD\u09AC", "\u09B6\u09CD\u09AE", "\u09B6\u09CD\u09B2", "\u09B7\u09CD\u0995", "\u09B7\u09CD\u0995\u09CD\u09B0", "\u09B7\u09CD\u099F", "\u09B7\u09CD\u09A0", "\u09B7\u09CD\u09A3", "\u09B7\u09CD\u09AA", "\u09B7\u09CD\u09AB", "\u09B7\u09CD\u09AE", "\u09B7\u09CD\u09B0", "\u09B8\u09CD\u0995", "\u09B8\u09CD\u099F", "\u09B8\u09CD\u0996", "\u09B8\u09CD\u09A4", "\u09B8\u09CD\u09A4\u09C1", "\u09B8\u09CD\u09A4\u09CD\u09B0", "\u09B8\u09CD\u09A5", "\u09B8\u09CD\u09A8", "\u09B8\u09CD\u09AA", "\u09B8\u09CD\u09AB", "\u09B8\u09CD\u09AC", "\u09B8\u09CD\u09AE", "\u09B8\u09CD\u09B0", "\u09B8\u09CD\u09B2", "\u09B9\u09C1", "\u09B9\u09CD\u09A3", "\u09B9\u09CD\u09AC", "\u09B9\u09CD\u09A8", "\u09B9\u09CD\u09AE", "\u09B9\u09CD\u09B2", "\u09B9\u09C3", "\u09DC\u09CD\u0997", "\u09B0\u09CD", "\u0986", "\u0985", "\u0987", "\u0988", "\u0989", "\u098A", "\u098B", "\u098F", "\u0990", "\u0993", "\u0994", "\u0995", "\u0996", "\u0997", "\u0998", "\u0999", "\u099A", "\u099B", "\u099C", "\u099D", "\u099E", "\u099F", "\u09A0", "\u09A1", "\u09A2", "\u09A3", "\u09A4", "\u09A5", "\u09A6", "\u09A7", "\u09A8", "\u09AA", "\u09AB", "\u09AC", "\u09AD", "\u09AE", "\u09AF", "\u09B0", "\u09B2", "\u09B6", "\u09B7", "\u09B8", "\u09B9", "\u09DC", "\u09DD", "\u09DF", "\u09CE", "\u09F3", "\u098D", "\u098E", "\u09E6", "\u09E7", "\u09E8", "\u09E9", "\u09EA", "\u09EB", "\u09EC", "\u09ED", "\u09EE", "\u09EF", "\u09BE", "\u09BF", "\u09C0", "\u09C1", "\u09C2", "\u09C3", "\u09C7", "\u09C8", "\u09D7", "\x2D", "\u2018", "\u2019", "\u0964", "\u0965", "\u201C", "\u201D", "\u0982", "\u0983", "\u0981", "\u09CD\u09B0", "\u09CD\u09AF", "\u09CD\u09AC", "\u09CD\u09B2", "\u09CD\u09A8", "\u09CD", "\x6C\x65\x6E\x67\x74\x68", "\x63\x68\x61\x72\x41\x74", "\x73\x75\x62\x73\x74\x72\x69\x6E\x67", "\u09CB", "\u09CC", "\x26\x23\x28\x5B\x30\x2D\x39\x41\x2D\x46\x61\x2D\x66\x5D\x7B\x34\x7D\x29\x3B", "\x65\x78\x65\x63", "\x26\x23", "\x3B", "\x67", "\x66\x72\x6F\x6D\x43\x68\x61\x72\x43\x6F\x64\x65", "\x72\x65\x70\x6C\x61\x63\x65", "\u0985\u09BE"];
+var _0xaea5 = ["\u09B0\u200C\u09CD\u09AF", "\u09CD\u09B0\u09CD\u09AF", "\u0995\u09CD\u09B7\u09CD\u09AE", "\u0995\u09CD\u0995", "\u0995\u09CD\u099F", "\u0995\u09CD\u09A4\u09CD\u09AC", "\u0995\u09CD\u09A4", "\u0995\u09CD\u09AC", "\u09B8\u09CD\u0995\u09CD\u09B0", "\u0995\u09CD\u09B0", "\u09B8\u09CD\u0995\u09CD\u09B2", "\u0995\u09CD\u09B2", "\u0995\u09CD\u09A8", "\u0995\u09CD\u09AE", "\u0995\u09CD\u09B7\u09CD\u09A3", "\u0995\u09CD\u09B7\u09CD\u09AC", "\u0999\u09CD\u0995\u09CD\u09B7", "\u0995\u09CD\u09B7", "\u0995\u09CD\u09B8", "\u0996\u09CD\u09AC", "\u0997\u09CD\u0997", "\u0997\u09CD\u09A6", "\u0997\u09CD\u09A7", "\u0997\u09CD\u09A8", "\u0997\u09CD\u09AC", "\u0997\u09CD\u09AE", "\u0997\u09CD\u09B2", "\u0998\u09CD\u09AC", "\u0998\u09CD\u09A8", "\u0999\u09CD\u0995", "\u0999\u09CD\u09AE", "\u0999\u09CD\u0996", "\u0999\u09CD\u0997", "\u0999\u09CD\u0998", "\u099A\u09CD\u099B\u09CD\u09AC", "\u099A\u09CD\u099A", "\u099A\u09CD\u099B", "\u099A\u09CD\u099E", "\u099B\u09CD\u09AC", "\u099C\u09CD\u099C\u09CD\u09AC", "\u099C\u09CD\u099C", "\u099C\u09CD\u099D", "\u099C\u09CD\u099E", "\u099C\u09CD\u09AC", "\u099C\u09CD\u09B0", "\u099E\u09CD\u099A", "\u099E\u09CD\u099B", "\u099E\u09CD\u099C", "\u099E\u09CD\u099D", "\u099F\u09CD\u099F", "\u099F\u09CD\u09AC", "\u099F\u09CD\u09AE", "\u09A1\u09CD\u09A1", "\u09A3\u09CD\u099F", "\u09A3\u09CD\u09A0", "\u09A3\u09CD\u09A2", "\u09A3\u09CD\u09A3", "\u09A3\u09CD\u09AE", "\u09A8\u09CD\u09B8", "\u09A3\u09CD\u09A1", "\u09A8\u09CD\u09A4\u09C1", "\u09A3\u09CD\u09AC", "\u09A4\u09CD\u09A4\u09CD\u09AC", "\u0995\u09CD\u09A4\u09CD\u09B0", "\u09A4\u09CD\u09A4", "\u09A4\u09CD\u09A5", "\u09A4\u09CD\u09A8", "\u09A4\u09CD\u09AE", "\u09A4\u09CD\u09B2", "\u09A8\u09CD\u09A4\u09CD\u09AC", "\u09B8\u09CD\u09A4\u09CD\u09AC", "\u09A4\u09CD\u09AC", "\u09A4\u09CD\u09B0", "\u09A5\u09CD\u09B2", "\u09A5\u09CD\u09AC", "\u09A8\u09CD\u09A6\u09CD\u09AC", "\u09A6\u09CD\u0997", "\u09A6\u09CD\u0998", "\u09A6\u09CD\u09A6\u09CD\u09AC", "\u09A6\u09CD\u09A6", "\u09A6\u09CD\u09A7\u09CD\u09AC", "\u09A6\u09CD\u09A7", "\u09A6\u09CD\u09A8", "\u09A6\u09CD\u09AC", "\u09A6\u09CD\u09AD\u09CD\u09B0", "\u09A6\u09CD\u09AD", "\u09A6\u09CD\u09AE", "\u09A7\u09CD\u09A8", "\u09A7\u09CD\u09AC", "\u09A7\u09CD\u09AE", "\u09A8\u09CD\u099F", "\u09A8\u09CD\u09A0", "\u09A8\u09CD\u09A1", "\u09A8\u09CD\u09A4", "\u09A8\u09CD\u09A4\u09CD\u09B0", "\u09A8\u09CD\u09A5", "\u09A8\u09CD\u09A6", "\u09A8\u09CD\u09A7", "\u09A8\u09CD\u09A8", "\u09A8\u09CD\u09AC", "\u09A8\u09CD\u09AE", "\u09AA\u09CD\u099F", "\u09AA\u09CD\u09A4", "\u09AA\u09CD\u09A8", "\u09AA\u09CD\u09AA", "\u09AA\u09CD\u09B2", "\u09AA\u09CD\u09B8", "\u09AB\u09CD\u099F", "\u09AB\u09CD\u09B2", "\u09AC\u09CD\u099C", "\u09AC\u09CD\u09A6", "\u09A8\u09CD\u09A6\u09CD\u09B0", "\u09AC\u09CD\u09A7", "\u09AC\u09CD\u09AC", "\u09AC\u09CD\u09B2", "\u09AD\u09CD\u09B0", "\u09AD\u09CD\u09B2", "\u09AE\u09CD\u09A8", "\u09B8\u09CD\u09AA\u09CD\u09B0", "\u09AE\u09CD\u09AA\u09CD\u09B0", "\u09B7\u09CD\u09AA\u09CD\u09B0", "\u09AE\u09CD\u09AA", "\u09AE\u09CD\u09AB", "\u09B7\u09CD\u09AC", "\u09AE\u09CD\u09AC", "\u09AE\u09CD\u09AD", "\u09AE\u09CD\u09AD\u09CD\u09B0", "\u09AE\u09CD\u09AE", "\u09AE\u09CD\u09B2", "\u09B2\u09CD\u0995", "\u09B2\u09CD\u0997", "\u09B2\u09CD\u09B8", "\u09B2\u09CD\u099F", "\u09B2\u09CD\u09A1", "\u09B2\u09CD\u09AA", "\u09B2\u09CD\u09AB", "\u09B2\u09CD\u09AC", "\u09B2\u09CD\u09AE", "\u09B2\u09CD\u09B2", "\u09B6\u09C1", "\u09B6\u09CD\u099A", "\u09B6\u09CD\u099B", "\u09B6\u09CD\u09A8", "\u09B6\u09CD\u09AC", "\u09B6\u09CD\u09AE", "\u09B6\u09CD\u09B2", "\u09B6\u09CD\u09B0", "\u09B7\u09CD\u0995", "\u09B7\u09CD\u0995\u09CD\u09B0", "\u09B7\u09CD\u099F", "\u09B7\u09CD\u09A0", "\u09B7\u09CD\u09A3", "\u09B7\u09CD\u09AA", "\u09B7\u09CD\u09AB", "\u09B7\u09CD\u09AE", "\u09B8\u09CD\u0995", "\u09B8\u09CD\u099F", "\u09B8\u09CD\u0996", "\u09B8\u09CD\u09A4", "\u09B8\u09CD\u09A4\u09C1", "\u09B8\u09CD\u09A4\u09CD\u09B0", "\u09B8\u09CD\u09A5", "\u09B8\u09CD\u09A8", "\u09B8\u09CD\u09AA", "\u09AA\u09CD\u09B0", "\u09B8\u09CD\u09AB", "\u09B8\u09CD\u09AC", "\u09B8\u09CD\u09AE", "\u09B8\u09CD\u09B2", "\u09B8\u09CD\u09B0", "\u09B9\u09C1", "\u09B9\u09CD\u09A3", "\u09B9\u09CD\u09AC", "\u09B9\u09CD\u09A8", "\u09B9\u09CD\u09AE", "\u09AE\u09CD\u09B0", "\u09B9\u09CD\u09B2", "\u09B9\u09C3", "\u09DC\u09CD\u0997", "\u0997\u09CD\u09B0", "\u09B2\u09CD\u0997\u09C1", "\u0997\u09C1", "\u09B0\u09CD", "\u0986", "\u0985", "\u0987", "\u0988", "\u0989", "\u098A", "\u098B", "\u098F", "\u0990", "\u0993", "\u0994", "\u09BC\u09C1", "\u0995", "\u0996", "\u0997", "\u0998", "\u0999", "\u099A", "\u099B", "\u099C", "\u099D", "\u099E", "\u099F", "\u09A0", "\u09DC", "\u09A1", "\u09DD", "\u09A2", "\u09A3", "\u09A4", "\u09A5", "\u09A6", "\u09A7", "\u09A8", "\u09AA", "\u09AB", "\u09B0", "\u09AC", "\u09AD", "\u09AE", "\u09DF", "\u09AF", "\u09B2", "\u09B6", "\u09B7", "\u09B8", "\u09B9", "\u09CE", "", "\u09E6", "\u09E7", "\u09E8", "\u09E9", "\u09EA", "\u09EB", "\u09EC", "\u09ED", "\u09EE", "\u09EF", "\u09BE", "\u09BF", "\u09C0", "\u09C1", "\u09C2", "\u09C3", "\u09C7", "\u09C8", "\u09D7", "\x21", "\x28", "\x29", "\x2A", "\x2C", "\x2D", "\u0964", "\x3A", "\x3B", "\x3F", "\u2018", "\u2019", "\u0982", "\u0983", "\u0981", "\u09CD\u09B0", "\u09CD\u09AF", "\u09CD", "\x6C\x65\x6E\x67\x74\x68", "\x63\x68\x61\x72\x41\x74", "\x73\x75\x62\x73\x74\x72\x69\x6E\x67", "\u09CB", "\u09CC", "\x26\x23\x28\x5B\x30\x2D\x39\x41\x2D\x46\x61\x2D\x66\x5D\x7B\x34\x7D\x29\x3B", "\x65\x78\x65\x63", "\x26\x23", "\x67", "\x66\x72\x6F\x6D\x43\x68\x61\x72\x43\x6F\x64\x65", "\x72\x65\x70\x6C\x61\x63\x65", "\u0985\u09BE"];
 var bijoy_string_conversion_map = {
-    "\x69\xA8": _0xe759[0],
-    "\xAA\xA8": _0xe759[1],
-    "\xB2": _0xe759[2],
-    "\xB0": _0xe759[3],
-    "\xB1": _0xe759[4],
-    "\xB3\xA1": _0xe759[5],
-    "\xB3": _0xe759[6],
-    "\x4B\xA1": _0xe759[7],
-    "\xAF\u0152": _0xe759[8],
-    "\xB5": _0xe759[9],
-    "\xAF\u2039\xAC": _0xe759[10],
-    "\x4B\xAC": _0xe759[11],
-    "\x4B\xE8": _0xe759[12],
-    "\xB4": _0xe759[13],
-    "\xB6\xE8": _0xe759[14],
-    "\xB6\xA1": _0xe759[15],
-    "\u2022\xB6": _0xe759[16],
-    "\xB6": _0xe759[17],
-    "\xB7": _0xe759[18],
-    "\x4C\xA1": _0xe759[19],
-    "\xB8": _0xe759[20],
-    "\xBA": _0xe759[21],
-    "\x4D\xA6": _0xe759[22],
-    "\xBB": _0xe759[23],
-    "\x4D\u0153": _0xe759[24],
-    "\x4D\xA5": _0xe759[25],
-    "\x4D\xAD": _0xe759[26],
-    "\x4E\xA1": _0xe759[27],
-    "\x4E\u0153": _0xe759[28],
-    "\xBC": _0xe759[29],
-    "\u2022\x67": _0xe759[30],
-    "\u2022\x4C": _0xe759[31],
-    "\xBD": _0xe759[32],
-    "\u2022\x4E": _0xe759[33],
-    "\u2022": _0xe759[18],
-    "\u201D\x51\xA1": _0xe759[34],
-    "\u201D\x51\xA6": _0xe759[34],
-    "\u201D\x50": _0xe759[35],
-    "\u201D\x51": _0xe759[36],
-    "\u201D\x54": _0xe759[37],
-    "\x51\xA1": _0xe759[38],
-    "\xBE\xA1": _0xe759[39],
-    "\xBE": _0xe759[40],
-    "\xC0": _0xe759[41],
-    "\xC1": _0xe759[42],
-    "\x52\xA1": _0xe759[43],
-    "\xC2": _0xe759[44],
-    "\xC3": _0xe759[45],
-    "\xC4": _0xe759[46],
-    "\xC5": _0xe759[47],
-    "\xC6": _0xe759[48],
-    "\x55\xA1": _0xe759[49],
-    "\x55\xA5": _0xe759[50],
-    "\xC7": _0xe759[51],
-    "\xC8": _0xe759[52],
-    "\xC9": _0xe759[53],
-    "\u2212": _0xe759[54],
-    "\x59\u0153": _0xe759[55],
-    "\x59\xA5": _0xe759[56],
-    "\xDD": _0xe759[57],
-    "\xCA": _0xe759[58],
-    "\u0161\u2018": _0xe759[59],
-    "\x59\x5C\x5E": _0xe759[60],
-    "\xCB\xA1": _0xe759[61],
-    "\xCB": _0xe759[62],
-    "\xCC": _0xe759[63],
-    "\x5A\u0153": _0xe759[64],
-    "\xCD": _0xe759[65],
-    "\x5A\xAC": _0xe759[66],
-    "\u0161\u2014\xA1": _0xe759[67],
-    "\xAF\u2014\xA1": _0xe759[68],
-    "\x5A\xA1": _0xe759[69],
-    "\xCE": _0xe759[70],
-    "\x5F\xAD": _0xe759[71],
-    "\x5F\xA1": _0xe759[72],
-    "\u203A\xD8": _0xe759[73],
-    "\u02DC\x4D": _0xe759[74],
-    "\u02DC\x4E": _0xe759[75],
-    "\xCF\xA1": _0xe759[76],
-    "\xCF": _0xe759[77],
-    "\xD7\xA1": _0xe759[78],
-    "\xD7": _0xe759[79],
-    "\x60\u0153": _0xe759[80],
-    "\xD8": _0xe759[81],
-    "\u2122\xA3": _0xe759[82],
-    "\u2122\xA2": _0xe759[83],
-    "\xD9": _0xe759[84],
-    "\x61\u0153": _0xe759[85],
-    "\x61\u0178": _0xe759[86],
-    "\x61\xA5": _0xe759[87],
-    "\u203A\x55": _0xe759[88],
-    "\xDA": _0xe759[89],
-    "\xDB": _0xe759[90],
-    "\u0161\xCD": _0xe759[91],
-    "\u0161\u2014": _0xe759[91],
-    "\u0161\xBF": _0xe759[92],
-    "\u0161\u2019": _0xe759[93],
-    "\u203A\x60": _0xe759[94],
-    "\xDC": _0xe759[95],
-    "\x62\u0153": _0xe759[96],
-    "\u0161\x5C\x5E": _0xe759[97],
-    "\x62\xA5": _0xe759[98],
-    "\xDE": _0xe759[99],
-    "\xDF": _0xe759[100],
-    "\x63\u0153": _0xe759[101],
-    "\xE0": _0xe759[102],
-    "\x63\xA5": _0xe759[103],
-    "\x63\xAD": _0xe759[104],
-    "\xE1": _0xe759[105],
-    "\x64\xAC": _0xe759[106],
-    "\xE2": _0xe759[107],
-    "\xE3": _0xe759[108],
-    "\xE4": _0xe759[109],
-    "\x65\u0178": _0xe759[110],
-    "\x65\xAD": _0xe759[111],
-    "\x66\xAC": _0xe759[112],
-    "\xE5": _0xe759[113],
-    "\xE6": _0xe759[114],
-    "\xA4\xFA": _0xe759[115],
-    "\xA4\x63": _0xe759[115],
-    "\xE7": _0xe759[116],
-    "\xAE\x5C\x5E": _0xe759[117],
-    "\xA4\x5C\x5E": _0xe759[118],
-    "\xA4\xA2": _0xe759[119],
-    "\xA4\xA3": _0xe759[120],
-    "\xA4\xA7": _0xe759[121],
-    "\xA4\xAA": _0xe759[122],
-    "\xA4\xAD": _0xe759[123],
-    "\xA4\xAC": _0xe759[123],
-    "\xE9": _0xe759[124],
-    "\xEA": _0xe759[125],
-    "\xEB": _0xe759[126],
-    "\xEC": _0xe759[127],
-    "\xED": _0xe759[128],
-    "\xEE": _0xe759[129],
-    "\x6A\xA6": _0xe759[130],
-    "\x6A\xA5": _0xe759[131],
-    "\x6A\xAD": _0xe759[132],
-    "\xEF": _0xe759[133],
-    "\xF0": _0xe759[134],
-    "\xF1": _0xe759[135],
-    "\x6B\u0153": _0xe759[136],
-    "\x6B\xA6": _0xe759[137],
-    "\x6B\x5C\x5E": _0xe759[137],
-    "\x6B\xA5": _0xe759[138],
-    "\x6B\xAD": _0xe759[139],
-    "\xAE\u2039": _0xe759[140],
-    "\xAE\u0152": _0xe759[141],
-    "\xF3": _0xe759[142],
-    "\xF4": _0xe759[143],
-    "\xF2": _0xe759[144],
-    "\xAE\xFA": _0xe759[145],
-    "\xAE\x63": _0xe759[145],
-    "\xF5": _0xe759[146],
-    "\xAE\xA7": _0xe759[147],
-    "\xAE\xAA": _0xe759[148],
-    "\xAF\u2039": _0xe759[149],
-    "\xF7": _0xe759[150],
-    "\xF6": _0xe759[151],
-    "\xAF\u2014": _0xe759[152],
-    "\xAF\xCD": _0xe759[152],
-    "\xAF\u2018": _0xe759[153],
-    "\xAF\xBF": _0xe759[154],
-    "\xAF\u2019": _0xe759[155],
-    "\xF8": _0xe759[156],
-    "\xAF\xFA": _0xe759[157],
-    "\xAF\x63": _0xe759[157],
-    "\xF9": _0xe759[158],
-    "\xAF\x5C\x5E": _0xe759[159],
-    "\xAF\xA7": _0xe759[160],
-    "\xAF\xAA": _0xe759[161],
-    "\xAF\xAD": _0xe759[162],
-    "\xAF\xAC": _0xe759[162],
-    "\xFB": _0xe759[163],
-    "\x6E\xE8": _0xe759[164],
-    "\x6E\u0178": _0xe759[165],
-    "\xFD": _0xe759[166],
-    "\xFE": _0xe759[167],
-    "\x6E\xAC": _0xe759[168],
-    "\xFC": _0xe759[169],
-    "\xFF": _0xe759[170],
-    "\xA9": _0xe759[171],
-    "\x41\x76": _0xe759[172],
-    "\x41": _0xe759[173],
-    "\x42": _0xe759[174],
-    "\x43": _0xe759[175],
-    "\x44": _0xe759[176],
-    "\x45": _0xe759[177],
-    "\x46": _0xe759[178],
-    "\x47": _0xe759[179],
-    "\x48": _0xe759[180],
-    "\x49": _0xe759[181],
-    "\x4A": _0xe759[182],
-    "\x4B": _0xe759[183],
-    "\x4C": _0xe759[184],
-    "\x4D": _0xe759[185],
-    "\x4E": _0xe759[186],
-    "\x4F": _0xe759[187],
-    "\x50": _0xe759[188],
-    "\x51": _0xe759[189],
-    "\x52": _0xe759[190],
-    "\x53": _0xe759[191],
-    "\x54": _0xe759[192],
-    "\x55": _0xe759[193],
-    "\x56": _0xe759[194],
-    "\x57": _0xe759[195],
-    "\x58": _0xe759[196],
-    "\x59": _0xe759[197],
-    "\x5A": _0xe759[198],
-    "\x5F": _0xe759[199],
-    "\x60": _0xe759[200],
-    "\x61": _0xe759[201],
-    "\x62": _0xe759[202],
-    "\x63": _0xe759[203],
-    "\x64": _0xe759[204],
-    "\x65": _0xe759[205],
-    "\x66": _0xe759[206],
-    "\x67": _0xe759[207],
-    "\x68": _0xe759[208],
-    "\x69": _0xe759[209],
-    "\x6A": _0xe759[210],
-    "\x6B": _0xe759[211],
-    "\x6C": _0xe759[212],
-    "\x6D": _0xe759[213],
-    "\x6E": _0xe759[214],
-    "\x6F": _0xe759[215],
-    "\x70": _0xe759[216],
-    "\x71": _0xe759[217],
-    "\x72": _0xe759[218],
-    "\x5C\x24": _0xe759[219],
-    "\x3C\x3C": _0xe759[220],
-    "\x3E\x3E": _0xe759[221],
-    "\x30": _0xe759[222],
-    "\x31": _0xe759[223],
-    "\x32": _0xe759[224],
-    "\x33": _0xe759[225],
-    "\x34": _0xe759[226],
-    "\x35": _0xe759[227],
-    "\x36": _0xe759[228],
-    "\x37": _0xe759[229],
-    "\x38": _0xe759[230],
-    "\x39": _0xe759[231],
-    "\x76": _0xe759[232],
-    "\x77": _0xe759[233],
-    "\x78": _0xe759[234],
-    "\x79": _0xe759[235],
-    "\x7A": _0xe759[235],
-    "\x7E": _0xe759[236],
-    "\u201A": _0xe759[236],
-    "\u0192": _0xe759[236],
-    "\u201E": _0xe759[237],
-    "\u201C": _0xe759[235],
-    "\u2021": _0xe759[238],
-    "\u2020": _0xe759[238],
-    "\u2030": _0xe759[239],
-    "\x5C\u02C6": _0xe759[239],
-    "\u0160": _0xe759[240],
-    "\xD0": _0xe759[241],
-    "\xD4": _0xe759[242],
-    "\xD5": _0xe759[243],
-    "\x5C\x7C": _0xe759[244],
-    "\x5C\x5C": _0xe759[245],
-    "\xD2": _0xe759[246],
-    "\xD3": _0xe759[247],
-    "\x73": _0xe759[248],
-    "\x74": _0xe759[249],
-    "\x75": _0xe759[250],
-    "\xAA": _0xe759[251],
-    "\xD6": _0xe759[251],
-    "\xAB": _0xe759[251],
-    "\xA8": _0xe759[252],
-    "\xA6": _0xe759[253],
-    "\xA1": _0xe759[253],
-    "\xAC": _0xe759[254],
-    "\xAD": _0xe759[254],
-    "\xE8": _0xe759[255],
-    "\u0153": _0xe759[255],
-    "\x5C\x26": _0xe759[256],
-    "\u2026": _0xe759[237]
+    "\xEE\xFB\xC4": _0xaea5[0],
+    "\xCA\xC4": _0xaea5[1],
+    "\x22": _0xaea5[2],
+    "\x45\xFE": _0xaea5[3],
+    "\x45": _0xaea5[3],
+    "\x51": _0xaea5[4],
+    "\x5F\xB4\xAB": _0xaea5[5],
+    "\x5F\xAB": _0xaea5[6],
+    "\xF0\xFE": _0xaea5[7],
+    "\xF0": _0xaea5[7],
+    "\xDF\xFE\x3B": _0xaea5[8],
+    "\xDF\x3B": _0xaea5[8],
+    "\x65\xAB": _0xaea5[9],
+    "\xDF\xFE\xCF\xF1": _0xaea5[10],
+    "\u201E\xCF\xFE": _0xaea5[11],
+    "\u201E\xCF": _0xaea5[11],
+    "\u201E\xF8\xFE": _0xaea5[12],
+    "\u201E\xF8": _0xaea5[12],
+    "\xA9": _0xaea5[13],
+    "\xC7\xF8\xFE": _0xaea5[14],
+    "\xC7\xF8": _0xaea5[14],
+    "\xC7\xB4\xFE": _0xaea5[15],
+    "\xC7\xB4": _0xaea5[15],
+    "\x41\xC7\xFE": _0xaea5[16],
+    "\x41\xC7": _0xaea5[16],
+    "\xC7\xFE": _0xaea5[17],
+    "\xC7": _0xaea5[17],
+    "\x3A": _0xaea5[18],
+    "\u2026\xB4": _0xaea5[19],
+    "\x3E": _0xaea5[20],
+    "\x40\u201D": _0xaea5[21],
+    "\x5C\x3F\xFE": _0xaea5[22],
+    "\x5C\x3F": _0xaea5[22],
+    "\x40\xC0": _0xaea5[23],
+    "\x40\xBB": _0xaea5[24],
+    "\x40\xC2": _0xaea5[25],
+    "\x40\xD5": _0xaea5[26],
+    "\u2021\xB4": _0xaea5[27],
+    "\u2021\xF8": _0xaea5[28],
+    "\x42\xFE": _0xaea5[29],
+    "\x42": _0xaea5[29],
+    "\x2D": _0xaea5[30],
+    "\x43": _0xaea5[31],
+    "\x44": _0xaea5[32],
+    "\x41\u2021": _0xaea5[33],
+    "\x46\u0160\xB4\xE9": _0xaea5[34],
+    "\x46\u0160\xB4": _0xaea5[34],
+    "\x46\u2030\xFE": _0xaea5[35],
+    "\x46\u2030": _0xaea5[35],
+    "\x46\u0160\xE9": _0xaea5[36],
+    "\x46\u0160": _0xaea5[36],
+    "\x8E\xFE": _0xaea5[37],
+    "\x8E": _0xaea5[37],
+    "\u0160\xB4\xE9": _0xaea5[38],
+    "\u0160\xB4": _0xaea5[38],
+    "\x49\xB5": _0xaea5[39],
+    "\x49": _0xaea5[40],
+    "\x4A": _0xaea5[41],
+    "\x4B\xFE\xE9": _0xaea5[42],
+    "\x4B": _0xaea5[42],
+    "\u2039\xB5": _0xaea5[43],
+    "\x4C": _0xaea5[44],
+    "\x4D\xFE\xE9": _0xaea5[45],
+    "\x4D": _0xaea5[45],
+    "\x4E\xFE": _0xaea5[46],
+    "\x4E": _0xaea5[46],
+    "\x4F": _0xaea5[47],
+    "\x50": _0xaea5[48],
+    "\x52": _0xaea5[49],
+    "\xDD\xB4\xFE": _0xaea5[50],
+    "\xDD\xB4": _0xaea5[50],
+    "\x8F": _0xaea5[51],
+    "\x55\xFE": _0xaea5[52],
+    "\x55": _0xaea5[52],
+    "\x5C\x5E\xF9\xDD\xFE": _0xaea5[53],
+    "\x5C\x5E\xF9\xDD": _0xaea5[53],
+    "\x5A\xFE": _0xaea5[54],
+    "\x5A": _0xaea5[54],
+    "\x5C\x5E\xE9\x57": _0xaea5[55],
+    "\x5C\x5D": _0xaea5[56],
+    "\x5C\x5E\xF9\xE9\xC2": _0xaea5[57],
+    "\xAA": _0xaea5[58],
+    "\x5C\x5B\xFE": _0xaea5[59],
+    "\x5C\x5B": _0xaea5[59],
+    "\x6C\x73\xFE": _0xaea5[60],
+    "\x6C\x73": _0xaea5[60],
+    "\x5C\x5E\xE9\xBB": _0xaea5[61],
+    "\x5F\xB4": _0xaea5[62],
+    "\x5F\xC9\xAB": _0xaea5[63],
+    "\x5F": _0xaea5[64],
+    "\x61": _0xaea5[65],
+    "\x62": _0xaea5[66],
+    "\x64": _0xaea5[67],
+    "\u201C\xCF\xFE": _0xaea5[68],
+    "\u201C\xCF": _0xaea5[68],
+    "\x67\x73\xFE": _0xaea5[69],
+    "\x67\x73": _0xaea5[69],
+    "\x67\xDF\xFE": _0xaea5[70],
+    "\x67\xDF": _0xaea5[70],
+    "\x63": _0xaea5[71],
+    "\x65": _0xaea5[72],
+    "\xED\xCF": _0xaea5[73],
+    "\xED\xB4": _0xaea5[74],
+    "\x72\x6D": _0xaea5[75],
+    "\xE5\u2020": _0xaea5[76],
+    "\xE5\u2021": _0xaea5[77],
+    "\x6A\xB5": _0xaea5[78],
+    "\x6A": _0xaea5[79],
+    "\x6B\xB4\xFE": _0xaea5[80],
+    "\x6B\xB4": _0xaea5[80],
+    "\x6B\xFE": _0xaea5[81],
+    "\x6B": _0xaea5[81],
+    "\u201D\xF8": _0xaea5[82],
+    "\x6D": _0xaea5[83],
+    "\x9E": _0xaea5[84],
+    "\x71": _0xaea5[85],
+    "\x70": _0xaea5[86],
+    "\u2022\xF8": _0xaea5[87],
+    "\u2022\xB9": _0xaea5[88],
+    "\x90": _0xaea5[89],
+    "\x72\xDD\xFE": _0xaea5[90],
+    "\x72\xDD": _0xaea5[90],
+    "\x74\xFE": _0xaea5[91],
+    "\x74": _0xaea5[91],
+    "\x75\xFE": _0xaea5[92],
+    "\x75": _0xaea5[92],
+    "\x68\x73\xFE": _0xaea5[93],
+    "\x68\x73": _0xaea5[93],
+    "\x73\xFE\x66": _0xaea5[94],
+    "\x73\xFE\x69": _0xaea5[95],
+    "\x72\u201D": _0xaea5[96],
+    "\xF5\xFE": _0xaea5[97],
+    "\xF5": _0xaea5[97],
+    "\xA7\xAC": _0xaea5[98],
+    "\xA7\xBA": _0xaea5[99],
+    "\xA7\xC3": _0xaea5[100],
+    "\xB2\x57\x7A": _0xaea5[101],
+    "\xAE": _0xaea5[102],
+    "\xB2\xC0": _0xaea5[103],
+    "\xAF": _0xaea5[104],
+    "\xB2\xD5": _0xaea5[105],
+    "\xB0": _0xaea5[106],
+    "\x81\xFE": _0xaea5[107],
+    "\x81": _0xaea5[107],
+    "\u0161\xCF\xFE": _0xaea5[108],
+    "\u0161\xCF": _0xaea5[108],
+    "\xB6": _0xaea5[109],
+    "\xB7": _0xaea5[110],
+    "\x77": _0xaea5[111],
+    "\xB8\xFE": _0xaea5[112],
+    "\xB8": _0xaea5[112],
+    "\xEE\xB9": _0xaea5[113],
+    "\xEE\xCF": _0xaea5[114],
+    "\xBC": _0xaea5[115],
+    "\xA6\xCF\xFE": _0xaea5[116],
+    "\xA6\xCF": _0xaea5[116],
+    "\xC1\xAC": _0xaea5[117],
+    "\xDF\xFE\xB1": _0xaea5[118],
+    "\xC1\xB1": _0xaea5[119],
+    "\xDC\xB1": _0xaea5[120],
+    "\xC1\u2122": _0xaea5[121],
+    "\xC1\xB3\xFE": _0xaea5[122],
+    "\xC1\xB3": _0xaea5[122],
+    "\xDC\xBA": _0xaea5[123],
+    "\xC1\xBA": _0xaea5[124],
+    "\xBD\xFE": _0xaea5[125],
+    "\xBD": _0xaea5[125],
+    "\xBE": _0xaea5[126],
+    "\xC1\xBF": _0xaea5[127],
+    "\xC1\xD4": _0xaea5[128],
+    "\xCD\xF1": _0xaea5[129],
+    "\xD1": _0xaea5[130],
+    "\xCE\xA2": _0xaea5[131],
+    "\xCE\xDD\xFE": _0xaea5[132],
+    "\xCE\xDD": _0xaea5[132],
+    "\xD3\xFE": _0xaea5[133],
+    "\xD3": _0xaea5[133],
+    "\xD2": _0xaea5[134],
+    "\xCD\xB3\xFE": _0xaea5[135],
+    "\xCD\xB3": _0xaea5[135],
+    "\xCD\xBA": _0xaea5[136],
+    "\xCD\xC3": _0xaea5[137],
+    "\xCD\xD4": _0xaea5[138],
+    "\xD6": _0xaea5[139],
+    "\xD8\xFE": _0xaea5[140],
+    "\xD8": _0xaea5[140],
+    "\xD9\u0160\xE9": _0xaea5[141],
+    "\xD9\u0160": _0xaea5[141],
+    "\xD9\xC0": _0xaea5[142],
+    "\xD9\xBB": _0xaea5[143],
+    "\xD9\xC2": _0xaea5[144],
+    "\xD9\xD5": _0xaea5[145],
+    "\xD7": _0xaea5[146],
+    "\xDC\xF1": _0xaea5[147],
+    "\xDC\x3B\xFE": _0xaea5[148],
+    "\xDC\x3B": _0xaea5[148],
+    "\xDC\x54": _0xaea5[149],
+    "\xDB\xFE": _0xaea5[150],
+    "\xDB": _0xaea5[150],
+    "\xA1\u0152": _0xaea5[151],
+    "\xDC\u2122": _0xaea5[152],
+    "\xDC\xB3\xFE": _0xaea5[153],
+    "\xDC\xB3": _0xaea5[153],
+    "\xDC\xBF": _0xaea5[154],
+    "\xDF\xFE\xF1": _0xaea5[155],
+    "\xDE\xDD\xFE": _0xaea5[156],
+    "\xDE\xDD": _0xaea5[156],
+    "\xDF\xFE\x3C": _0xaea5[157],
+    "\x68\xDF\xFE": _0xaea5[158],
+    "\x68\xDF": _0xaea5[158],
+    "\x6C\xDF\xFE": _0xaea5[159],
+    "\x6C\xDF": _0xaea5[159],
+    "\xDF\xFE\x66": _0xaea5[160],
+    "\xDF\xFE\x69": _0xaea5[161],
+    "\xDF\xFE\xAC": _0xaea5[162],
+    "\xDF\xFE\u2122": _0xaea5[163],
+    "\xB2\xCC": _0xaea5[164],
+    "\xDF\xFE\xB3\xFE": _0xaea5[165],
+    "\xDF\xFE\xB3": _0xaea5[165],
+    "\xDF\xFE\xBA": _0xaea5[166],
+    "\xDF\xFE\xBF": _0xaea5[167],
+    "\xDF\xFE\xD4": _0xaea5[168],
+    "\xDF\xFE\xCB": _0xaea5[169],
+    "\xFD": _0xaea5[170],
+    "\xE3": _0xaea5[171],
+    "\xA3\xB9": _0xaea5[172],
+    "\xA3\xAB": _0xaea5[173],
+    "\xE1\xFE": _0xaea5[174],
+    "\xE1": _0xaea5[174],
+    "\xC1\xCB": _0xaea5[175],
+    "\xE2": _0xaea5[176],
+    "\xA3\x5C\x2A": _0xaea5[177],
+    "\x58\u2020": _0xaea5[178],
+    "\x40\xF9\xCC": _0xaea5[179],
+    "\u20AC": _0xaea5[180],
+    "\x3D": _0xaea5[181],
+    "\xC5": _0xaea5[182],
+    "\x78\x79": _0xaea5[183],
+    "\x78": _0xaea5[184],
+    "\xA3\x7A": _0xaea5[185],
+    "\x7B": _0xaea5[186],
+    "\x76\xFE\x7A": _0xaea5[187],
+    "\x5C\x7C": _0xaea5[188],
+    "\x7D": _0xaea5[189],
+    "\x7E": _0xaea5[190],
+    "\xFA": _0xaea5[191],
+    "\xE7": _0xaea5[192],
+    "\xE8": _0xaea5[193],
+    "\x59": _0xaea5[194],
+    "\u201E\xFE": _0xaea5[195],
+    "\u201E": _0xaea5[195],
+    "\u2026": _0xaea5[196],
+    "\u2020": _0xaea5[197],
+    "\u2021": _0xaea5[198],
+    "\u02C6": _0xaea5[199],
+    "\u2030\xFE": _0xaea5[200],
+    "\u2030": _0xaea5[200],
+    "\u0160\xE9": _0xaea5[201],
+    "\u0160": _0xaea5[201],
+    "\u2039": _0xaea5[202],
+    "\x47\xFE": _0xaea5[203],
+    "\x47": _0xaea5[203],
+    "\x7E\u0152": _0xaea5[204],
+    "\xDD\xFE": _0xaea5[205],
+    "\xDD": _0xaea5[205],
+    "\xE0\xFE": _0xaea5[206],
+    "\xE0": _0xaea5[206],
+    "\x76\xFE\xFC": _0xaea5[207],
+    "\x76\xFE": _0xaea5[208],
+    "\x76": _0xaea5[208],
+    "\u2018\xFE\xFC": _0xaea5[209],
+    "\u2018\xFE": _0xaea5[210],
+    "\u2018": _0xaea5[210],
+    "\u2019": _0xaea5[211],
+    "\u201C\xFE": _0xaea5[212],
+    "\u201C": _0xaea5[212],
+    "\xED": _0xaea5[213],
+    "\u201D": _0xaea5[214],
+    "\u2022": _0xaea5[215],
+    "\u02DC": _0xaea5[216],
+    "\xFE\u2122": _0xaea5[217],
+    "\u0161\xFE": _0xaea5[218],
+    "\u0161": _0xaea5[218],
+    "\xEE\xFB": _0xaea5[219],
+    "\xEE": _0xaea5[220],
+    "\xA6\xFE": _0xaea5[221],
+    "\xA6": _0xaea5[221],
+    "\u203A": _0xaea5[222],
+    "\xEB\xFB": _0xaea5[223],
+    "\xEB": _0xaea5[224],
+    "\u0153": _0xaea5[225],
+    "\u0178": _0xaea5[226],
+    "\xA1\xEC": _0xaea5[227],
+    "\xA2": _0xaea5[228],
+    "\xA3": _0xaea5[229],
+    "\xEA": _0xaea5[230],
+    "\xFE": _0xaea5[231],
+    "\xE9": _0xaea5[231],
+    "\x30": _0xaea5[232],
+    "\x31": _0xaea5[233],
+    "\x32": _0xaea5[234],
+    "\x33": _0xaea5[235],
+    "\x34": _0xaea5[236],
+    "\x35": _0xaea5[237],
+    "\x36": _0xaea5[238],
+    "\x37": _0xaea5[239],
+    "\x38": _0xaea5[240],
+    "\x39": _0xaea5[241],
+    "\x79": _0xaea5[242],
+    "\x21": _0xaea5[243],
+    "\x23": _0xaea5[244],
+    "\x25": _0xaea5[245],
+    "\x5C\x29": _0xaea5[246],
+    "\x5C\x28": _0xaea5[246],
+    "\x26": _0xaea5[245],
+    "\x5C\x24": _0xaea5[245],
+    "\x5C\x2A": _0xaea5[246],
+    "\x2C": _0xaea5[247],
+    "\xF6\xEC": _0xaea5[248],
+    "\xF6": _0xaea5[248],
+    "\xF7\xEC": _0xaea5[249],
+    "\xF7": _0xaea5[249],
+    "\xEF": _0xaea5[250],
+    "\xEC": _0xaea5[231],
+    "\xE6": _0xaea5[251],
+    "\x53": _0xaea5[252],
+    "\x56": _0xaea5[253],
+    "\xA0": _0xaea5[254],
+    "\u2013": _0xaea5[255],
+    "\xE9\xF4\xE9": _0xaea5[256],
+    "\xF4": _0xaea5[256],
+    "\xD0": _0xaea5[257],
+    "\xAD": _0xaea5[258],
+    "\u2014": _0xaea5[259],
+    "\xDA": _0xaea5[260],
+    "\xF2": _0xaea5[261],
+    "\xF3": _0xaea5[262],
+    "\u201A": _0xaea5[263],
+    "\u0192": _0xaea5[264],
+    "\xA4": _0xaea5[265],
+    "\xCA": _0xaea5[266],
+    "\xC6": _0xaea5[266],
+    "\xC8": _0xaea5[266],
+    "\xC9": _0xaea5[266],
+    "\xC4": _0xaea5[267],
+    "\xE4": _0xaea5[268]
 };
-function ReArrangeUnicodeConvertedText(_0x5576x3) {
-    for (var _0x5576x4 = 0; _0x5576x4 < _0x5576x3[_0xe759[257]]; _0x5576x4++) {
-        if (_0x5576x4 > 0 && _0x5576x3[_0xe759[258]](_0x5576x4) == _0xe759[256] && (IsBanglaKar(_0x5576x3[_0xe759[258]](_0x5576x4 - 1)) || IsBanglaNukta(_0x5576x3[_0xe759[258]](_0x5576x4 - 1))) && _0x5576x4 < _0x5576x3[_0xe759[257]] - 1) {
-            var _0x5576x5 = _0x5576x3[_0xe759[259]](0, _0x5576x4 - 1);
-            _0x5576x5 += _0x5576x3[_0xe759[258]](_0x5576x4);
-            _0x5576x5 += _0x5576x3[_0xe759[258]](_0x5576x4 + 1);
-            _0x5576x5 += _0x5576x3[_0xe759[258]](_0x5576x4 - 1);
-            _0x5576x5 += _0x5576x3[_0xe759[259]](_0x5576x4 + 2, _0x5576x3[_0xe759[257]]);
-            _0x5576x3 = _0x5576x5
+function ReArrangeUnicodeConvertedText(_0x5bb8x3) {
+    for (var _0x5bb8x4 = 0; _0x5bb8x4 < _0x5bb8x3[_0xaea5[269]]; _0x5bb8x4++) {
+        if (_0x5bb8x4 > 0 && _0x5bb8x3[_0xaea5[270]](_0x5bb8x4) == _0xaea5[268] && (IsBanglaKar(_0x5bb8x3[_0xaea5[270]](_0x5bb8x4 - 1)) || IsBanglaNukta(_0x5bb8x3[_0xaea5[270]](_0x5bb8x4 - 1))) && _0x5bb8x4 < _0x5bb8x3[_0xaea5[269]] - 1) {
+            var _0x5bb8x5 = _0x5bb8x3[_0xaea5[271]](0, _0x5bb8x4 - 1);
+            _0x5bb8x5 += _0x5bb8x3[_0xaea5[270]](_0x5bb8x4);
+            _0x5bb8x5 += _0x5bb8x3[_0xaea5[270]](_0x5bb8x4 + 1);
+            _0x5bb8x5 += _0x5bb8x3[_0xaea5[270]](_0x5bb8x4 - 1);
+            _0x5bb8x5 += _0x5bb8x3[_0xaea5[271]](_0x5bb8x4 + 2, _0x5bb8x3[_0xaea5[269]]);
+            _0x5bb8x3 = _0x5bb8x5
         }
-        ;if (_0x5576x4 > 0 && _0x5576x4 < _0x5576x3[_0xe759[257]] - 1 && _0x5576x3[_0xe759[258]](_0x5576x4) == _0xe759[256] && _0x5576x3[_0xe759[258]](_0x5576x4 - 1) == _0xe759[209] && _0x5576x3[_0xe759[258]](_0x5576x4 - 2) != _0xe759[256] && IsBanglaKar(_0x5576x3[_0xe759[258]](_0x5576x4 + 1))) {
-            var _0x5576x5 = _0x5576x3[_0xe759[259]](0, _0x5576x4 - 1);
-            _0x5576x5 += _0x5576x3[_0xe759[258]](_0x5576x4 + 1);
-            _0x5576x5 += _0x5576x3[_0xe759[258]](_0x5576x4 - 1);
-            _0x5576x5 += _0x5576x3[_0xe759[258]](_0x5576x4);
-            _0x5576x5 += _0x5576x3[_0xe759[259]](_0x5576x4 + 2, _0x5576x3[_0xe759[257]]);
-            _0x5576x3 = _0x5576x5
+        ;if (_0x5bb8x4 > 0 && _0x5bb8x4 < _0x5bb8x3[_0xaea5[269]] - 1 && _0x5bb8x3[_0xaea5[270]](_0x5bb8x4) == _0xaea5[268] && _0x5bb8x3[_0xaea5[270]](_0x5bb8x4 - 1) == _0xaea5[219] && _0x5bb8x3[_0xaea5[270]](_0x5bb8x4 - 2) != _0xaea5[268] && IsBanglaKar(_0x5bb8x3[_0xaea5[270]](_0x5bb8x4 + 1))) {
+            var _0x5bb8x5 = _0x5bb8x3[_0xaea5[271]](0, _0x5bb8x4 - 1);
+            _0x5bb8x5 += _0x5bb8x3[_0xaea5[270]](_0x5bb8x4 + 1);
+            _0x5bb8x5 += _0x5bb8x3[_0xaea5[270]](_0x5bb8x4 - 1);
+            _0x5bb8x5 += _0x5bb8x3[_0xaea5[270]](_0x5bb8x4);
+            _0x5bb8x5 += _0x5bb8x3[_0xaea5[271]](_0x5bb8x4 + 2, _0x5bb8x3[_0xaea5[269]]);
+            _0x5bb8x3 = _0x5bb8x5
         }
-        ;if (_0x5576x4 < _0x5576x3[_0xe759[257]] - 1 && _0x5576x3[_0xe759[258]](_0x5576x4) == _0xe759[209] && IsBanglaHalant(_0x5576x3[_0xe759[258]](_0x5576x4 + 1)) && !IsBanglaHalant(_0x5576x3[_0xe759[258]](_0x5576x4 - 1))) {
-            var _0x5576x6 = 1;
+        ;if (_0x5bb8x4 < _0x5bb8x3[_0xaea5[269]] - 1 && _0x5bb8x3[_0xaea5[270]](_0x5bb8x4) == _0xaea5[219] && IsBanglaHalant(_0x5bb8x3[_0xaea5[270]](_0x5bb8x4 + 1)) && !IsBanglaHalant(_0x5bb8x3[_0xaea5[270]](_0x5bb8x4 - 1))) {
+            var _0x5bb8x6 = 1;
             while (true) {
-                if (_0x5576x4 - _0x5576x6 < 0) {
+                if (_0x5bb8x4 - _0x5bb8x6 < 0) {
                     break
                 }
-                ;if (IsBanglaBanjonborno(_0x5576x3[_0xe759[258]](_0x5576x4 - _0x5576x6)) && IsBanglaHalant(_0x5576x3[_0xe759[258]](_0x5576x4 - _0x5576x6 - 1))) {
-                    _0x5576x6 += 2
+                ;if (IsBanglaBanjonborno(_0x5bb8x3[_0xaea5[270]](_0x5bb8x4 - _0x5bb8x6)) && IsBanglaHalant(_0x5bb8x3[_0xaea5[270]](_0x5bb8x4 - _0x5bb8x6 - 1))) {
+                    _0x5bb8x6 += 2
                 } else {
-                    if (_0x5576x6 == 1 && IsBanglaKar(_0x5576x3[_0xe759[258]](_0x5576x4 - _0x5576x6))) {
-                        _0x5576x6++
+                    if (_0x5bb8x6 == 1 && IsBanglaKar(_0x5bb8x3[_0xaea5[270]](_0x5bb8x4 - _0x5bb8x6))) {
+                        _0x5bb8x6++
                     } else {
                         break
                     }
                 }
             }
-            ;var _0x5576x5 = _0x5576x3[_0xe759[259]](0, _0x5576x4 - _0x5576x6);
-            _0x5576x5 += _0x5576x3[_0xe759[258]](_0x5576x4);
-            _0x5576x5 += _0x5576x3[_0xe759[258]](_0x5576x4 + 1);
-            _0x5576x5 += _0x5576x3[_0xe759[259]](_0x5576x4 - _0x5576x6, _0x5576x4);
-            _0x5576x5 += _0x5576x3[_0xe759[259]](_0x5576x4 + 2, _0x5576x3[_0xe759[257]]);
-            _0x5576x3 = _0x5576x5;
-            _0x5576x4 += 1;
+            ;var _0x5bb8x5 = _0x5bb8x3[_0xaea5[271]](0, _0x5bb8x4 - _0x5bb8x6);
+            _0x5bb8x5 += _0x5bb8x3[_0xaea5[270]](_0x5bb8x4);
+            _0x5bb8x5 += _0x5bb8x3[_0xaea5[270]](_0x5bb8x4 + 1);
+            _0x5bb8x5 += _0x5bb8x3[_0xaea5[271]](_0x5bb8x4 - _0x5bb8x6, _0x5bb8x4);
+            _0x5bb8x5 += _0x5bb8x3[_0xaea5[271]](_0x5bb8x4 + 2, _0x5bb8x3[_0xaea5[269]]);
+            _0x5bb8x3 = _0x5bb8x5;
+            _0x5bb8x4 += 1;
             continue
         }
-        ;if (_0x5576x4 < _0x5576x3[_0xe759[257]] - 1 && IsBanglaPreKar(_0x5576x3[_0xe759[258]](_0x5576x4)) && IsSpace(_0x5576x3[_0xe759[258]](_0x5576x4 + 1)) == false) {
-            var _0x5576x5 = _0x5576x3[_0xe759[259]](0, _0x5576x4);
-            var _0x5576x6 = 1;
-            while (IsBanglaBanjonborno(_0x5576x3[_0xe759[258]](_0x5576x4 + _0x5576x6))) {
-                if (IsBanglaHalant(_0x5576x3[_0xe759[258]](_0x5576x4 + _0x5576x6 + 1))) {
-                    _0x5576x6 += 2
+        ;if (_0x5bb8x4 < _0x5bb8x3[_0xaea5[269]] - 1 && IsBanglaPreKar(_0x5bb8x3[_0xaea5[270]](_0x5bb8x4)) && IsSpace(_0x5bb8x3[_0xaea5[270]](_0x5bb8x4 + 1)) == false) {
+            var _0x5bb8x5 = _0x5bb8x3[_0xaea5[271]](0, _0x5bb8x4);
+            var _0x5bb8x6 = 1;
+            while (IsBanglaBanjonborno(_0x5bb8x3[_0xaea5[270]](_0x5bb8x4 + _0x5bb8x6))) {
+                if (IsBanglaHalant(_0x5bb8x3[_0xaea5[270]](_0x5bb8x4 + _0x5bb8x6 + 1))) {
+                    _0x5bb8x6 += 2
                 } else {
                     break
                 }
             }
-            ;_0x5576x5 += _0x5576x3[_0xe759[259]](_0x5576x4 + 1, _0x5576x4 + _0x5576x6 + 1);
-            var _0x5576x7 = 0;
-            if (_0x5576x3[_0xe759[258]](_0x5576x4) == _0xe759[238] && _0x5576x3[_0xe759[258]](_0x5576x4 + _0x5576x6 + 1) == _0xe759[232]) {
-                _0x5576x5 += _0xe759[260];
-                _0x5576x7 = 1
+            ;_0x5bb8x5 += _0x5bb8x3[_0xaea5[271]](_0x5bb8x4 + 1, _0x5bb8x4 + _0x5bb8x6 + 1);
+            var _0x5bb8x7 = 0;
+            if (_0x5bb8x3[_0xaea5[270]](_0x5bb8x4) == _0xaea5[248] && _0x5bb8x3[_0xaea5[270]](_0x5bb8x4 + _0x5bb8x6 + 1) == _0xaea5[242]) {
+                _0x5bb8x5 += _0xaea5[272];
+                _0x5bb8x7 = 1
             } else {
-                if (_0x5576x3[_0xe759[258]](_0x5576x4) == _0xe759[238] && _0x5576x3[_0xe759[258]](_0x5576x4 + _0x5576x6 + 1) == _0xe759[240]) {
-                    _0x5576x5 += _0xe759[261];
-                    _0x5576x7 = 1
+                if (_0x5bb8x3[_0xaea5[270]](_0x5bb8x4) == _0xaea5[248] && _0x5bb8x3[_0xaea5[270]](_0x5bb8x4 + _0x5bb8x6 + 1) == _0xaea5[250]) {
+                    _0x5bb8x5 += _0xaea5[273];
+                    _0x5bb8x7 = 1
                 } else {
-                    _0x5576x5 += _0x5576x3[_0xe759[258]](_0x5576x4)
+                    _0x5bb8x5 += _0x5bb8x3[_0xaea5[270]](_0x5bb8x4)
                 }
             }
-            ;_0x5576x5 += _0x5576x3[_0xe759[259]](_0x5576x4 + _0x5576x6 + _0x5576x7 + 1, _0x5576x3[_0xe759[257]]);
-            _0x5576x3 = _0x5576x5;
-            _0x5576x4 += _0x5576x6
+            ;_0x5bb8x5 += _0x5bb8x3[_0xaea5[271]](_0x5bb8x4 + _0x5bb8x6 + _0x5bb8x7 + 1, _0x5bb8x3[_0xaea5[269]]);
+            _0x5bb8x3 = _0x5bb8x5;
+            _0x5bb8x4 += _0x5bb8x6
         }
-        ;if (_0x5576x4 < _0x5576x3[_0xe759[257]] - 1 && _0x5576x3[_0xe759[258]](_0x5576x4) == _0xe759[250] && IsBanglaPostKar(_0x5576x3[_0xe759[258]](_0x5576x4 + 1))) {
-            var _0x5576x5 = _0x5576x3[_0xe759[259]](0, _0x5576x4);
-            _0x5576x5 += _0x5576x3[_0xe759[258]](_0x5576x4 + 1);
-            _0x5576x5 += _0x5576x3[_0xe759[258]](_0x5576x4);
-            _0x5576x5 += _0x5576x3[_0xe759[259]](_0x5576x4 + 2, _0x5576x3[_0xe759[257]]);
-            _0x5576x3 = _0x5576x5
+        ;if (_0x5bb8x4 < _0x5bb8x3[_0xaea5[269]] - 1 && _0x5bb8x3[_0xaea5[270]](_0x5bb8x4) == _0xaea5[265] && IsBanglaPostKar(_0x5bb8x3[_0xaea5[270]](_0x5bb8x4 + 1))) {
+            var _0x5bb8x5 = _0x5bb8x3[_0xaea5[271]](0, _0x5bb8x4);
+            _0x5bb8x5 += _0x5bb8x3[_0xaea5[270]](_0x5bb8x4 + 1);
+            _0x5bb8x5 += _0x5bb8x3[_0xaea5[270]](_0x5bb8x4);
+            _0x5bb8x5 += _0x5bb8x3[_0xaea5[271]](_0x5bb8x4 + 2, _0x5bb8x3[_0xaea5[269]]);
+            _0x5bb8x3 = _0x5bb8x5
         }
     }
-    ;return _0x5576x3
+    ;return _0x5bb8x3
 }
-function h2d(_0x5576x9) {
-    return parseInt(_0x5576x9, 16)
+function h2d(_0x5bb8x9) {
+    return parseInt(_0x5bb8x9, 16)
 }
-function HTMLSafeToUnicode(_0x5576xb) {
-    var _0x5576xc = new RegExp(_0xe759[262]);
-    var _0x5576xd = _0x5576xc[_0xe759[263]](_0x5576xb);
-    while (_0x5576xd != null) {
-        var _0x5576xe = new RegExp(_0xe759[264] + _0x5576xd[1] + _0xe759[265],_0xe759[266]);
-        _0x5576xb = _0x5576xb[_0xe759[268]](_0x5576xe, String[_0xe759[267]](h2d(_0x5576xd[1])));
-        _0x5576xd = _0x5576xc[_0xe759[263]](_0x5576xb)
+function HTMLSafeToUnicode(_0x5bb8xb) {
+    var _0x5bb8xc = new RegExp(_0xaea5[274]);
+    var _0x5bb8xd = _0x5bb8xc[_0xaea5[275]](_0x5bb8xb);
+    while (_0x5bb8xd != null) {
+        var _0x5bb8xe = new RegExp(_0xaea5[276] + _0x5bb8xd[1] + _0xaea5[259],_0xaea5[277]);
+        _0x5bb8xb = _0x5bb8xb[_0xaea5[279]](_0x5bb8xe, String[_0xaea5[278]](h2d(_0x5bb8xd[1])));
+        _0x5bb8xd = _0x5bb8xc[_0xaea5[275]](_0x5bb8xb)
     }
-    ;return _0x5576xb
+    ;return _0x5bb8xb
 }
-function ConvertToUnicode(_0x5576x10, _0x5576xb) {
-    var _0x5576x11 = bijoy_string_conversion_map;
-    for (var _0x5576x12 in _0x5576x11) {
-        var _0x5576x13 = new RegExp(_0x5576x12,_0xe759[266]);
-        _0x5576xb = _0x5576xb[_0xe759[268]](_0x5576x13, _0x5576x11[_0x5576x12])
+function ConvertToUnicode(_0x5bb8x10, _0x5bb8xb) {
+    var _0x5bb8x11 = bijoy_string_conversion_map;
+    for (var _0x5bb8x12 in _0x5bb8x11) {
+        var _0x5bb8x13 = new RegExp(_0x5bb8x12,_0xaea5[277]);
+        _0x5bb8xb = _0x5bb8xb[_0xaea5[279]](_0x5bb8x13, _0x5bb8x11[_0x5bb8x12])
     }
-    ;_0x5576xb = ReArrangeUnicodeConvertedText(_0x5576xb);
-    var _0x5576x13 = new RegExp(_0xe759[269],_0xe759[266]);
-    _0x5576xb = _0x5576xb[_0xe759[268]](_0x5576x13, _0xe759[172]);
-    return _0x5576xb
+    ;_0x5bb8xb = ReArrangeUnicodeConvertedText(_0x5bb8xb);
+    var _0x5bb8x13 = new RegExp(_0xaea5[280],_0xaea5[277]);
+    _0x5bb8xb = _0x5bb8xb[_0xaea5[279]](_0x5bb8x13, _0xaea5[183]);
+    return _0x5bb8xb
 }
+
 </script>
 
 <script>
 /* rconverter.js ফাইলের সম্পূর্ণ কোড এখানে */
-var _0x19a6 = ["\x7C", "\x5C", "\xD4", "\xD5", "\xD2", "\xD3", "\xAA\xA8", "\x69\xA8", "\x6F", "\x70", "\x71", "\xB6\xA1", "\xB2", "\xB6\xE8", "\xB0", "\xB1", "\xB3\xA1", "\xB3", "\x4B\xA1", "\xBC\xAB", "\xAF\u0152", "\xAE\u0152", "\xB5", "\xAF\u2039\xAC", "\x4B\xAC", "\x4B\xE8", "\xB4", "\u2022\xB6", "\xB6", "\xB7", "\x4C\xA1", "\xBD", "\u02DC\x4D", "\xEA", "\xFF", "\xB8", "\x4D\xA6", "\xBB", "\xBA", "\x4D\u0153", "\x4D\xA5", "\x4D\xAC", "\x4E\xA1", "\x4E\u0153", "\xBC", "\u2022\x67", "\u2022\x4C", "\u2022\x4E", "\u201D\x51\xA1", "\u201D\x50", "\u201D\x51", "\x51\xA1", "\u201D\x54", "\x52", "\xBE\xA1", "\xBE", "\xC0", "\xC1", "\x52\xA1", "\xC2", "\xC3", "\xC4", "\xC5", "\xC6", "\x55\xA1", "\x55\xA5", "\xC7", "\xC8", "\xC9", "\u2212", "\x59\u0153", "\x59\xA5", "\xDD", "\xCA", "\u0161\u2018", "\x59\x5E", "\xCB\xA1", "\xCB", "\xCC", "\x5A\u0153", "\xCD", "\x5A\xAC", "\u0161\u2014\xA1", "\xAF\u2014\xA1", "\x5A\xA1", "\x5F\xAC", "\x5F\xA1", "\u02DC\x4E", "\xCF\xA1", "\xCF", "\xD7\xA1", "\xD7", "\x60\u0153", "\u203A\xD8", "\xD8", "\u2122\xA3", "\u2122\xA2", "\xD9", "\x61\u0153", "\x61\u0178", "\x61\xA5", "\u203A\x55", "\xDA", "\xDB", "\u0161\xBF", "\u0161\u2014", "\xAF\xBF", "\xCE", "\u0161\u2019", "\u203A\x60", "\xDC", "\x62\u0153", "\u0161\x5E", "\x62\xA5", "\xDE", "\xDF", "\x63\u0153", "\xE0", "\x63\xA5", "\x63\xAC", "\xE1", "\x64\xAC", "\xE2", "\xE3", "\xE4", "\x65\u0178", "\x65\xAC", "\xA4\xA3", "\xE5", "\x66\xAC", "\xE6", "\xA4\xFA", "\xE7", "\xA4\x5E", "\xA4\xA2", "\xA4\xA7", "\xA4\xAC", "\xE9", "\xEB", "\xEC", "\xED", "\xEE", "\x6A\xA6", "\x6A\xA5", "\x6A\xAC", "\xEF", "\xF0", "\xF1", "\x6B\u0153", "\x6B\xA6", "\x6B\xA5", "\x6B\xAC", "\xAE\u2039", "\xAE\x5E", "\xF3", "\xF4", "\xF2", "\xAE\xFA", "\xF5", "\xAE\xA7", "\xAF\u2039", "\xF7", "\xF6", "\xAF\u2018", "\xAF\u2014", "\xAF\u2019", "\xF8", "\xAF\xFA", "\xF9", "\xAF\x5E", "\xAF\xA7", "\xAF\xAC", "\xFB", "\x6E\xE8", "\x6E\u0178", "\xFD", "\xFE", "\x6E\xAC", "\xFC", "\xA9", "\xAA", "\xA8", "\xA1", "\xAC", "\u0153", "\x26", "\x41\x76", "\x41", "\x42", "\x43", "\x44", "\x45", "\x46", "\x47", "\x48", "\x49", "\x4A", "\x4B", "\x4C", "\x4D", "\x4E", "\x4F", "\x50", "\x51", "\x53", "\x54", "\x55", "\x56", "\x57", "\x58", "\x59", "\x5A", "\x5F", "\x60", "\x61", "\x62", "\x63", "\x64", "\x65", "\x66", "\x67", "\x68", "\x69", "\x6A", "\x6B", "\x6C", "\x6D", "\x6E", "\x72", "\x24", "\x3C\x3C", "\x3E\x3E", "\x30", "\x31", "\x32", "\x33", "\x34", "\x35", "\x36", "\x37", "\x38", "\x39", "\x76", "\x77", "\x78", "\x79", "\x7E", "\u201E", "\u2021", "\u2030", "\u0160", "\x73", "\x74", "\x75", "\x6C\x65\x6E\x67\x74\x68", "\x63\x68\x61\x72\x41\x74", "\x73\x75\x62\x73\x74\x72\x69\x6E\x67", "\u09B0", "\x30\x31\x32\x33\x34\x35\x36\x37\x38\x39\x41\x42\x43\x44\x45\x46", "\x73\x75\x62\x73\x74\x72", "", "\x63\x68\x61\x72\x43\x6F\x64\x65\x41\x74", "\x26\x23", "\x3B", "\u09CB", "\u09C7\u09BE", "\x72\x65\x70\x6C\x61\x63\x65", "\u09CC", "\u09C7\u09D7"];
+var _0x3360 = ["\xE6", "\x53", "\x56", "\xA0", "\u2013", "\xE9\xF4\xE9", "\xD0", "\xAD", "\u2014", "\xDA", "\xF2", "\xF3", "\xCA\xC4", "\xEE\xFB\xC4", "\x76\xFE\xFC", "\u2018\xFE\xFC", "\xEB\xFB", "\x22", "\xC7\xF8\xFE", "\xC7\xB4\xFE", "\x45\xFE", "\x51", "\x5F\xB4\xAB", "\x5F\xAB", "\xF0\xFE", "\x42\xCA\xFE", "\xDF\xFE\x3B", "\xDC\x3B\xFE", "\xCD\xF1", "\x65\xAB", "\xDF\xFE\xCF\xF1", "\u201E\xCF\xFE", "\u201E\xF8\xFE", "\xA9", "\x41\xC7\xFE", "\xC7\xFE", "\x3A", "\u2026\xB4", "\x3E", "\x3F\xFE", "\x40\u201D", "\x40\xC0", "\x40\xBB", "\x40\xC2", "\x40\xD5", "\u2021\xB4", "\u2021\xF8", "\x42\xFE", "\x2D", "\x43", "\x44", "\x41\u2021", "\x46\u0160\xB4\xE9", "\x46\u2030\xFE", "\x46\u0160\xE9", "\u0160\xB4\xE9", "\x8E\xFE", "\u2039", "\x49\xB5", "\x49", "\x4A", "\x4B\xFE\xE9", "\u2039\xB5", "\x4C", "\x4D\xFE\xE9", "\x4E\xFE", "\x4F", "\x50", "\x52", "\xDD\xB4\xFE", "\x8F", "\x55\xFE", "\x5E\xF9\xDD\xFE", "\x5A\xFE", "\x5E\xE9\x57", "\x5D", "\x5E\xF9\xE9\xC2", "\xAA", "\x5B\xFE", "\x6C\x73\xFE", "\x5E\xE9\xBB", "\x5F\xB4", "\x5F", "\x61", "\x62", "\x64", "\u201C\xCF\xFE", "\x67\x73\xFE", "\x67\xDF\xFE", "\x63", "\xED\xCF", "\xED\xB4", "\xE5\u2020", "\xE5\u2021", "\x6A\xB5", "\x6A", "\x6B\xB4\xFE", "\x6B\xFE", "\u201D\xF8", "\x72\x6D", "\x6D", "\x9E", "\x71", "\x70", "\u2022\xF8", "\u2022\xB9", "\x90", "\x72\xDD\xFE", "\x74\xFE", "\x75\xFE", "\x73\xFE\x66", "\x68\x73\xFE", "\xDF\xFE\x66", "\x65", "\x73\xFE\x69", "\xF5\xFE", "\xA7\xAC", "\xA7\xBA", "\xA7\xC3", "\xB2\x57\x7A", "\xAE", "\xB2\xC0", "\xAF", "\xB2\xD5", "\xB0", "\u0161\xCF\xFE", "\x81\xFE", "\xB6", "\xB7", "\x77", "\x72\u201D", "\xB8\xFE", "\xEE\xB9", "\xEE\xCF", "\xBE", "\xBC", "\xA6\xCF\xFE", "\xC1\xAC", "\xDF\xFE\xB1", "\xC1\xB1", "\xDC\xB1", "\xC1\u2122", "\xC1\xB3\xFE", "\xC1\xBA\xC9", "\xC1\xBA", "\xBD\xFE", "\xC1\xBF", "\xC1\xD4", "\xCE\xA2", "\xCE\xDD\xFE", "\xD3\xFE", "\xD2", "\xCD\xB3\xFE", "\xCD\xBA", "\xCD\xC3", "\xCD\xD4", "\xD6", "\xD8\xFE", "\xD9\u0160\xE9", "\xD9\xC0", "\xD9\xBB", "\xD9\xC2", "\xD9\xD5", "\xD7", "\xDC\xF1", "\xDC\xBA", "\xDC\x54", "\xDB\xFE", "\xA1\u0152", "\xDC\u2122", "\xDC\xB3\xFE", "\xDC\xBF", "\xDF\xFE\xF1", "\xDE\xDD\xFE", "\xDF\xFE\x3C", "\x6C\xDF\xFE", "\x68\xDF\xFE", "\xDF\xFE\x69", "\xDF\xFE\xAC", "\xDF\xFE\u2122", "\xB2\xCC", "\xDF\xFE\xB3\xFE", "\xDF\xFE\xBA", "\xDF\xFE\xBF", "\xDF\xFE\xD4", "\xDF\xFE\xCB", "\xFD", "\xE3", "\xA3\xB9", "\xA3\xAB", "\xE1\xFE", "\xC1\xCB", "\xE2", "\xA3\x2A", "\x58\u2020", "\u20AC", "\xD1", "\x40\xF9\xCC", "\x3D", "\xC5", "\xCA", "\xC4", "\xE4", "\x78\x79", "\x78", "\xA3\x7A", "\x7B", "\x76\xFE\x7A", "\x7C", "\x7D", "\x7E", "\xFA", "\xE7", "\xE8", "\u201E\xFE", "\u2026", "\u2020", "\u2021", "\u02C6", "\u2030\xFE", "\u0160\xE9", "\x47\xFE", "\x7E\u0152", "\xDD\xFE", "\xE0\xFE", "\x76\xFE", "\u2018\xFE", "\u2019", "\u201C\xFE", "\xED", "\u201D", "\u2022", "\u02DC", "\xFE\u2122", "\u0161\xFE", "\xEE", "\xA6\xFE", "\u203A", "\xEB", "\xEE\xFB", "\u0153", "\u0178", "\xA1\xEC", "\xA2", "\xA3", "\xEA", "\x30", "\x31", "\x32", "\x33", "\x34", "\x35", "\x36", "\x37", "\x38", "\x39", "\x79", "\x21", "\x23", "\x25", "\x29", "\x2C", "\xF6\xEC", "\xF7\xEC", "\xEF", "\u201A", "\u0192", "\xA4", "\x6C\x65\x6E\x67\x74\x68", "\x63\x68\x61\x72\x41\x74", "\x73\x75\x62\x73\x74\x72\x69\x6E\x67", "\u09B0", "\x30\x31\x32\x33\x34\x35\x36\x37\x38\x39\x41\x42\x43\x44\x45\x46", "\x73\x75\x62\x73\x74\x72", "", "\x63\x68\x61\x72\x43\x6F\x64\x65\x41\x74", "\x26\x23", "\x3B", "\u09CB", "\x67", "\u09C7\u09BE", "\x72\x65\x70\x6C\x61\x63\x65", "\u09CC", "\u09C7\u09D7"];
 var uni2bijoy_string_conversion_map = {
-    "\u0964": _0x19a6[0],
-    "\u0965": _0x19a6[1],
-    "\u2018": _0x19a6[2],
-    "\u2019": _0x19a6[3],
-    "\u201C": _0x19a6[4],
-    "\u201D": _0x19a6[5],
-    "\u09CD\u09B0\u09CD\u09AF": _0x19a6[6],
-    "\u09B0\u200C\u09CD\u09AF": _0x19a6[7],
-    "\u09A1\u09BC": _0x19a6[8],
-    "\u09A2\u09BC": _0x19a6[9],
-    "\u09AF\u09BC": _0x19a6[10],
-    "\u0995\u09CD\u09B7\u09CD\u09AC": _0x19a6[11],
-    "\u0995\u09CD\u09B7\u09CD\u09AE": _0x19a6[12],
-    "\u0995\u09CD\u09B7\u09CD\u09A3": _0x19a6[13],
-    "\u0995\u09CD\u0995": _0x19a6[14],
-    "\u0995\u09CD\u099F": _0x19a6[15],
-    "\u0995\u09CD\u09A4\u09CD\u09AC": _0x19a6[16],
-    "\u0995\u09CD\u09A4": _0x19a6[17],
-    "\u0995\u09CD\u09AC": _0x19a6[18],
-    "\u0999\u09CD\u0995\u09CD\u09B0": _0x19a6[19],
-    "\u09B8\u09CD\u0995\u09CD\u09B0": _0x19a6[20],
-    "\u09B7\u09CD\u0995\u09CD\u09B0": _0x19a6[21],
-    "\u0995\u09CD\u09B0": _0x19a6[22],
-    "\u09B8\u09CD\u0995\u09CD\u09B2": _0x19a6[23],
-    "\u0995\u09CD\u09B2": _0x19a6[24],
-    "\u0995\u09CD\u09A8": _0x19a6[25],
-    "\u0995\u09CD\u09AE": _0x19a6[26],
-    "\u0999\u09CD\u0995\u09CD\u09B7": _0x19a6[27],
-    "\u0995\u09CD\u09B7": _0x19a6[28],
-    "\u0995\u09CD\u09B8": _0x19a6[29],
-    "\u0996\u09CD\u09AC": _0x19a6[30],
-    "\u0999\u09CD\u0997": _0x19a6[31],
-    "\u09A6\u09CD\u0997": _0x19a6[32],
-    "\u09B2\u09CD\u0997": _0x19a6[33],
-    "\u09DC\u09CD\u0997": _0x19a6[34],
-    "\u0997\u09C1": _0x19a6[35],
-    "\u0997\u09CD\u09AC": _0x19a6[36],
-    "\u0997\u09CD\u09A7": _0x19a6[37],
-    "\u0997\u09CD\u09A6": _0x19a6[38],
-    "\u0997\u09CD\u09A8": _0x19a6[39],
-    "\u0997\u09CD\u09AE": _0x19a6[40],
-    "\u0997\u09CD\u09B2": _0x19a6[41],
-    "\u0998\u09CD\u09AC": _0x19a6[42],
-    "\u0998\u09CD\u09A8": _0x19a6[43],
-    "\u0999\u09CD\u0995": _0x19a6[44],
-    "\u0999\u09CD\u09AE": _0x19a6[45],
-    "\u0999\u09CD\u0996": _0x19a6[46],
-    "\u0999\u09CD\u0998": _0x19a6[47],
-    "\u099A\u09CD\u099B\u09CD\u09AC": _0x19a6[48],
-    "\u099A\u09CD\u099A": _0x19a6[49],
-    "\u099A\u09CD\u099B": _0x19a6[50],
-    "\u099B\u09CD\u09AC": _0x19a6[51],
-    "\u099A\u09CD\u099E": _0x19a6[52],
-    "\u099C\u09BC": _0x19a6[53],
-    "\u099C\u09CD\u099C\u09CD\u09AC": _0x19a6[54],
-    "\u099C\u09CD\u099C": _0x19a6[55],
-    "\u099C\u09CD\u099D": _0x19a6[56],
-    "\u099C\u09CD\u099E": _0x19a6[57],
-    "\u099C\u09CD\u09AC": _0x19a6[58],
-    "\u099E\u09CD\u099A": _0x19a6[59],
-    "\u099E\u09CD\u099B": _0x19a6[60],
-    "\u099E\u09CD\u099C": _0x19a6[61],
-    "\u099E\u09CD\u099D": _0x19a6[62],
-    "\u099F\u09CD\u099F": _0x19a6[63],
-    "\u099F\u09CD\u09AC": _0x19a6[64],
-    "\u099F\u09CD\u09AE": _0x19a6[65],
-    "\u09A1\u09CD\u09A1": _0x19a6[66],
-    "\u09A3\u09CD\u099F": _0x19a6[67],
-    "\u09A3\u09CD\u09A0": _0x19a6[68],
-    "\u09A3\u09CD\u09A2": _0x19a6[69],
-    "\u09A3\u09CD\u09A3": _0x19a6[70],
-    "\u09A3\u09CD\u09AE": _0x19a6[71],
-    "\u09A8\u09CD\u09B8": _0x19a6[72],
-    "\u09A3\u09CD\u09A1": _0x19a6[73],
-    "\u09A8\u09CD\u09A4\u09C1": _0x19a6[74],
-    "\u09A3\u09CD\u09AC": _0x19a6[75],
-    "\u09A4\u09CD\u09A4\u09CD\u09AC": _0x19a6[76],
-    "\u09A4\u09CD\u09A4": _0x19a6[77],
-    "\u09A4\u09CD\u09A5": _0x19a6[78],
-    "\u09A4\u09CD\u09A8": _0x19a6[79],
-    "\u09A4\u09CD\u09AE": _0x19a6[80],
-    "\u09A4\u09CD\u09B2": _0x19a6[81],
-    "\u09A8\u09CD\u09A4\u09CD\u09AC": _0x19a6[82],
-    "\u09B8\u09CD\u09A4\u09CD\u09AC": _0x19a6[83],
-    "\u09A4\u09CD\u09AC": _0x19a6[84],
-    "\u09A5\u09CD\u09B2": _0x19a6[85],
-    "\u09A5\u09CD\u09AC": _0x19a6[86],
-    "\u09A6\u09CD\u0998": _0x19a6[87],
-    "\u09A6\u09CD\u09A6\u09CD\u09AC": _0x19a6[88],
-    "\u09A6\u09CD\u09A6": _0x19a6[89],
-    "\u09A6\u09CD\u09A7\u09CD\u09AC": _0x19a6[90],
-    "\u09A6\u09CD\u09A7": _0x19a6[91],
-    "\u09A6\u09CD\u09A8": _0x19a6[92],
-    "\u09A8\u09CD\u09A6\u09CD\u09AC": _0x19a6[93],
-    "\u09A6\u09CD\u09AC": _0x19a6[94],
-    "\u09A6\u09CD\u09AD\u09CD\u09B0": _0x19a6[95],
-    "\u09A6\u09CD\u09AD": _0x19a6[96],
-    "\u09A6\u09CD\u09AE": _0x19a6[97],
-    "\u09A7\u09CD\u09A8": _0x19a6[98],
-    "\u09A7\u09CD\u09AC": _0x19a6[99],
-    "\u09A7\u09CD\u09AE": _0x19a6[100],
-    "\u09A8\u09CD\u099F": _0x19a6[101],
-    "\u09A8\u09CD\u09A0": _0x19a6[102],
-    "\u09A8\u09CD\u09A1": _0x19a6[103],
-    "\u09A8\u09CD\u09A4\u09CD\u09B0": _0x19a6[104],
-    "\u09A8\u09CD\u09A4": _0x19a6[105],
-    "\u09B8\u09CD\u09A4\u09CD\u09B0": _0x19a6[106],
-    "\u09A4\u09CD\u09B0": _0x19a6[107],
-    "\u09A8\u09CD\u09A5": _0x19a6[108],
-    "\u09A8\u09CD\u09A6": _0x19a6[109],
-    "\u09A8\u09CD\u09A7": _0x19a6[110],
-    "\u09A8\u09CD\u09A8": _0x19a6[111],
-    "\u09A8\u09CD\u09AC": _0x19a6[112],
-    "\u09A8\u09CD\u09AE": _0x19a6[113],
-    "\u09AA\u09CD\u099F": _0x19a6[114],
-    "\u09AA\u09CD\u09A4": _0x19a6[115],
-    "\u09AA\u09CD\u09A8": _0x19a6[116],
-    "\u09AA\u09CD\u09AA": _0x19a6[117],
-    "\u09AA\u09CD\u09AE": _0x19a6[118],
-    "\u09AA\u09CD\u09B2": _0x19a6[119],
-    "\u09AA\u09CD\u09B8": _0x19a6[120],
-    "\u09AB\u09CD\u09B2": _0x19a6[121],
-    "\u09AC\u09CD\u099C": _0x19a6[122],
-    "\u09AC\u09CD\u09A6": _0x19a6[123],
-    "\u09AC\u09CD\u09A7": _0x19a6[124],
-    "\u09AC\u09CD\u09AC": _0x19a6[125],
-    "\u09AC\u09CD\u09B2": _0x19a6[126],
-    "\u09AE\u09CD\u09AD\u09CD\u09B0": _0x19a6[127],
-    "\u09AD\u09CD\u09B0": _0x19a6[128],
-    "\u09AD\u09CD\u09B2": _0x19a6[129],
-    "\u09AE\u09CD\u09A8": _0x19a6[130],
-    "\u09AE\u09CD\u09AA": _0x19a6[131],
-    "\u09AE\u09CD\u09AB": _0x19a6[132],
-    "\u09AE\u09CD\u09AC": _0x19a6[133],
-    "\u09AE\u09CD\u09AD": _0x19a6[134],
-    "\u09AE\u09CD\u09AE": _0x19a6[135],
-    "\u09AE\u09CD\u09B2": _0x19a6[136],
-    "\u09B2\u09CD\u0995": _0x19a6[137],
-    "\u09B2\u09CD\u099F": _0x19a6[138],
-    "\u09B2\u09CD\u09A1": _0x19a6[139],
-    "\u09B2\u09CD\u09AA": _0x19a6[140],
-    "\u09B2\u09CD\u09AB": _0x19a6[141],
-    "\u09B2\u09CD\u09AC": _0x19a6[142],
-    "\u09B2\u09CD\u09AE": _0x19a6[143],
-    "\u09B2\u09CD\u09B2": _0x19a6[144],
-    "\u09B6\u09C1": _0x19a6[145],
-    "\u09B6\u09CD\u099A": _0x19a6[146],
-    "\u09B6\u09CD\u099B": _0x19a6[147],
-    "\u09B6\u09CD\u09A8": _0x19a6[148],
-    "\u09B6\u09CD\u09AC": _0x19a6[149],
-    "\u09B6\u09CD\u09AE": _0x19a6[150],
-    "\u09B6\u09CD\u09B2": _0x19a6[151],
-    "\u09B7\u09CD\u0995": _0x19a6[152],
-    "\u09B7\u09CD\u09AC": _0x19a6[153],
-    "\u09B7\u09CD\u099F": _0x19a6[154],
-    "\u09B7\u09CD\u09A0": _0x19a6[155],
-    "\u09B7\u09CD\u09A3": _0x19a6[156],
-    "\u09B7\u09CD\u09AA": _0x19a6[157],
-    "\u09B7\u09CD\u09AB": _0x19a6[158],
-    "\u09B7\u09CD\u09AE": _0x19a6[159],
-    "\u09B8\u09CD\u0995": _0x19a6[160],
-    "\u09B8\u09CD\u099F": _0x19a6[161],
-    "\u09B8\u09CD\u0996": _0x19a6[162],
-    "\u09B8\u09CD\u09A4\u09C1": _0x19a6[163],
-    "\u09B8\u09CD\u09A4": _0x19a6[164],
-    "\u09B8\u09CD\u09A5": _0x19a6[165],
-    "\u09B8\u09CD\u09A8": _0x19a6[166],
-    "\u09B8\u09CD\u09AA": _0x19a6[167],
-    "\u09B8\u09CD\u09AB": _0x19a6[168],
-    "\u09B8\u09CD\u09AC": _0x19a6[169],
-    "\u09B8\u09CD\u09AE": _0x19a6[170],
-    "\u09B8\u09CD\u09B2": _0x19a6[171],
-    "\u09B9\u09C1": _0x19a6[172],
-    "\u09B9\u09CD\u09A3": _0x19a6[173],
-    "\u09B9\u09CD\u09AC": _0x19a6[174],
-    "\u09B9\u09CD\u09A8": _0x19a6[175],
-    "\u09B9\u09CD\u09AE": _0x19a6[176],
-    "\u09B9\u09CD\u09B2": _0x19a6[177],
-    "\u09B9\u09C3": _0x19a6[178],
-    "\u09B0\u09CD": _0x19a6[179],
-    "\u09CD\u09B0": _0x19a6[180],
-    "\u09CD\u09AF": _0x19a6[181],
-    "\u09CD\u09AC": _0x19a6[182],
-    "\u09CD\u09B2": _0x19a6[183],
-    "\u09CD\u09A8": _0x19a6[184],
-    "\u09CD": _0x19a6[185],
-    "\u0986": _0x19a6[186],
-    "\u0985": _0x19a6[187],
-    "\u0987": _0x19a6[188],
-    "\u0988": _0x19a6[189],
-    "\u0989": _0x19a6[190],
-    "\u098A": _0x19a6[191],
-    "\u098B": _0x19a6[192],
-    "\u098F": _0x19a6[193],
-    "\u0990": _0x19a6[194],
-    "\u0993": _0x19a6[195],
-    "\u0994": _0x19a6[196],
-    "\u0995": _0x19a6[197],
-    "\u0996": _0x19a6[198],
-    "\u0997": _0x19a6[199],
-    "\u0998": _0x19a6[200],
-    "\u0999": _0x19a6[201],
-    "\u099A": _0x19a6[202],
-    "\u099B": _0x19a6[203],
-    "\u099C": _0x19a6[53],
-    "\u099D": _0x19a6[204],
-    "\u099E": _0x19a6[205],
-    "\u099F": _0x19a6[206],
-    "\u09A0": _0x19a6[207],
-    "\u09A1": _0x19a6[208],
-    "\u09A2": _0x19a6[209],
-    "\u09A3": _0x19a6[210],
-    "\u09A4": _0x19a6[211],
-    "\u09A5": _0x19a6[212],
-    "\u09A6": _0x19a6[213],
-    "\u09A7": _0x19a6[214],
-    "\u09A8": _0x19a6[215],
-    "\u09AA": _0x19a6[216],
-    "\u09AB": _0x19a6[217],
-    "\u09AC": _0x19a6[218],
-    "\u09AD": _0x19a6[219],
-    "\u09AE": _0x19a6[220],
-    "\u09AF": _0x19a6[221],
-    "\u09B0": _0x19a6[222],
-    "\u09B2": _0x19a6[223],
-    "\u09B6": _0x19a6[224],
-    "\u09B7": _0x19a6[225],
-    "\u09B8": _0x19a6[226],
-    "\u09B9": _0x19a6[227],
-    "\u09DC": _0x19a6[8],
-    "\u09DD": _0x19a6[9],
-    "\u09DF": _0x19a6[10],
-    "\u09CE": _0x19a6[228],
-    "\u09F3": _0x19a6[229],
-    "\u098D": _0x19a6[230],
-    "\u098E": _0x19a6[231],
-    "\u09E6": _0x19a6[232],
-    "\u09E7": _0x19a6[233],
-    "\u09E8": _0x19a6[234],
-    "\u09E9": _0x19a6[235],
-    "\u09EA": _0x19a6[236],
-    "\u09EB": _0x19a6[237],
-    "\u09EC": _0x19a6[238],
-    "\u09ED": _0x19a6[239],
-    "\u09EE": _0x19a6[240],
-    "\u09EF": _0x19a6[241],
-    "\u09BE": _0x19a6[242],
-    "\u09BF": _0x19a6[243],
-    "\u09C0": _0x19a6[244],
-    "\u09C1": _0x19a6[245],
-    "\u09C2": _0x19a6[246],
-    "\u09C3": _0x19a6[247],
-    "\u09C7": _0x19a6[248],
-    "\u09C8": _0x19a6[249],
-    "\u09D7": _0x19a6[250],
-    "\u0982": _0x19a6[251],
-    "\u0983": _0x19a6[252],
-    "\u0981": _0x19a6[253]
+    "\x21": _0x3360[0],
+    "\x5C\x28": _0x3360[1],
+    "\x5C\x29": _0x3360[2],
+    "\x5C\x2A": _0x3360[3],
+    "\x2C": _0x3360[4],
+    "\x2D": _0x3360[5],
+    "\u0964": _0x3360[6],
+    "\x3A": _0x3360[7],
+    "\x3B": _0x3360[8],
+    "\x5C\x3F": _0x3360[9],
+    "\u2018": _0x3360[10],
+    "\u2019": _0x3360[11],
+    "\x27": _0x3360[11],
+    "\u09CD\u09B0\u09CD\u09AF": _0x3360[12],
+    "\u09B0\u200C\u09CD\u09AF": _0x3360[13],
+    "\u09A1\u09BC": _0x3360[14],
+    "\u09A2\u09BC": _0x3360[15],
+    "\u09AF\u09BC": _0x3360[16],
+    "\u0995\u09CD\u09B7\u09CD\u09AE": _0x3360[17],
+    "\u0995\u09CD\u09B7\u09CD\u09A3": _0x3360[18],
+    "\u0995\u09CD\u09B7\u09CD\u09AC": _0x3360[19],
+    "\u0995\u09CD\u0995": _0x3360[20],
+    "\u0995\u09CD\u099F": _0x3360[21],
+    "\u0995\u09CD\u09A4\u09CD\u09AC": _0x3360[22],
+    "\u0995\u09CD\u09A4": _0x3360[23],
+    "\u0995\u09CD\u09AC": _0x3360[24],
+    "\u0999\u09CD\u0995\u09CD\u09B0": _0x3360[25],
+    "\u09B8\u09CD\u0995\u09CD\u09B0": _0x3360[26],
+    "\u09B7\u09CD\u0995\u09CD\u09B0": _0x3360[27],
+    "\u09B2\u09CD\u0995": _0x3360[28],
+    "\u0995\u09CD\u09B0": _0x3360[29],
+    "\u09B8\u09CD\u0995\u09CD\u09B2": _0x3360[30],
+    "\u0995\u09CD\u09B2": _0x3360[31],
+    "\u0995\u09CD\u09A8": _0x3360[32],
+    "\u0995\u09CD\u09AE": _0x3360[33],
+    "\u0999\u09CD\u0995\u09CD\u09B7": _0x3360[34],
+    "\u0995\u09CD\u09B7": _0x3360[35],
+    "\u0995\u09CD\u09B8": _0x3360[36],
+    "\u0996\u09CD\u09AC": _0x3360[37],
+    "\u0997\u09CD\u0997": _0x3360[38],
+    "\u0997\u09CD\u09A7": _0x3360[39],
+    "\u0997\u09CD\u09A6": _0x3360[40],
+    "\u0997\u09CD\u09A8": _0x3360[41],
+    "\u0997\u09CD\u09AC": _0x3360[42],
+    "\u0997\u09CD\u09AE": _0x3360[43],
+    "\u0997\u09CD\u09B2": _0x3360[44],
+    "\u0998\u09CD\u09AC": _0x3360[45],
+    "\u0998\u09CD\u09A8": _0x3360[46],
+    "\u0999\u09CD\u0995": _0x3360[47],
+    "\u0999\u09CD\u09AE": _0x3360[48],
+    "\u0999\u09CD\u0996": _0x3360[49],
+    "\u0999\u09CD\u0997": _0x3360[50],
+    "\u0999\u09CD\u0998": _0x3360[51],
+    "\u099A\u09CD\u099B\u09CD\u09AC": _0x3360[52],
+    "\u099A\u09CD\u099A": _0x3360[53],
+    "\u099A\u09CD\u099B": _0x3360[54],
+    "\u099B\u09CD\u09AC": _0x3360[55],
+    "\u099A\u09CD\u099E": _0x3360[56],
+    "\u099C\u09BC": _0x3360[57],
+    "\u099C\u09CD\u099C\u09CD\u09AC": _0x3360[58],
+    "\u099C\u09CD\u099C": _0x3360[59],
+    "\u099C\u09CD\u099D": _0x3360[60],
+    "\u099C\u09CD\u099E": _0x3360[61],
+    "\u099C\u09CD\u09AC": _0x3360[62],
+    "\u099C\u09CD\u09B0": _0x3360[63],
+    "\u099E\u09CD\u099A": _0x3360[64],
+    "\u099E\u09CD\u099B": _0x3360[65],
+    "\u099E\u09CD\u099C": _0x3360[66],
+    "\u099E\u09CD\u099D": _0x3360[67],
+    "\u099F\u09CD\u099F": _0x3360[68],
+    "\u099F\u09CD\u09AC": _0x3360[69],
+    "\u099F\u09CD\u09AE": _0x3360[70],
+    "\u09A1\u09CD\u09A1": _0x3360[71],
+    "\u09A3\u09CD\u099F": _0x3360[72],
+    "\u09A3\u09CD\u09A0": _0x3360[73],
+    "\u09A3\u09CD\u09A2": _0x3360[74],
+    "\u09A3\u09CD\u09A3": _0x3360[75],
+    "\u09A3\u09CD\u09AE": _0x3360[76],
+    "\u09A8\u09CD\u09B8": _0x3360[77],
+    "\u09A3\u09CD\u09A1": _0x3360[78],
+    "\u09A8\u09CD\u09A4\u09C1": _0x3360[79],
+    "\u09A3\u09CD\u09AC": _0x3360[80],
+    "\u09A4\u09CD\u09A4\u09CD\u09AC": _0x3360[81],
+    "\u09A4\u09CD\u09A4": _0x3360[82],
+    "\u09A4\u09CD\u09A5": _0x3360[83],
+    "\u09A4\u09CD\u09A8": _0x3360[84],
+    "\u09A4\u09CD\u09AE": _0x3360[85],
+    "\u09A4\u09CD\u09B2": _0x3360[86],
+    "\u09A8\u09CD\u09A4\u09CD\u09AC": _0x3360[87],
+    "\u09B8\u09CD\u09A4\u09CD\u09AC": _0x3360[88],
+    "\u09A4\u09CD\u09AC": _0x3360[89],
+    "\u09A5\u09CD\u09B2": _0x3360[90],
+    "\u09A5\u09CD\u09AC": _0x3360[91],
+    "\u09A6\u09CD\u0997": _0x3360[92],
+    "\u09A6\u09CD\u0998": _0x3360[93],
+    "\u09A6\u09CD\u09A6\u09CD\u09AC": _0x3360[94],
+    "\u09A6\u09CD\u09A6": _0x3360[95],
+    "\u09A6\u09CD\u09A7\u09CD\u09AC": _0x3360[96],
+    "\u09A6\u09CD\u09A7": _0x3360[97],
+    "\u09A6\u09CD\u09A8": _0x3360[98],
+    "\u09A8\u09CD\u09A6\u09CD\u09AC": _0x3360[99],
+    "\u09A6\u09CD\u09AC": _0x3360[100],
+    "\u09A6\u09CD\u09AD\u09CD\u09B0": _0x3360[101],
+    "\u09A6\u09CD\u09AD": _0x3360[102],
+    "\u09A6\u09CD\u09AE": _0x3360[103],
+    "\u09A7\u09CD\u09A8": _0x3360[104],
+    "\u09A7\u09CD\u09AC": _0x3360[105],
+    "\u09A7\u09CD\u09AE": _0x3360[106],
+    "\u09A8\u09CD\u099F": _0x3360[107],
+    "\u09A8\u09CD\u09A0": _0x3360[108],
+    "\u09A8\u09CD\u09A1": _0x3360[109],
+    "\u09A8\u09CD\u09A4\u09CD\u09B0": _0x3360[110],
+    "\u09A8\u09CD\u09A4": _0x3360[111],
+    "\u09B8\u09CD\u09A4\u09CD\u09B0": _0x3360[112],
+    "\u09A4\u09CD\u09B0": _0x3360[113],
+    "\u09A8\u09CD\u09A5": _0x3360[114],
+    "\u09A8\u09CD\u09A7": _0x3360[115],
+    "\u09A8\u09CD\u09A8": _0x3360[116],
+    "\u09A8\u09CD\u09AC": _0x3360[117],
+    "\u09A8\u09CD\u09AE": _0x3360[118],
+    "\u09AA\u09CD\u099F": _0x3360[119],
+    "\u09AA\u09CD\u09A4": _0x3360[120],
+    "\u09AA\u09CD\u09A8": _0x3360[121],
+    "\u09AA\u09CD\u09AA": _0x3360[122],
+    "\u09AA\u09CD\u09B2": _0x3360[123],
+    "\u09AA\u09CD\u09B8": _0x3360[124],
+    "\u09AB\u09CD\u09B2": _0x3360[125],
+    "\u09AB\u09CD\u099F": _0x3360[126],
+    "\u09AC\u09CD\u099C": _0x3360[127],
+    "\u09AC\u09CD\u09A6": _0x3360[128],
+    "\u09A8\u09CD\u09A6\u09CD\u09B0": _0x3360[129],
+    "\u09A8\u09CD\u09A6": _0x3360[130],
+    "\u09AC\u09CD\u09A7": _0x3360[131],
+    "\u09AC\u09CD\u09AC": _0x3360[132],
+    "\u09AC\u09CD\u09B2": _0x3360[133],
+    "\u09AE\u09CD\u09AD\u09CD\u09B0": _0x3360[134],
+    "\u09AD\u09CD\u09B0": _0x3360[135],
+    "\u09AD\u09CD\u09B2": _0x3360[136],
+    "\u09AE\u09CD\u09A8": _0x3360[137],
+    "\u09B8\u09CD\u09AA\u09CD\u09B0": _0x3360[138],
+    "\u09AE\u09CD\u09AA\u09CD\u09B0": _0x3360[139],
+    "\u09B7\u09CD\u09AA\u09CD\u09B0": _0x3360[140],
+    "\u09AE\u09CD\u09AA": _0x3360[141],
+    "\u09AE\u09CD\u09AB": _0x3360[142],
+    "\u09AE\u09CD\u09AC\u09CD\u09B0": _0x3360[143],
+    "\u09AE\u09CD\u09AC": _0x3360[144],
+    "\u09AE\u09CD\u09AD": _0x3360[145],
+    "\u09AE\u09CD\u09AE": _0x3360[146],
+    "\u09AE\u09CD\u09B2": _0x3360[147],
+    "\u09B2\u09CD\u09B8": _0x3360[148],
+    "\u09B2\u09CD\u099F": _0x3360[149],
+    "\u09B2\u09CD\u09A1": _0x3360[150],
+    "\u09B2\u09CD\u09AA": _0x3360[151],
+    "\u09B2\u09CD\u09AB": _0x3360[152],
+    "\u09B2\u09CD\u09AC": _0x3360[153],
+    "\u09B2\u09CD\u09AE": _0x3360[154],
+    "\u09B2\u09CD\u09B2": _0x3360[155],
+    "\u09B6\u09C1": _0x3360[156],
+    "\u09B6\u09CD\u099A": _0x3360[157],
+    "\u09B6\u09CD\u099B": _0x3360[158],
+    "\u09B6\u09CD\u09A8": _0x3360[159],
+    "\u09B6\u09CD\u09AC": _0x3360[160],
+    "\u09B6\u09CD\u09AE": _0x3360[161],
+    "\u09B6\u09CD\u09B2": _0x3360[162],
+    "\u09B6\u09CD\u09B0": _0x3360[163],
+    "\u09B7\u09CD\u0995": _0x3360[164],
+    "\u09B7\u09CD\u09AC": _0x3360[165],
+    "\u09B7\u09CD\u099F": _0x3360[166],
+    "\u09B7\u09CD\u09A0": _0x3360[167],
+    "\u09B7\u09CD\u09A3": _0x3360[168],
+    "\u09B7\u09CD\u09AA": _0x3360[169],
+    "\u09B7\u09CD\u09AB": _0x3360[170],
+    "\u09B7\u09CD\u09AE": _0x3360[171],
+    "\u09B8\u09CD\u0995": _0x3360[172],
+    "\u09B8\u09CD\u099F": _0x3360[173],
+    "\u09B8\u09CD\u0996": _0x3360[174],
+    "\u09B8\u09CD\u09A4\u09C1": _0x3360[175],
+    "\u09B8\u09CD\u09A4": _0x3360[176],
+    "\u09B8\u09CD\u09A5": _0x3360[177],
+    "\u09B8\u09CD\u09A8": _0x3360[178],
+    "\u09B8\u09CD\u09AA": _0x3360[179],
+    "\u09AA\u09CD\u09B0": _0x3360[180],
+    "\u09B8\u09CD\u09AB": _0x3360[181],
+    "\u09B8\u09CD\u09AC": _0x3360[182],
+    "\u09B8\u09CD\u09AE": _0x3360[183],
+    "\u09B8\u09CD\u09B2": _0x3360[184],
+    "\u09B8\u09CD\u09B0": _0x3360[185],
+    "\u09B9\u09C1": _0x3360[186],
+    "\u09B9\u09CD\u09A3": _0x3360[187],
+    "\u09B9\u09CD\u09AC": _0x3360[188],
+    "\u09B9\u09CD\u09A8": _0x3360[189],
+    "\u09B9\u09CD\u09AE": _0x3360[190],
+    "\u09AE\u09CD\u09B0": _0x3360[191],
+    "\u09B9\u09CD\u09B2": _0x3360[192],
+    "\u09B9\u09C3": _0x3360[193],
+    "\u09DC\u09CD\u0997": _0x3360[194],
+    "\u09B2\u09CD\u0997\u09C1": _0x3360[195],
+    "\u09B2\u09CD\u0997": _0x3360[196],
+    "\u0997\u09CD\u09B0": _0x3360[197],
+    "\u0997\u09C1": _0x3360[198],
+    "\u09B0\u09CD": _0x3360[199],
+    "\u09CD\u09B0": _0x3360[200],
+    "\u09CD\u09AF": _0x3360[201],
+    "\u09CD": _0x3360[202],
+    "\u0986": _0x3360[203],
+    "\u0985": _0x3360[204],
+    "\u0987": _0x3360[205],
+    "\u0988": _0x3360[206],
+    "\u0989": _0x3360[207],
+    "\u098A": _0x3360[208],
+    "\u098B": _0x3360[209],
+    "\u098F": _0x3360[210],
+    "\u0990": _0x3360[211],
+    "\u0993": _0x3360[212],
+    "\u0994": _0x3360[213],
+    "\u0995": _0x3360[214],
+    "\u0996": _0x3360[215],
+    "\u0997": _0x3360[216],
+    "\u0998": _0x3360[217],
+    "\u0999": _0x3360[218],
+    "\u099A": _0x3360[219],
+    "\u099B": _0x3360[220],
+    "\u099C": _0x3360[57],
+    "\u099D": _0x3360[221],
+    "\u099E": _0x3360[222],
+    "\u099F": _0x3360[223],
+    "\u09A0": _0x3360[224],
+    "\u09A1": _0x3360[225],
+    "\u09A2": _0x3360[226],
+    "\u09A3": _0x3360[227],
+    "\u09A4": _0x3360[228],
+    "\u09A5": _0x3360[229],
+    "\u09A6": _0x3360[230],
+    "\u09A7": _0x3360[231],
+    "\u09A8": _0x3360[232],
+    "\u09AA": _0x3360[233],
+    "\u09AB": _0x3360[234],
+    "\u09AC": _0x3360[235],
+    "\u09AD": _0x3360[236],
+    "\u09AE": _0x3360[237],
+    "\u09AF": _0x3360[238],
+    "\u09B0": _0x3360[239],
+    "\u09B2": _0x3360[240],
+    "\u09B6": _0x3360[241],
+    "\u09B7": _0x3360[242],
+    "\u09B8": _0x3360[243],
+    "\u09B9": _0x3360[244],
+    "\u09DC": _0x3360[14],
+    "\u09DD": _0x3360[15],
+    "\u09DF": _0x3360[16],
+    "\u09CE": _0x3360[245],
+    "\u09E6": _0x3360[246],
+    "\u09E7": _0x3360[247],
+    "\u09E8": _0x3360[248],
+    "\u09E9": _0x3360[249],
+    "\u09EA": _0x3360[250],
+    "\u09EB": _0x3360[251],
+    "\u09EC": _0x3360[252],
+    "\u09ED": _0x3360[253],
+    "\u09EE": _0x3360[254],
+    "\u09EF": _0x3360[255],
+    "\u09BE": _0x3360[256],
+    "\u09BF": _0x3360[257],
+    "\u09C0": _0x3360[258],
+    "\u09C1": _0x3360[259],
+    "\u09C2": _0x3360[260],
+    "\u09C3": _0x3360[261],
+    "\u09C7": _0x3360[262],
+    "\u09C8": _0x3360[263],
+    "\u09D7": _0x3360[264],
+    "\u0982": _0x3360[265],
+    "\u0983": _0x3360[266],
+    "\u0981": _0x3360[267]
 };
-function ReArrangeUnicodeText(_0x6840x3) {
-    var _0x6840x4 = 0;
-    for (var _0x6840x5 = 0; _0x6840x5 < _0x6840x3[_0x19a6[254]]; _0x6840x5++) {
-        if (_0x6840x5 < _0x6840x3[_0x19a6[254]] && IsBanglaPreKar(_0x6840x3[_0x19a6[255]](_0x6840x5))) {
-            var _0x6840x6 = 1;
-            while (IsBanglaBanjonborno(_0x6840x3[_0x19a6[255]](_0x6840x5 - _0x6840x6))) {
-                if (_0x6840x5 - _0x6840x6 < 0) {
+function ReArrangeUnicodeText(_0xa4f2x3) {
+    var _0xa4f2x4 = 0;
+    for (var _0xa4f2x5 = 0; _0xa4f2x5 < _0xa4f2x3[_0x3360[268]]; _0xa4f2x5++) {
+        if (_0xa4f2x5 < _0xa4f2x3[_0x3360[268]] && IsBanglaPreKar(_0xa4f2x3[_0x3360[269]](_0xa4f2x5))) {
+            var _0xa4f2x6 = 1;
+            while (IsBanglaBanjonborno(_0xa4f2x3[_0x3360[269]](_0xa4f2x5 - _0xa4f2x6))) {
+                if (_0xa4f2x5 - _0xa4f2x6 < 0) {
                     break
                 }
-                ;if (_0x6840x5 - _0x6840x6 <= _0x6840x4) {
+                ;if (_0xa4f2x5 - _0xa4f2x6 <= _0xa4f2x4) {
                     break
                 }
-                ;if (IsBanglaHalant(_0x6840x3[_0x19a6[255]](_0x6840x5 - _0x6840x6 - 1))) {
-                    _0x6840x6 += 2
+                ;if (IsBanglaHalant(_0xa4f2x3[_0x3360[269]](_0xa4f2x5 - _0xa4f2x6 - 1))) {
+                    _0xa4f2x6 += 2
                 } else {
                     break
                 }
             }
-            ;var _0x6840x7 = _0x6840x3[_0x19a6[256]](0, _0x6840x5 - _0x6840x6);
-            _0x6840x7 += _0x6840x3[_0x19a6[255]](_0x6840x5);
-            _0x6840x7 += _0x6840x3[_0x19a6[256]](_0x6840x5 - _0x6840x6, _0x6840x5);
-            _0x6840x7 += _0x6840x3[_0x19a6[256]](_0x6840x5 + 1, _0x6840x3[_0x19a6[254]]);
-            _0x6840x3 = _0x6840x7;
-            _0x6840x4 = _0x6840x5 + 1;
+            ;var _0xa4f2x7 = _0xa4f2x3[_0x3360[270]](0, _0xa4f2x5 - _0xa4f2x6);
+            _0xa4f2x7 += _0xa4f2x3[_0x3360[269]](_0xa4f2x5);
+            _0xa4f2x7 += _0xa4f2x3[_0x3360[270]](_0xa4f2x5 - _0xa4f2x6, _0xa4f2x5);
+            _0xa4f2x7 += _0xa4f2x3[_0x3360[270]](_0xa4f2x5 + 1, _0xa4f2x3[_0x3360[268]]);
+            _0xa4f2x3 = _0xa4f2x7;
+            _0xa4f2x4 = _0xa4f2x5 + 1;
             continue
         }
-        ;if (_0x6840x5 < _0x6840x3[_0x19a6[254]] - 1 && IsBanglaHalant(_0x6840x3[_0x19a6[255]](_0x6840x5)) && _0x6840x3[_0x19a6[255]](_0x6840x5 - 1) == _0x19a6[257] && !IsBanglaHalant(_0x6840x3[_0x19a6[255]](_0x6840x5 - 2))) {
-            var _0x6840x6 = 1;
-            var _0x6840x8 = 0;
+        ;if (_0xa4f2x5 < _0xa4f2x3[_0x3360[268]] - 1 && IsBanglaHalant(_0xa4f2x3[_0x3360[269]](_0xa4f2x5)) && _0xa4f2x3[_0x3360[269]](_0xa4f2x5 - 1) == _0x3360[271] && !IsBanglaHalant(_0xa4f2x3[_0x3360[269]](_0xa4f2x5 - 2))) {
+            var _0xa4f2x6 = 1;
+            var _0xa4f2x8 = 0;
             while (true) {
-                if (IsBanglaBanjonborno(_0x6840x3[_0x19a6[255]](_0x6840x5 + _0x6840x6)) && IsBanglaHalant(_0x6840x3[_0x19a6[255]](_0x6840x5 + _0x6840x6 + 1))) {
-                    _0x6840x6 += 2
+                if (IsBanglaBanjonborno(_0xa4f2x3[_0x3360[269]](_0xa4f2x5 + _0xa4f2x6)) && IsBanglaHalant(_0xa4f2x3[_0x3360[269]](_0xa4f2x5 + _0xa4f2x6 + 1))) {
+                    _0xa4f2x6 += 2
                 } else {
-                    if (IsBanglaBanjonborno(_0x6840x3[_0x19a6[255]](_0x6840x5 + _0x6840x6)) && IsBanglaPreKar(_0x6840x3[_0x19a6[255]](_0x6840x5 + _0x6840x6 + 1))) {
-                        _0x6840x8 = 1;
+                    if (IsBanglaBanjonborno(_0xa4f2x3[_0x3360[269]](_0xa4f2x5 + _0xa4f2x6)) && IsBanglaPreKar(_0xa4f2x3[_0x3360[269]](_0xa4f2x5 + _0xa4f2x6 + 1))) {
+                        _0xa4f2x8 = 1;
                         break
                     } else {
                         break
                     }
                 }
             }
-            ;var _0x6840x7 = _0x6840x3[_0x19a6[256]](0, _0x6840x5 - 1);
-            _0x6840x7 += _0x6840x3[_0x19a6[256]](_0x6840x5 + _0x6840x6 + 1, _0x6840x5 + _0x6840x6 + _0x6840x8 + 1);
-            _0x6840x7 += _0x6840x3[_0x19a6[256]](_0x6840x5 + 1, _0x6840x5 + _0x6840x6 + 1);
-            _0x6840x7 += _0x6840x3[_0x19a6[255]](_0x6840x5 - 1);
-            _0x6840x7 += _0x6840x3[_0x19a6[255]](_0x6840x5);
-            _0x6840x7 += _0x6840x3[_0x19a6[256]](_0x6840x5 + _0x6840x6 + _0x6840x8 + 1, _0x6840x3[_0x19a6[254]]);
-            _0x6840x3 = _0x6840x7;
-            _0x6840x5 += (_0x6840x6 + _0x6840x8);
-            _0x6840x4 = _0x6840x5 + 1;
+            ;var _0xa4f2x7 = _0xa4f2x3[_0x3360[270]](0, _0xa4f2x5 - 1);
+            _0xa4f2x7 += _0xa4f2x3[_0x3360[270]](_0xa4f2x5 + _0xa4f2x6 + 1, _0xa4f2x5 + _0xa4f2x6 + _0xa4f2x8 + 1);
+            _0xa4f2x7 += _0xa4f2x3[_0x3360[270]](_0xa4f2x5 + 1, _0xa4f2x5 + _0xa4f2x6 + 1);
+            _0xa4f2x7 += _0xa4f2x3[_0x3360[269]](_0xa4f2x5 - 1);
+            _0xa4f2x7 += _0xa4f2x3[_0x3360[269]](_0xa4f2x5);
+            _0xa4f2x7 += _0xa4f2x3[_0x3360[270]](_0xa4f2x5 + _0xa4f2x6 + _0xa4f2x8 + 1, _0xa4f2x3[_0x3360[268]]);
+            _0xa4f2x3 = _0xa4f2x7;
+            _0xa4f2x5 += (_0xa4f2x6 + _0xa4f2x8);
+            _0xa4f2x4 = _0xa4f2x5 + 1;
             continue
         }
     }
-    ;return _0x6840x3
+    ;return _0xa4f2x3
 }
-var hD = _0x19a6[258];
-function d2h(_0x6840xb) {
-    var _0x6840xc = hD[_0x19a6[259]](_0x6840xb & 15, 1);
-    while (_0x6840xb > 15) {
-        _0x6840xb >>= 4;
-        _0x6840xc = hD[_0x19a6[259]](_0x6840xb & 15, 1) + _0x6840xc
+var hD = _0x3360[272];
+function d2h(_0xa4f2xb) {
+    var _0xa4f2xc = hD[_0x3360[273]](_0xa4f2xb & 15, 1);
+    while (_0xa4f2xb > 15) {
+        _0xa4f2xb >>= 4;
+        _0xa4f2xc = hD[_0x3360[273]](_0xa4f2xb & 15, 1) + _0xa4f2xc
     }
-    ;while (_0x6840xc[_0x19a6[254]] < 4) {
-        _0x6840xc = _0x19a6[232] + _0x6840xc
+    ;while (_0xa4f2xc[_0x3360[268]] < 4) {
+        _0xa4f2xc = _0x3360[246] + _0xa4f2xc
     }
-    ;return _0x6840xc
+    ;return _0xa4f2xc
 }
-function UnicodeToHTMLSafe(_0x6840xe) {
-    var _0x6840xf = _0x19a6[260];
-    for (i = 0; i < _0x6840xe[_0x19a6[254]]; i++) {
-        if (IsASCII(_0x6840xe[_0x19a6[261]](i))) {
-            _0x6840xf += _0x6840xe[_0x19a6[255]](i)
+function UnicodeToHTMLSafe(_0xa4f2xe) {
+    var _0xa4f2xf = _0x3360[274];
+    for (i = 0; i < _0xa4f2xe[_0x3360[268]]; i++) {
+        if (IsASCII(_0xa4f2xe[_0x3360[275]](i))) {
+            _0xa4f2xf += _0xa4f2xe[_0x3360[269]](i)
         } else {
-            _0x6840xf += _0x19a6[262] + d2h(_0x6840xe[_0x19a6[261]](i), 16) + _0x19a6[263]
+            _0xa4f2xf += _0x3360[276] + d2h(_0xa4f2xe[_0x3360[275]](i), 16) + _0x3360[277]
         }
     }
-    ;return _0x6840xf
+    ;return _0xa4f2xf
 }
-function ConvertToASCII(_0x6840x11, _0x6840xe) {
-    var _0x6840x12 = uni2bijoy_string_conversion_map;
-    var _0x6840x13;
-    _0x6840x13 = new RegExp(_0x19a6[264],_0x19a6[220]);
-    _0x6840xe = _0x6840xe[_0x19a6[266]](_0x6840x13, _0x19a6[265]);
-    _0x6840x13 = new RegExp(_0x19a6[267],_0x19a6[220]);
-    _0x6840xe = _0x6840xe[_0x19a6[266]](_0x6840x13, _0x19a6[268]);
-    _0x6840xe = ReArrangeUnicodeText(_0x6840xe);
-    for (var _0x6840x14 in _0x6840x12) {
-        _0x6840x13 = new RegExp(_0x6840x14,_0x19a6[220]);
-        _0x6840xe = _0x6840xe[_0x19a6[266]](_0x6840x13, _0x6840x12[_0x6840x14])
+function ConvertToASCII(_0xa4f2x11, _0xa4f2xe) {
+    var _0xa4f2x12 = uni2bijoy_string_conversion_map;
+    var _0xa4f2x13;
+    _0xa4f2x13 = new RegExp(_0x3360[278],_0x3360[279]);
+    _0xa4f2xe = _0xa4f2xe[_0x3360[281]](_0xa4f2x13, _0x3360[280]);
+    _0xa4f2x13 = new RegExp(_0x3360[282],_0x3360[279]);
+    _0xa4f2xe = _0xa4f2xe[_0x3360[281]](_0xa4f2x13, _0x3360[283]);
+    _0xa4f2xe = ReArrangeUnicodeText(_0xa4f2xe);
+    for (var _0xa4f2x14 in _0xa4f2x12) {
+        _0xa4f2x13 = new RegExp(_0xa4f2x14,_0x3360[279]);
+        _0xa4f2xe = _0xa4f2xe[_0x3360[281]](_0xa4f2x13, _0xa4f2x12[_0xa4f2x14])
     }
-    ;return _0x6840xe
+    ;return _0xa4f2xe
 }
+
 </script>
 
 <!-- ===== JAVASCRIPT CODE END ===== -->
-		<script>
-function openNav() {
-    document.getElementById("mySidenav").classList.add("open");
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").classList.remove("open");
-}
-</script>
 </body>
 </html> 
