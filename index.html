@@ -139,27 +139,6 @@ s20 {
 	overflow: none;
 }
 
-/* Side Nav Bar*/
-
-.sidenav {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    left: -300px;
-    overflow-x: hidden;
-    background: linear-gradient(80deg, var(--colorone), var(--colortwo));
-    padding: 80px 50px;
-    color: #FFFFFF;
-    transition: left 0.3s ease;
-    box-sizing: border-box;
-}
-
-.sidenav.open {
-    left: 0;
-}
-
 .footer {
 	margin-top: 40px;
 	font-size: 14px; 
@@ -1161,17 +1140,77 @@ s20 {
 		display: none;
 	}
 }
+/* ===============================
+   RESPONSIVE SIDEBAR
+================================ */
+
+/* Desktop */
+.sidenav {
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 80px 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1000;
+    background: linear-gradient(80deg, var(--colorone), var(--colortwo));
+    transition: width 0.3s ease;
+}
+
+.sidenav.open {
+    left: 0;
+}
+
+/* Main Content */
+.main {
+    margin-left: 220px;
+    transition: margin-left 0.3s ease;
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .sidenav {
+        width: 200px;
+    }
+
+    .main {
+        margin-left: 200px;
+    }
+}
+
+/* Mobile */
 @media screen and (max-width: 800px) {
     .sidenav {
         width: 0;
-        padding: 0;
+        height: 100vh;
         left: 0;
+        padding: 0;
+        overflow: hidden;
         transition: width 0.3s ease;
     }
 
     .sidenav.open {
-        width: 300px;
+        width: min(280px, 85vw);
         padding: 60px 20px;
+    }
+
+    .main {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .closem {
+        display: block;
+    }
+}
+
+/* Desktop Close Button Hidden */
+@media screen and (min-width: 801px) {
+    .closem {
+        display: none;
     }
 }
 </style>
