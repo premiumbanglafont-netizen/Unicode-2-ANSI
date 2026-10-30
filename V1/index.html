@@ -1,0 +1,2768 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Unicode to ANSI V1 - Converter</title>
+		<meta charset="utf-8" />
+		<meta name="theme-color" content="#ff6600" />
+		<meta property="og:image" content="/img/ogimage.png" />
+		<meta property="og:description" content="Welcome to the largest collection of Premium Bangla Fonts" />
+		<link rel="icon" type="image/png" sizes="192x192"  href="../favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+		<link rel="manifest" href="../favicon/manifest.json">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
+		<link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/5950a63964.js"></script>
+		<script src="/js/theme.js?messengerPlugin"></script>
+		<link href="/css/style.css?converterStyle" rel="stylesheet">
+		<link rel="stylesheet" href="css/converter-style.css">
+		<link href="/css/webfont.css?ruposhiLetestFile" rel="stylesheet">
+		<!-- ===== CSS CODE START ===== -->
+		 <style>
+			/* তোমার সম্পূর্ণ CSS কোড এখানে থাকবে */
+ :root {
+	--colorone: #9900DD;
+	--colortwo: #DD0099;
+}
+
+body {
+	font-family: 'Saira Semi Condensed', sans-serif;
+	color: #333333;
+	background: #f2f2f2;
+	moz-user-select: none; 
+	-webkit-user-select: none; 
+	-ms-user-select:none; 
+	user-select:none;
+	-o-user-select:none;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: var(--colortwo);
+	transition: 0.5s;
+}
+
+a:hover {
+	color: var(--colorone);
+}
+
+s14 {
+	font-size: 14px;
+}
+
+s20 {
+	font-size: 20px;
+}
+
+.dftheme {
+	background: linear-gradient(80deg, var(--colorone), var(--colortwo));
+	border: 2px #FFFFFF solid;
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.theme {
+	border: 2px #FFFFFF solid;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 4px;
+	cursor: pointer;
+}
+
+.themeA {
+	background: linear-gradient(80deg, #FF0066, #FF6600);
+}
+
+.themeB {
+	background: linear-gradient(80deg, #009900, #99CC00);
+}
+
+.themeC {
+	background: linear-gradient(80deg, #6600CC, #0099CC);
+}
+
+.themeD {
+	background: linear-gradient(80deg, #9900DD, #DD0099);
+}
+
+.themeE {
+	background: linear-gradient(80deg, #FF6633, #FFCC00);
+}
+
+.themeF {
+	background: linear-gradient(80deg, #00CC99, #0099CC);
+}
+
+.colortitle {
+	display: inline-block; 
+	vertical-align: middle; 
+	margin-left: 5px;
+	color: rgb(250, 250, 250, 0.8);
+	cursor: pointer;
+}
+
+.thememenu {
+	display: inline-block;
+	position: relative; 
+	margin: 5px;
+}
+
+.themebox {
+	height: 0;
+	padding: 0;
+	overflow: hidden;
+	position: absolute;
+	background-color: #FFFFFF;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	transition: 0.5s;
+	width: 160px;
+	border-radius: 10px;
+	margin-left: -26px;
+}
+
+.themeboxact {
+	height: 95px;
+	padding: 10px;
+	opacity: 1;
+	overflow: none;
+}
+
+.footer {
+	margin-top: 40px;
+	font-size: 14px; 
+	color: rgb(250, 250, 250, 0.6); 
+}
+
+.footer a {
+	color: rgb(250, 250, 250, 0.8);  
+	transition: 0.5s;
+}
+
+.footer a:hover {
+	color: #FFFFFF;
+}
+
+.footer .dbr {
+	height: 15px
+}
+
+.main {
+	margin-left: 300px;
+	padding: 40px;
+}
+
+.menu {
+	padding: 10px 15px 10px 15px; 
+	margin: 5px 0 5px;
+	transition: 0.5s;
+	color: #FFFFFF;
+}
+
+.menu:hover {
+	background: rgb(0,0,0, 0.1);
+	border-radius: 10px;
+	
+}
+
+.menuactive {
+	background: #FFFFFF; 
+	color: var(--colorone); 
+	font-weight: bold; 
+	padding: 10px 15px 10px 15px; 
+	margin: 5px 0 5px; 
+	border-radius: 10px;
+}
+
+/* Main Body */
+
+.right {
+	float: right;
+}
+
+.rightpc {
+	float: right;
+}
+
+.title {
+	background: linear-gradient(80deg, var(--colorone), var(--colortwo)); 
+	color: #FFFFFF; 
+	padding: 20px 40px 20px 40px; 
+	border-radius: 30px; 
+	font-size: 45px; 
+	width: 500px;
+}
+
+.customize {
+	padding: 20px 0 15px 0;
+	border-bottom: #C0C0C0 solid 2px;
+	margin-bottom: 10px;
+	position: sticky;
+	top: 0;
+	background: #f2f2f2;
+}
+
+.semititle {
+	padding: 20px 0 15px 0;
+	border-bottom: #C0C0C0 solid 2px;
+	margin-bottom: 10px;
+	position: sticky;
+	top: 0;
+	background: #f2f2f2;
+	text-align: left;
+}
+
+.fontbox {
+	background: #ffffff;
+	width: 420px;
+	padding:  15px 20px 20px 20px;
+	border-radius: 20px;
+	display: inline-table;
+	margin: 7px 5px 7px 5px;
+	text-align: left;
+	transition: 0.5s;
+}
+
+.box {
+	background: #ffffff;
+	padding:  20px 20px 20px 20px;
+	border-radius: 20px;
+	display: inline-block;
+	margin: 18px 5px 5px 5px;
+	text-align: left;
+	transition: 0.5s;
+	vertical-align: top;
+}
+
+.preview {
+	font-size: 40px; 
+	color: #000000; 
+	padding: 10px;
+}
+
+.fontbox:hover , .download:hover , .box:hover, .toolbox:hover, .inputsubmit:hover , .designersocial:hover, .designerbox:hover , .theme:hover{
+	box-shadow: 0 10px 16px -6px rgb(0,0,0,0.2);
+}
+
+.fontdetail {
+	width: 260px;
+}
+
+.note {
+	background: #f2f2f2;
+	padding: 10px 20px 10px 20px;
+	border-radius: 10px;
+	margin: 10px 0 0 0;
+	font-size: 14px;
+	text-align: center;
+}
+
+.aboutnote {
+	padding: 10px 20px; 
+	background: #F0F0F0; 
+	border-radius: 10px; 
+	font-style: italic; 
+	margin: -5px -10px 15px -10px;
+}
+/* Inputs */
+
+.textbox {
+	padding: 5px;
+	font-family: 'Saira Semi Condensed', sans-serif;
+	outline: 0;
+	border: 0;
+	width: 120px;
+	font-size: 16px;
+	background: #f2f2f2;
+}
+
+.selector {
+	padding: 5px;
+	font-family: 'Saira Semi Condensed', sans-serif;
+	outline: 0;
+	border: 0;
+	width: 100px;
+	font-size: 16px;
+	background: #f2f2f2;
+	cursor: pointer;
+}
+
+.slider {
+	-webkit-appearance: none;
+	width: 100px;
+	height: 5px;
+	border-radius: 5px;
+	background: #d3d3d3;
+	outline: none;
+	transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: linear-gradient(80deg, var(--colorone), var(--colortwo));
+	cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: linear-gradient(80deg, var(--colorone), var(--colortwo));
+	cursor: pointer;
+}
+
+.download {
+	background: linear-gradient(80deg, var(--colorone), var(--colortwo));
+	color: #FFFFFF;
+	border: 0;
+	outline: 0;
+	font-family: 'Saira Semi Condensed', sans-serif;
+	font-size: 16px;
+	padding: 10px;
+	border-radius: 15px;
+	width: calc(100% + 20px);
+	margin: 12px -10px -10px -10px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.inputtext {
+	width: calc(100% - 10px);
+	max-width: 400px;
+	padding: 10px;
+	outline: 0; 
+	border: var(--colortwo) solid 1px;
+	border-radius: 10px;
+	margin: 5px 0 10px 0; 
+	font-family: 'Saira Semi Condensed', sans-serif;
+	font-size: 14px;
+}
+
+.inputsubmit {
+	padding: 10px 30px;
+	background: linear-gradient(80deg, var(--colorone), var(--colortwo));
+	font-family: 'Saira Semi Condensed', sans-serif;
+	font-size: 16px;
+	border-radius: 10px;
+	outline: 0;
+	border: 0;
+	cursor: pointer;
+	color: #FFFFFF;
+	margin: 8px 0 5px 0;
+	transition: 0.5s;
+}
+
+.morefont {
+	width: 60%;
+}
+
+/* Designers */
+
+.logo {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background: #f2f2f2;
+}
+.logo:before {
+    position: absolute;
+    z-index: -1;
+  	top: -10px;
+  	right: -10px;
+  	width: 220px;
+    height: 220px;
+    background: linear-gradient(80deg, var(--colorone), var(--colortwo));
+    border-radius: 100%;
+    content: '';
+}
+
+.logocont {
+	display: inline-table;
+	vertical-align: middle;
+	margin: 30px 20px 30px 20px;
+	padding: 10px;
+}
+
+.designerbox {
+	background: #ffffff;
+	border-radius: 20px;
+	display: inline-block;
+	text-align: left;
+	transition: 0.5s;
+	vertical-align: middle;
+	margin: 18px 5px 18px 5px;
+	width: calc(100% - 350px); 
+	padding: 30px 35px
+}
+
+.designersocial {
+	background: linear-gradient(80deg, var(--colorone), var(--colortwo)); 
+	color: #FFFFFF; 
+	padding: 8px; 
+	font-size: 25px; 
+	border-radius: 100%;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin: 8px 2px 8px 2px;
+	transition: 0.5s;
+}
+
+.designers {
+	margin-top: 100px;
+}
+
+.boxlogoborder {
+	background: linear-gradient(80deg, var(--colorone), var(--colortwo));
+	display: inline-block;
+	padding: 10px;
+	border-radius: 100%;
+	margin-top: -100px;
+	margin-bottom: 10px;
+}
+
+.boxlogo {
+	width: 160px; 
+	border-radius: 100%; 
+	border: #f2f2f2 solid 6px;
+}
+
+/* Font Menu Tab*/
+
+.fontmenu {
+	width: calc(100% - 370px);
+}
+
+.fontmenutab {
+	background: linear-gradient(80deg, var(--colorone), var(--colortwo));
+	margin: -20px -20px 20px -20px;
+	border-radius: 20px 20px 0 0;
+	padding: 15px 15px 0 15px;
+	text-align: center;
+}
+
+.tab {
+  overflow: hidden;
+}
+
+.tab button {
+	font-family: 'Saira Semi Condensed', sans-serif;
+	background-color: rgb(0,0,0,0);
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 10px 14px;
+	transition: 0.5s;
+	border-radius: 10px 10px 0 0; 
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+.tab button:hover {
+	background-color: #FFFFFF;
+	color: var(--colorone);
+}
+
+.tab button.active {
+	background-color: #FFFFFF;
+	color: var(--colorone);
+	font-weight: bold;
+	padding: 10px 22px;
+}
+
+.tabcontent {
+	display: none;
+	padding: 10px 20px;
+}
+
+.tabcontent table {
+	display: inline-block;
+}
+
+.tabcontent textarea {
+	width: 100%;
+	padding: 10px 20px 20px 20px;
+	font-size: 40px;
+	resize: none;
+	min-height: 180px;
+	outline: 0;
+	border: 0;
+}
+
+.paratitle {
+	font-size: 50px;
+	transition: 0.5s;
+}
+
+.parapassage {
+	font-size: 18px;
+}
+
+.paratitle:hover {
+	color: var(--colorone);
+}
+
+.trycont {
+	padding: 0px 0 6px 0;
+	border-bottom: #C0C0C0 solid 2px;
+	margin: 0 5px 10px 5px;
+	text-align: left;
+	overflow: auto;
+}
+
+.trycont .leftpc {
+	padding: 3px 0;
+}
+
+.trybtn {
+	color: var(--colorone); 
+	background: #ffffff;
+	border: var(--colorone) 1px solid;
+	border-radius: 5px;
+	text-align: center;
+	width: 32px;
+	height: 32px;
+	transition: 0.5s;
+}
+.trybtn .material-icons {
+	color: var(--colorone);
+	font-size: 18px;
+}
+.trybtnact{
+    background: linear-gradient(var(--colorone),var(--colortwo));
+	color: #ffffff; 
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	width: 32px;
+	height: 32px;
+	transition: 0.5s box-shadow;
+}
+.trybtnact .material-icons {
+	color: #ffffff;
+}
+.trybtn:hover {
+    box-shadow: 0 10px 16px -6px rgb(0,0,0,0.2);
+}
+
+.trybold {
+	font-weight: bold;
+}
+
+.tryitalic {
+	font-style: italic;
+}
+
+.tryunderline {
+	text-decoration: underline;
+}
+
+.tryleft {
+	text-align: left;
+}
+.trycenter {
+	text-align: center;
+}
+.tryright {
+	text-align: right;
+}
+.tryblack {
+	background: #231f20;
+	color: #FFFFFF;
+	border-radius: 10px;
+}
+
+
+
+
+/* Toast */
+#toast, .toast{
+	visibility: hidden;
+	min-width: 250px;
+	margin-left: -125px;
+	background-color: rgb(0,0,0,0.5);
+	color: #FFFFFF;
+	text-align: center;
+	border-radius: 10px;
+	padding: 10px 0;
+	position: fixed;
+	z-index: 1;
+	left: 50%;
+	bottom: 30px;
+}
+
+#toast.show, .toastShow{
+	visibility: visible;
+	-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+
+
+@-webkit-keyframes fadein {
+	from {bottom: 0; opacity: 0;} 
+	to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+	from {bottom: 0; opacity: 0;}
+	to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+	from {bottom: 30px; opacity: 1;} 
+	to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+	from {bottom: 30px; opacity: 1;}
+	to {bottom: 0; opacity: 0;}
+}
+
+
+
+/* Tools */
+.tool {
+	background: linear-gradient(80deg, var(--colorone), var(--colortwo));
+	margin: -20px 20px -20px -20px;
+	width: 120px;
+	padding: 10px;
+	border-radius: 20px 0 0 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.toolbox {
+	background: #ffffff;
+	padding:  20px 20px 20px 20px;
+	border-radius: 20px;
+	display: inline-block;
+	margin: 7px;
+	text-align: left;
+	transition: 0.5s;
+	vertical-align: top;
+	width: calc(100% - 80px);  
+	color: #333333;
+}
+
+.toolText {
+	width: calc(100% - 180px); 
+	display: inline-block; 
+	vertical-align: middle; 
+	padding: 0 10px;
+}
+
+
+/* Pagination */
+
+.nexprebtn {
+	background: linear-gradient(80deg, var(--colorone), var(--colortwo));
+	cursor: pointer;
+	border: 0;
+	outline: 0;
+	width: 50px;
+	height: 50px;
+	border-radius: 30px;
+	font-size: 25px;
+	color: #FFFFFF;
+	text-align: center;
+	display: inline-block;
+	vertical-align: center;
+	margin: 20px 10px;
+	transition: 0.5s;
+}
+
+.nexprebtn:hover {
+	box-shadow: 0 10px 16px -6px rgb(0,0,0,0.2);
+}
+
+.nexprebtn:disabled {
+	opacity: 0.5;
+}
+
+
+
+
+/* Converterer Jinish */
+
+.textareaContainer {
+	display: inline-block; 
+	vertical-align: middle; 
+	width: calc(50% - 40px);
+}
+
+.kboardTextareaContainer {
+	display: block; 
+	width: 100%;
+}
+
+
+.textareaTitle {
+	background: linear-gradient(80deg, var(--colorone), var(--colortwo)); 
+	color: #FFFFFF; 
+	border-radius: 15px 15px 0 0; 
+	font-size: 15px; 
+	padding: 4px;
+	width: calc(100% - 8px);
+	overflow: auto;
+	text-align: left;
+}
+
+.textareaName {
+	font-size: 18px;
+	padding: 13px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.textareaContainer .textarea {
+	border-radius: 0 0 15px 15px;
+	padding: 20px;
+	font-size: 25px;
+	width: 100%;
+	height: 350px;
+	border: 0;
+	outline: 0;
+	resize: none;
+}
+
+.kboardTextareaContainer .textarea {
+	border-radius: 0 0 15px 15px;
+	padding: 20px;
+	font-size: 25px;
+	width: 100%;
+	height: 300px;
+	border: 0;
+	outline: 0;
+	resize: none;
+}
+
+.clrButton {
+	font-weight: bold;
+	background: #ffffff; 
+	color: var(--colortwo);
+	float: right; 
+	padding: 10px; 
+	border-radius: 10px; 
+	margin: 5px 4px; 
+	font-size: 14px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.clrButton .material-icons {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+.clrButton .btnName {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+.clrButton:hover {
+	background: rgb(0,0,0, 0.2);
+	color: #FFFFFF;
+}
+
+.convertIcon {
+	padding: 10px; 
+	font-size: 40px;
+	display: inline-block;
+	vertical-align: middle;
+	color: #999999;
+}
+
+.convertMode {
+	background: rgb(0,0,0,0.1); 
+	border-radius: 15px; 
+	padding: 15px 20px; 
+	display: inline-block; 
+	margin: 5px;
+	transition: 0.5s;
+	color: #666666;
+}
+
+.activeMode, .convertMode:hover {
+	background: linear-gradient(80deg, var(--colorone), var(--colortwo)); 
+	color: #FFFFFF;
+}
+
+.convertMode div {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 5px;
+}
+
+
+/*converter shesh */
+
+/* okkhor originals */
+
+.originalYes {
+	background: var(--colortwo);
+	display: inline-block; 
+	vertical-align: middle; 
+	color: #FFFFFF; 
+	padding: 1px 6px; 
+	font-size: 12px; 
+	border-radius: 4px; 
+	margin: 3px 0;
+	transition: 0.5s;
+}
+
+.originalYes:hover {
+	background: var(--colorone);
+}
+
+.originalNo {
+	display: none;
+}
+
+/*okkhor original end */
+
+/*keyboard start */
+
+.keyboard {
+	background: #FFFFFF; 
+	padding: 8px; 
+	border-radius: 15px; 
+	display: inline-block;
+}
+
+.keyboard .key {
+	width: 60px; 
+	height: 60px; 
+	border-radius: 8px; 
+	background: #DDDDDD; 
+	display: inline-block; 
+	vertical-align: middle; 
+	margin: 1.5px 0; 
+}
+.keyboard .key .defKey {
+	width: 25px; 
+	height: 30px; 
+	line-height: 30px; 
+	display: inline-block; 
+	vertical-align: middle; 
+	border-radius: 8px; 
+	opacity: 0.6;
+}
+.keyboard .key .valKeyCont {
+	display: inline-block; 
+	vertical-align: middle;
+}
+.keyboard .key .valKeyCont .valKey {
+	width: 25px; 
+	height: 30px; 
+	line-height: 30px; 
+	border-radius: 8px;
+	font-weight: bold; 
+	transition: 0.5s; 
+	cursor: pointer;
+}
+.keyboard .key .valKeyCont .valKey:hover {
+	background: rgb(0,0,0,0.2);
+}
+.keyboard .keyBksp {
+	width: 100px; 
+	height: 60px; 
+	border-radius: 8px; 
+	display: inline-block; 
+	vertical-align: middle; 
+	line-height: 60px; 
+	background: linear-gradient(80deg, var(--colorone), var(--colortwo)); 
+	color: #FFFFFF; 
+	opacity: 0.8; 
+	margin: 1.5px 0; 
+}
+.keyboard .keyCplk {
+	width: 112px; 
+	height: 60px; 
+	border-radius: 8px; 
+	display: inline-block; 
+	vertical-align: middle; 
+	line-height: 60px; 
+	background: linear-gradient(80deg, var(--colorone), var(--colortwo)); 
+	color: #FFFFFF; 
+	opacity: 0.8; 
+	margin: 1.5px 0; 
+}
+.keyboard .keyShft {
+	width: 143px; 
+	height: 60px; 
+	border-radius: 8px; 
+	display: inline-block; 
+	vertical-align: middle; 
+	line-height: 60px; 
+	background: linear-gradient(80deg, var(--colorone), var(--colortwo)); 
+	color: #FFFFFF; 
+	opacity: 0.8; 
+	margin: 1.5px 0; 
+}
+
+/*keyboard end*/
+
+
+/* Mobile Extra */
+
+.headerm {
+	display: none;
+}
+
+.closem {
+	display: none;
+}
+
+@media screen and (min-width: 1900px) {
+	.fontbox {
+		width: 450px;
+	}
+}
+
+@media screen and (max-width: 1600px) {
+	.fontbox {
+		width: 500px;
+	}
+}
+
+@media screen and (max-width: 1600px) {
+	.fontbox {
+		width: 500px;
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	.fontbox {
+		width: 460px;
+	}
+}
+
+@media screen and (max-width: 1400px) {
+	.fontbox {
+		width: 420px;
+	}
+	.sidenav {
+		padding: 60px 50px 60px 50px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.sidenav {
+	    width: 0px;
+		overflow-x: hidden;
+		padding: 0;
+		transition: width 0.5s;
+		box-shadow: 10px 0px 18px rgb(0,0,0,0.3);
+		z-index: 3;
+	}
+	
+	.closem {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 50px;
+		color: #FFFFFF;
+		text-decoration: none;
+		margin-left: 50px;
+	}
+	
+	.footer {
+		position: static;
+		width: 100%;
+		margin-top: 30px;
+	}
+	
+	.headerm {
+		display: block;
+		background: linear-gradient(80deg, var(--colorone), var(--colortwo));
+		padding: 10px;
+		font-size: 35px;
+		color: #FFFFFF;
+		margin: -18px -18px 18px -18px;
+		position: sticky;
+		z-index: 2;
+		top: 0;
+		border-bottom: solid 2px #f2f2f2;
+	}
+	
+	.rightpc {
+		float: none;
+	}
+	
+	.main {
+		margin-left: 0;
+		padding: 10px;
+	}
+	
+	.customize {
+		text-align: center;
+		top: 35px;
+		z-index: 1;
+	}
+	
+	.semititle {
+		z-index: 1;
+		top: 77px;
+	}
+	
+	
+	.title {
+		font-size: 35px;
+		padding: 15px 30px 15px 30px;
+		width: calc(100% - 60px)
+	}
+	
+	.fontbox {
+		width: calc(100% - 60px);
+	}
+	
+	.fontmenu {
+		width: calc(100% - 40px);
+		padding: 10px;
+	}
+	.fontmenutab {
+		margin: -10px -10px 15px -10px;
+	}
+	
+	.paratitle {
+		font-size: 40px;
+	}
+	
+	.trycont {
+		margin: 0px 0 10px 0;
+		padding-top: 8px;
+		text-align: center;
+	}
+	.morefont {
+		width: 95%;
+	}
+
+
+	.logocont {
+		text-align: center;
+		width: calc(100% - 60px);
+	}
+	.designerbox {
+		margin-top: 0px;
+		width: calc(100% - 80px)
+	}
+
+	.tool {
+		margin: -20px -20px 15px -20px;
+		width: calc(100% + 20px);
+		border-radius: 20px 20px 0 0;
+		text-align: center;
+	}
+
+	.tool img {
+		width: 150px;
+	}
+
+	.toolText {
+		width: calc(100% - 20px); 
+	}
+
+	.trycont .leftpc {
+		padding: 0 0 3px 0;
+	}
+
+
+	.textareaContainer {
+		display: block; 
+		width: 100%;
+	}
+	.textarea {
+		height: 300px;
+	}
+
+	.convertIcon {
+		transform: rotate(-90deg);
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.footer {
+		position: fixed; 
+		bottom: 80px;
+		left: 0; 
+		width: 200px;
+		padding: 0 50px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.convertMode {
+		display: block;
+		width: calc(100% - 50px);
+		text-align: center;
+	}
+
+
+	.clrButton .material-icons {
+		margin-right: 0px;
+	}
+
+	.clrButton .btnName {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 1355px) {
+	.keyboard .keyShft, .keyboard .keyCplk, .keyboard .keyBksp {
+		display: none;
+	}
+}
+@media screen and (max-width: 1249px) {
+	.keyboard br {
+		display: none;
+	}
+}
+/* ===============================
+   RESPONSIVE SIDEBAR
+================================ */
+
+/* Desktop */
+.sidenav {
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 80px 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1000;
+    background: linear-gradient(80deg, var(--colorone), var(--colortwo));
+    transition: width 0.3s ease;
+}
+
+.sidenav.open {
+    left: 0;
+}
+
+/* Main Content */
+.main {
+    margin-left: 220px;
+    transition: margin-left 0.3s ease;
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .sidenav {
+        width: 200px;
+    }
+
+    .main {
+        margin-left: 200px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 800px) {
+    .sidenav {
+        width: 0;
+        height: 100vh;
+        left: 0;
+        padding: 0;
+        overflow: hidden;
+        transition: width 0.3s ease;
+    }
+
+    .sidenav.open {
+        width: min(280px, 85vw);
+        padding: 60px 20px;
+    }
+
+    .main {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .closem {
+        display: block;
+    }
+}
+
+/* Desktop Close Button Hidden */
+@media screen and (min-width: 801px) {
+    .closem {
+        display: none;
+    }
+}
+</style>
+	<!-- ===== CSS CODE END ===== -->
+		<script src="/js/converter/common.js" defer></script>
+		<script src="/js/converter/uni2ansiv1/defualt.js?ansiInput__fixed" defer></script>
+	    <script src="/js/converter/uni2ansiv1/converter.js?newAnsiInput_fixed" defer></script>
+	    <script src="/js/converter/uni2ansiv1/rconverter.js?ansiInput_fixed" defer></script>
+	    <script data-ad-client="ca-pub-9213624182321474" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	</head>
+	<body>
+
+	<div class="sidenav" id="mySidenav">
+		<a href="javascript:void(0)" class="closem" onclick="closeNav()">&times;</a>
+		<div class="thememenu" onclick="myFunction()"></div>
+		<center>
+			<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEsVm0GeG_oxGfxhSxNAHX6zhw7vs9-VEaV_961L0Bhag1-22WmmIp8KJ3_O88zitQxbpn8tGq6O2KkYl-O4B6qKIGu3cxIfPZo5tTmUMWZFhDZOJkt1enznCNtqLkMBxJ6ipCl0GSafaezvcVXJMcU5ednLtZWHuZ52Mu4-M5isHVzod2NHsSOx2gujs/w300-rw/20260915_115301.png" width="180px">
+				<div class="thememenu" onclick="myFunction()">
+				<div class="themebox" id="themeBOX">
+					
+				</div>
+			</div>
+		</center>
+		<a href="https://premiumbanglafont-netizen.github.io/Font-Preview/"><div class="menu">Font Preview</div></a>
+		<a href="https://premiumbanglafont-netizen.github.io/font-metadata-editor/"><div class="menu">Font Metadata Editor</div></a>
+		<a href="https://premiumbanglafont-netizen.github.io/Font-Merger/"><div class="menu">Font Merger</div></a>
+		<a href="https://premiumbanglafont-netizen.github.io/Font-Format-Converter/"><div class="menu">Font Format Converter</div></a>
+		<a href="https://premiumbanglafont-netizen.github.io/Glyph-Remover/"><div class="menu">Glyph Remover</div></a>
+		
+		<div class="footer">
+			<center> 
+				<a href="https://premiumbanglafont.blogspot.com">Home</a> • 
+				<a href="https://premiumbanglafont.blogspot.com/p/eula.html">Eula</a> • <a href="https://premiumbanglafont.blogspot.com/p/privacy-policy.html">Privacy Policy</a> • <a href="https://premiumbanglafont.blogspot.com/p/about.html">About Us</a> • <a href="https://premiumbanglafont.blogspot.com/p/contact-us.html">Contact Us</a>
+				<br/><div class="dbr"></div>
+				PBFF © 2026
+				<div style="font-size: 12px">Premium Bangla Font. All rights reserved.</div>
+			</center>
+		</div>
+	</div>
+	<div class="main">
+		<table class="headerm">
+			<tr>
+				<td><i class="material-icons" style="font-size: 40px; padding: 0 10px;" onclick="openNav()">menu</i></td>
+				<td><b>FONT </b><b>CONVERTER</b></td>
+			</tr>
+		</table>
+		
+
+		<div class="title">Converter V1</div>
+		<div style="height: 15px"></div>
+		<div class="convertMode activeMode"><div>Unicode</div><div class="material-icons">code</div><div>ANSI V1</div></div>
+		<a href="UnicodeToANSIV2.html"><div class="convertMode"><div>Unicode</div><div class="material-icons">code</div><div>ANSI V2</div></div></a>
+		<a href="UnicodeToANSIV3.html"><div class="convertMode"><div>Unicode</div><div class="material-icons">code</div><div>ANSI V3</div></div></a>
+		<div style="height: 15px"></div>
+		<center>
+			<div class="textareaContainer">
+				<div class="textareaTitle">
+					<div class="textareaName">Unicode</div>
+					<div class="clrButton" onclick="clearText()"><div class="material-icons">clear</div><div class="btnName">Clear</div></div>
+					<div class="clrButton" id="pasteUni"><div class="material-icons">content_paste</div><div class="btnName">Paste</div></div>
+					<div class="clrButton" onclick="doCopy('uniText')"><div class="material-icons">content_copy</div><div class="btnName">Copy</div></div>
+				</div>
+				<textarea id="uniText" class="textarea" placeholder="এখানে ইউনিকোড লিখুন" style="font-family: RuposhiUnicode;"></textarea>
+			</div>
+			<span class="material-icons convertIcon">code</span>
+			<div class="textareaContainer">
+				<div class="textareaTitle">
+					<div class="textareaName">ANSI V1</div>
+					<div class="clrButton" onclick="clearText()"><div class="material-icons">clear</div><div class="btnName">Clear</div></div>
+					<div class="clrButton" id="pasteAnsi"><div class="material-icons">content_paste</div><div class="btnName">Paste</div></div>
+					<div class="clrButton" onclick="doCopy('ansiText')"><div class="material-icons">content_copy</div><div class="btnName">Copy</div></div>
+				</div>
+				<textarea id="ansiText" class="textarea" placeholder="GLv‡b GGbGmAvB wjLyb" style="font-family: RuposhiANSIV1;"></textarea>
+			</div>
+
+		</center>
+
+		<br/>
+		
+	</div>
+	<div id="copySuccess" class="toast">Successfully Copied to Clipboard</div>
+	<div id="pasteSuccess" class="toast">Successfully Pasted in Textbox</div>
+	<div id="clearSuccess" class="toast">Textbox is Cleared Successfully</div>
+	<div id="funcFailed" class="toast">Textbox is Empty!</div>
+	<div id="pasteFailed" class="toast">Clipboard Permission Denied!</div>
+	<div id="pasteEmpty" class="toast">Clipboard is Empty!</div>
+
+	<script src="/js/menum.js"></script>
+	<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"bf45b8cd9def4589a4a7dd20fc48b3ee","r":1,"spa":2}' crossorigin="anonymous"></script>
+<!-- ===== JAVASCRIPT CODE START ===== -->
+
+<script>
+/* common.js ফাইলের সম্পূর্ণ কোড এখানে */
+var _0x1ddac7 = function() {
+    var _0x2397a1 = !![];
+    return function(_0x18008f, _0x4e277e) {
+        var _0x24ced4 = _0x2397a1 ? function() {
+            if (_0x4e277e) {
+                var _0x3b651e = _0x4e277e['\x61\x70\x70\x6c\x79'](_0x18008f, arguments);
+                _0x4e277e = null;
+                return _0x3b651e;
+            }
+        }
+        : function() {}
+        ;
+        _0x2397a1 = ![];
+        return _0x24ced4;
+    }
+    ;
+}();
+var _0x4d85bc = _0x1ddac7(this, function() {
+    var _0x46b3bc = function() {
+        var _0x5a9451;
+        try {
+            _0x5a9451 = Function('\x72\x65\x74\x75\x72\x6e\x20\x28\x66\x75\x6e\x63\x74\x69\x6f\x6e\x28\x29\x20' + '\x7b\x7d\x2e\x63\x6f\x6e\x73\x74\x72\x75\x63\x74\x6f\x72\x28\x22\x72\x65\x74\x75\x72\x6e\x20\x74\x68\x69\x73\x22\x29\x28\x20\x29' + '\x29\x3b')();
+        } catch (_0x183f51) {
+            _0x5a9451 = window;
+        }
+        return _0x5a9451;
+    };
+    var _0x5debc5 = _0x46b3bc();
+    var _0x252f06 = function() {
+        return {
+            '\x6b\x65\x79': '\x69\x74\x65\x6d',
+            '\x76\x61\x6c\x75\x65': '\x61\x74\x74\x72\x69\x62\x75\x74\x65',
+            '\x67\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65': function() {
+                for (var _0x2ef84d = 0x0; _0x2ef84d < 0x3e8; _0x2ef84d--) {
+                    var _0x4552b2 = _0x2ef84d > 0x0;
+                    switch (_0x4552b2) {
+                    case !![]:
+                        return this['\x69\x74\x65\x6d'] + '\x5f' + this['\x76\x61\x6c\x75\x65'] + '\x5f' + _0x2ef84d;
+                    default:
+                        this['\x69\x74\x65\x6d'] + '\x5f' + this['\x76\x61\x6c\x75\x65'];
+                    }
+                }
+            }()
+        };
+    };
+    var _0x198b8f = new RegExp('\x5b\x77\x61\x45\x78\x7a\x45\x54\x79\x71\x4d\x6c\x66\x51\x77\x4a\x52\x75\x57\x79\x76\x4e\x78\x6e\x4c\x58\x4a\x6a\x44\x6a\x57\x74\x5d','\x67');
+    var _0x19e0ac = '\x77\x61\x45\x6f\x78\x7a\x6b\x45\x54\x6b\x68\x79\x71\x4d\x6c\x6f\x66\x51\x77\x72\x35\x32\x4a\x2e\x63\x52\x75\x6f\x57\x79\x76\x6d\x4e\x78\x6e\x4c\x58\x4a\x6a\x44\x6a\x57\x74'['\x72\x65\x70\x6c\x61\x63\x65'](_0x198b8f, '')['\x73\x70\x6c\x69\x74']('\x3b');
+    var _0x117aa3;
+    var _0x3992f7;
+    var _0x1beb9e;
+    var _0x4ff9e4;
+    for (var _0x23a936 in _0x5debc5) {
+        if (_0x23a936['\x6c\x65\x6e\x67\x74\x68'] == 0x8 && _0x23a936['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](0x7) == 0x74 && _0x23a936['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](0x5) == 0x65 && _0x23a936['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](0x3) == 0x75 && _0x23a936['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](0x0) == 0x64) {
+            _0x117aa3 = _0x23a936;
+            break;
+        }
+    }
+    for (var _0x3425af in _0x5debc5[_0x117aa3]) {
+        if (_0x3425af['\x6c\x65\x6e\x67\x74\x68'] == 0x6 && _0x3425af['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](0x5) == 0x6e && _0x3425af['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](0x0) == 0x64) {
+            _0x3992f7 = _0x3425af;
+            break;
+        }
+    }
+    if (!('\x7e' > _0x3992f7)) {
+        for (var _0x53913e in _0x5debc5[_0x117aa3]) {
+            if (_0x53913e['\x6c\x65\x6e\x67\x74\x68'] == 0x8 && _0x53913e['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](0x7) == 0x6e && _0x53913e['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](0x0) == 0x6c) {
+                _0x1beb9e = _0x53913e;
+                break;
+            }
+        }
+        for (var _0x2880af in _0x5debc5[_0x117aa3][_0x1beb9e]) {
+            if (_0x2880af['\x6c\x65\x6e\x67\x74\x68'] == 0x8 && _0x2880af['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](0x7) == 0x65 && _0x2880af['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](0x0) == 0x68) {
+                _0x4ff9e4 = _0x2880af;
+                break;
+            }
+        }
+    }
+    if (!_0x117aa3 || !_0x5debc5[_0x117aa3]) {
+        return;
+    }
+    var _0x4b0b21 = _0x5debc5[_0x117aa3][_0x3992f7];
+    var _0x38841c = !!_0x5debc5[_0x117aa3][_0x1beb9e] && _0x5debc5[_0x117aa3][_0x1beb9e][_0x4ff9e4];
+    var _0x2ebd23 = _0x4b0b21 || _0x38841c;
+    if (!_0x2ebd23) {
+        return;
+    }
+    var _0x2683a3 = ![];
+    for (var _0x46461f = 0x0; _0x46461f < _0x19e0ac['\x6c\x65\x6e\x67\x74\x68']; _0x46461f++) {
+        var _0x3992f7 = _0x19e0ac[_0x46461f];
+        var _0x592880 = _0x3992f7[0x0] === String['\x66\x72\x6f\x6d\x43\x68\x61\x72\x43\x6f\x64\x65'](0x2e) ? _0x3992f7['\x73\x6c\x69\x63\x65'](0x1) : _0x3992f7;
+        var _0x5dd6a8 = _0x2ebd23['\x6c\x65\x6e\x67\x74\x68'] - _0x592880['\x6c\x65\x6e\x67\x74\x68'];
+        var _0x49ab2b = _0x2ebd23['\x69\x6e\x64\x65\x78\x4f\x66'](_0x592880, _0x5dd6a8);
+        var _0x3e3e55 = _0x49ab2b !== -0x1 && _0x49ab2b === _0x5dd6a8;
+        if (_0x3e3e55) {
+            if (_0x2ebd23['\x6c\x65\x6e\x67\x74\x68'] == _0x3992f7['\x6c\x65\x6e\x67\x74\x68'] || _0x3992f7['\x69\x6e\x64\x65\x78\x4f\x66']('\x2e') === 0x0) {
+                _0x2683a3 = !![];
+            }
+        }
+    }
+    if (!_0x2683a3) {
+        data;
+    } else {
+        return;
+    }
+    _0x252f06();
+});
+_0x4d85bc();
+function Insert(_0x4b0d81, _0x1e5793) {
+    if (document['\x73\x65\x6c\x65\x63\x74\x69\x6f\x6e']) {
+        _0x4b0d81['\x66\x6f\x63\x75\x73']();
+        sel = document['\x73\x65\x6c\x65\x63\x74\x69\x6f\x6e']['\x63\x72\x65\x61\x74\x65\x52\x61\x6e\x67\x65']();
+        sel['\x74\x65\x78\x74'] = _0x1e5793;
+        sel['\x63\x6f\x6c\x6c\x61\x70\x73\x65'](!![]);
+        sel['\x73\x65\x6c\x65\x63\x74']();
+    } else if (_0x4b0d81['\x73\x65\x6c\x65\x63\x74\x69\x6f\x6e\x53\x74\x61\x72\x74'] || _0x4b0d81['\x73\x65\x6c\x65\x63\x74\x69\x6f\x6e\x53\x74\x61\x72\x74'] == '\x30') {
+        var _0x557a77 = _0x4b0d81['\x73\x65\x6c\x65\x63\x74\x69\x6f\x6e\x53\x74\x61\x72\x74'];
+        var _0x49c03a = _0x4b0d81['\x73\x65\x6c\x65\x63\x74\x69\x6f\x6e\x45\x6e\x64'];
+        var _0x2b1210 = _0x4b0d81['\x73\x63\x72\x6f\x6c\x6c\x54\x6f\x70'];
+        _0x557a77 = _0x557a77 == -0x1 ? _0x4b0d81['\x76\x61\x6c\x75\x65']['\x6c\x65\x6e\x67\x74\x68'] : _0x557a77;
+        _0x4b0d81['\x76\x61\x6c\x75\x65'] = _0x4b0d81['\x76\x61\x6c\x75\x65']['\x73\x75\x62\x73\x74\x72\x69\x6e\x67'](0x0, _0x557a77) + _0x1e5793 + _0x4b0d81['\x76\x61\x6c\x75\x65']['\x73\x75\x62\x73\x74\x72\x69\x6e\x67'](_0x49c03a, _0x4b0d81['\x76\x61\x6c\x75\x65']['\x6c\x65\x6e\x67\x74\x68']);
+        _0x4b0d81['\x66\x6f\x63\x75\x73']();
+        _0x4b0d81['\x73\x65\x6c\x65\x63\x74\x69\x6f\x6e\x53\x74\x61\x72\x74'] = _0x557a77 + _0x1e5793['\x6c\x65\x6e\x67\x74\x68'];
+        _0x4b0d81['\x73\x65\x6c\x65\x63\x74\x69\x6f\x6e\x45\x6e\x64'] = _0x557a77 + _0x1e5793['\x6c\x65\x6e\x67\x74\x68'];
+        _0x4b0d81['\x73\x63\x72\x6f\x6c\x6c\x54\x6f\x70'] = _0x2b1210;
+    } else {
+        var _0x2b1210 = _0x4b0d81['\x73\x63\x72\x6f\x6c\x6c\x54\x6f\x70'];
+        _0x4b0d81['\x76\x61\x6c\x75\x65'] += value;
+        _0x4b0d81['\x66\x6f\x63\x75\x73']();
+        _0x4b0d81['\x73\x63\x72\x6f\x6c\x6c\x54\x6f\x70'] = _0x2b1210;
+    }
+}
+function RemoveNInsert(_0x22a8bf, _0x58df2c, _0x474996) {
+    if (document['\x73\x65\x6c\x65\x63\x74\x69\x6f\x6e']) {
+        _0x22a8bf['\x66\x6f\x63\x75\x73']();
+        sel = document['\x73\x65\x6c\x65\x63\x74\x69\x6f\x6e']['\x63\x72\x65\x61\x74\x65\x52\x61\x6e\x67\x65']();
+        if (_0x22a8bf['\x76\x61\x6c\x75\x65']['\x6c\x65\x6e\x67\x74\x68'] >= _0x474996) {
+            sel['\x6d\x6f\x76\x65\x53\x74\x61\x72\x74']('\x63\x68\x61\x72\x61\x63\x74\x65\x72', -0x1 * _0x474996);
+        }
+        sel['\x74\x65\x78\x74'] = _0x58df2c;
+        sel['\x63\x6f\x6c\x6c\x61\x70\x73\x65'](!![]);
+        sel['\x73\x65\x6c\x65\x63\x74']();
+    } else if (_0x22a8bf['\x73\x65\x6c\x65\x63\x74\x69\x6f\x6e\x53\x74\x61\x72\x74'] || _0x22a8bf['\x73\x65\x6c\x65\x63\x74\x69\x6f\x6e\x53\x74\x61\x72\x74'] == 0x0) {
+        _0x22a8bf['\x66\x6f\x63\x75\x73']();
+        var _0x42e7d4 = _0x22a8bf['\x73\x65\x6c\x65\x63\x74\x69\x6f\x6e\x53\x74\x61\x72\x74'] - _0x474996;
+        var _0x294a06 = _0x22a8bf['\x73\x65\x6c\x65\x63\x74\x69\x6f\x6e\x45\x6e\x64'];
+        var _0xf62738 = _0x22a8bf['\x73\x63\x72\x6f\x6c\x6c\x54\x6f\x70'];
+        _0x42e7d4 = _0x42e7d4 == -0x1 ? _0x22a8bf['\x76\x61\x6c\x75\x65']['\x6c\x65\x6e\x67\x74\x68'] : _0x42e7d4;
+        _0x22a8bf['\x76\x61\x6c\x75\x65'] = _0x22a8bf['\x76\x61\x6c\x75\x65']['\x73\x75\x62\x73\x74\x72\x69\x6e\x67'](0x0, _0x42e7d4) + _0x58df2c + _0x22a8bf['\x76\x61\x6c\x75\x65']['\x73\x75\x62\x73\x74\x72\x69\x6e\x67'](_0x294a06, _0x22a8bf['\x76\x61\x6c\x75\x65']['\x6c\x65\x6e\x67\x74\x68']);
+        _0x22a8bf['\x66\x6f\x63\x75\x73']();
+        _0x22a8bf['\x73\x65\x6c\x65\x63\x74\x69\x6f\x6e\x53\x74\x61\x72\x74'] = _0x42e7d4 + _0x58df2c['\x6c\x65\x6e\x67\x74\x68'];
+        _0x22a8bf['\x73\x65\x6c\x65\x63\x74\x69\x6f\x6e\x45\x6e\x64'] = _0x42e7d4 + _0x58df2c['\x6c\x65\x6e\x67\x74\x68'];
+        _0x22a8bf['\x73\x63\x72\x6f\x6c\x6c\x54\x6f\x70'] = _0xf62738;
+    } else {
+        var _0xf62738 = _0x22a8bf['\x73\x63\x72\x6f\x6c\x6c\x54\x6f\x70'];
+        _0x22a8bf['\x76\x61\x6c\x75\x65'] += _0x58df2c;
+        _0x22a8bf['\x66\x6f\x63\x75\x73']();
+        _0x22a8bf['\x73\x63\x72\x6f\x6c\x6c\x54\x6f\x70'] = _0xf62738;
+    }
+}
+function capsDetect(_0x13fe0f) {
+    if (!_0x13fe0f)
+        _0x13fe0f = window['\x65\x76\x65\x6e\x74'];
+    if (!_0x13fe0f)
+        return ![];
+    var _0x2c953a = _0x13fe0f['\x77\x68\x69\x63\x68'] ? _0x13fe0f['\x77\x68\x69\x63\x68'] : _0x13fe0f['\x6b\x65\x79\x43\x6f\x64\x65'] ? _0x13fe0f['\x6b\x65\x79\x43\x6f\x64\x65'] : _0x13fe0f['\x63\x68\x61\x72\x43\x6f\x64\x65'] ? _0x13fe0f['\x63\x68\x61\x72\x43\x6f\x64\x65'] : 0x0;
+    var _0x67182b = _0x13fe0f['\x73\x68\x69\x66\x74\x4b\x65\x79'] || _0x13fe0f['\x6d\x6f\x64\x69\x66\x69\x65\x72\x73'] && _0x13fe0f['\x6d\x6f\x64\x69\x66\x69\x65\x72\x73'] & 0x4;
+    return _0x2c953a > 0x40 && _0x2c953a < 0x5b && !_0x67182b || _0x2c953a > 0x60 && _0x2c953a < 0x7b && _0x67182b;
+}
+function HideDIV(_0x256f06) {
+    if (document['\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64']) {
+        document['\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64'](_0x256f06)['\x73\x74\x79\x6c\x65']['\x64\x69\x73\x70\x6c\x61\x79'] = '\x6e\x6f\x6e\x65';
+    } else {
+        if (document['\x6c\x61\x79\x65\x72\x73']) {
+            document['\x69\x64']['\x64\x69\x73\x70\x6c\x61\x79'] = '\x6e\x6f\x6e\x65';
+        } else {
+            document['\x61\x6c\x6c']['\x69\x64']['\x73\x74\x79\x6c\x65']['\x64\x69\x73\x70\x6c\x61\x79'] = '\x6e\x6f\x6e\x65';
+        }
+    }
+}
+function ShowDIV(_0x1477a3) {
+    if (document['\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64']) {
+        document['\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64'](_0x1477a3)['\x73\x74\x79\x6c\x65']['\x64\x69\x73\x70\x6c\x61\x79'] = '\x62\x6c\x6f\x63\x6b';
+    } else {
+        if (document['\x6c\x61\x79\x65\x72\x73']) {
+            document['\x69\x64']['\x64\x69\x73\x70\x6c\x61\x79'] = '\x62\x6c\x6f\x63\x6b';
+        } else {
+            document['\x61\x6c\x6c']['\x69\x64']['\x73\x74\x79\x6c\x65']['\x64\x69\x73\x70\x6c\x61\x79'] = '\x62\x6c\x6f\x63\x6b';
+        }
+    }
+}
+function IsBanglaDigit(_0x1948f8) {
+    if (_0x1948f8 == '\u09e6' || _0x1948f8 == '\u09e7' || _0x1948f8 == '\u09e8' || _0x1948f8 == '\u09e9' || _0x1948f8 == '\u09ea' || _0x1948f8 == '\u09eb' || _0x1948f8 == '\u09ec' || _0x1948f8 == '\u09ed' || _0x1948f8 == '\u09ee' || _0x1948f8 == '\u09ef')
+        return !![];
+    return ![];
+}
+function IsBanglaPreKar(_0x5a6582) {
+    if (_0x5a6582 == '\u09bf' || _0x5a6582 == '\u09c8' || _0x5a6582 == '\u09c7')
+        return !![];
+    return ![];
+}
+function IsBanglaPostKar(_0x2bbf46) {
+    if (_0x2bbf46 == '\u09be' || _0x2bbf46 == '\u09cb' || _0x2bbf46 == '\u09cc' || _0x2bbf46 == '\u09d7' || _0x2bbf46 == '\u09c1' || _0x2bbf46 == '\u09c2' || _0x2bbf46 == '\u09c0' || _0x2bbf46 == '\u09c3')
+        return !![];
+    return ![];
+}
+function IsBanglaKar(_0x90cd7f) {
+    if (IsBanglaPreKar(_0x90cd7f) || IsBanglaPostKar(_0x90cd7f))
+        return !![];
+    return ![];
+}
+function IsBanglaBanjonborno(_0xc9e894) {
+    if (_0xc9e894 == '\u0995' || _0xc9e894 == '\u0996' || _0xc9e894 == '\u0997' || _0xc9e894 == '\u0998' || _0xc9e894 == '\u0999' || _0xc9e894 == '\u099a' || _0xc9e894 == '\u099b' || _0xc9e894 == '\u099c' || _0xc9e894 == '\u099d' || _0xc9e894 == '\u099e' || _0xc9e894 == '\u099f' || _0xc9e894 == '\u09a0' || _0xc9e894 == '\u09a1' || _0xc9e894 == '\u09a2' || _0xc9e894 == '\u09a3' || _0xc9e894 == '\u09a4' || _0xc9e894 == '\u09a5' || _0xc9e894 == '\u09a6' || _0xc9e894 == '\u09a7' || _0xc9e894 == '\u09a8' || _0xc9e894 == '\u09aa' || _0xc9e894 == '\u09ab' || _0xc9e894 == '\u09ac' || _0xc9e894 == '\u09ad' || _0xc9e894 == '\u09ae' || _0xc9e894 == '\u09b6' || _0xc9e894 == '\u09b7' || _0xc9e894 == '\u09b8' || _0xc9e894 == '\u09b9' || _0xc9e894 == '\u09af' || _0xc9e894 == '\u09b0' || _0xc9e894 == '\u09b2' || _0xc9e894 == '\u09df' || _0xc9e894 == '\u0982' || _0xc9e894 == '\u0983' || _0xc9e894 == '\u0981' || _0xc9e894 == '\u09ce')
+        return !![];
+    return ![];
+}
+function IsBanglaSoroborno(_0x3d0353) {
+    if (_0x3d0353 == '\u0985' || _0x3d0353 == '\u0986' || _0x3d0353 == '\u0987' || _0x3d0353 == '\u0988' || _0x3d0353 == '\u0989' || _0x3d0353 == '\u098a' || _0x3d0353 == '\u098b' || _0x3d0353 == '\u098c' || _0x3d0353 == '\u098f' || _0x3d0353 == '\u0990' || _0x3d0353 == '\u0993' || _0x3d0353 == '\u0994')
+        return !![];
+    return ![];
+}
+function IsBanglaNukta(_0x5af344) {
+    if (_0x5af344 == '\u0982' || _0x5af344 == '\u0983' || _0x5af344 == '\u0981')
+        return !![];
+    return ![];
+}
+function IsBanglaFola(_0xde6dbc) {
+    if (_0xde6dbc == '\u09cd\u09af' || _0xde6dbc == '\u09cd\u09b0')
+        return !![];
+    return ![];
+}
+function IsBanglaHalant(_0x195577) {
+    if (_0x195577 == '\u09cd')
+        return !![];
+    return ![];
+}
+function IsBangla(_0xc56d8f) {
+    if (IsBanglaDigit(_0xc56d8f) || IsBanglaKar(_0xc56d8f) || IsBanglaBanjonborno(_0xc56d8f) || IsBanglaSoroborno(_0xc56d8f) || IsBanglaNukta(_0xc56d8f) || IsBanglaFola(_0xc56d8f) || IsBanglaHalant(_0xc56d8f))
+        return !![];
+    return ![];
+}
+function IsASCII(_0x108a0d) {
+    if (_0x108a0d >= 0x0 && _0x108a0d < 0x80)
+        return !![];
+    return ![];
+}
+function IsSpace(_0x1b2d45) {
+    if (_0x1b2d45 == '\x20' || _0x1b2d45 == '\x09' || _0x1b2d45 == '\x0a' || _0x1b2d45 == '\x0d')
+        return !![];
+    return ![];
+}
+function MapKarToSorborno(_0x339539) {
+    var _0x3b74ff = _0x339539;
+    if (_0x339539 == '\u09be')
+        _0x3b74ff = '\u0986';
+    else if (_0x339539 == '\u09bf')
+        _0x3b74ff = '\u0987';
+    else if (_0x339539 == '\u09c0')
+        _0x3b74ff = '\u0988';
+    else if (_0x339539 == '\u09c1')
+        _0x3b74ff = '\u0989';
+    else if (_0x339539 == '\u09c2')
+        _0x3b74ff = '\u098a';
+    else if (_0x339539 == '\u09c3')
+        _0x3b74ff = '\u098b';
+    else if (_0x339539 == '\u09c7')
+        _0x3b74ff = '\u098f';
+    else if (_0x339539 == '\u09c8')
+        _0x3b74ff = '\u0990';
+    else if (_0x339539 == '\u09cb')
+        _0x3b74ff = '\u0993';
+    else if (_0x339539 == '\u09c7\u09be')
+        _0x3b74ff = '\u0993';
+    else if (_0x339539 == '\u09cc')
+        _0x3b74ff = '\u0994';
+    else if (_0x339539 == '\u09c7\u09d7')
+        _0x3b74ff = '\u0994';
+    return _0x3b74ff;
+}
+function MapSorbornoToKar(_0x304790) {
+    var _0x338837 = _0x304790;
+    if (_0x304790 == '\u0986')
+        _0x338837 = '\u09be';
+    else if (_0x304790 == '\u0987')
+        _0x338837 = '\u09bf';
+    else if (_0x304790 == '\u0988')
+        _0x338837 = '\u09c0';
+    else if (_0x304790 == '\u0989')
+        _0x338837 = '\u09c1';
+    else if (_0x304790 == '\u098a')
+        _0x338837 = '\u09c2';
+    else if (_0x304790 == '\u098b')
+        _0x338837 = '\u09c3';
+    else if (_0x304790 == '\u098f')
+        _0x338837 = '\u09c7';
+    else if (_0x304790 == '\u0990')
+        _0x338837 = '\u09c8';
+    else if (_0x304790 == '\u0993')
+        _0x338837 = '\u09cb';
+    else if (_0x304790 == '\u0994')
+        _0x338837 = '\u09cc';
+    return _0x338837;
+}
+</script>
+
+<script>
+/* defualt.js ফাইলের সম্পূর্ণ কোড এখানে */
+var _0x9c43 = ["\x76\x61\x6C\x75\x65", "\x61\x6E\x73\x69\x54\x65\x78\x74", "\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64", "\x20\u2020", "\x72\x65\x70\x6C\x61\x63\x65", "\x4B\x7A", "\xB0\x7A", "\xB1\x7A", "\x4B\xE8\x7A", "\xB5\x7A", "\x4B\xAC\x7A", "\xFF\x7A", "\xB3\x7A", "\xFF\xE8\x7A", "\xBB\x7A", "\x4F\x7A", "\xBC\x7A", "\xBC\xAB\x7A", "\u2022\xFF\x7A", "\u201D\x50\x7A", "\u201D\x51\x7A", "\u201D\x54\x7A", "\x51\x7A", "\xC0\x7A", "\xC1\x7A", "\x53\x7A", "\xC2\x7A", "\xC3\x7A", "\x55\x7A", "\xC6\x7A", "\x57\x7A", "\xC7\x7A", "\x58\x7A", "\xC8\x7A", "\xC9\x7A", "\xD0\x7A", "\x5A\x7A", "\xCB\x7A", "\xD7\x7A", "\u2122\xA2\x7A", "\u203A\x55\x7A", "\xDB\x7A", "\xDA\x7A", "\u0161\u2019\x7A", "\xDC\x7A", "\xDC\xAB\x7A", "\xDF\x7A", "\xDE\x7A", "\x64\x7A", "\x64\xAB\x7A", "\x64\xAC\x7A", "\xE4\x7A", "\x66\x7A", "\xE7\x7A", "\xE9\x7A", "\xEE\x7A", "\xF0\x7A", "\xF1\x7A", "\xAE\u2039\x7A", "\xF3\x7A", "\xF4\x7A", "\xAE\u0152\x7A", "\xF2\x7A", "\xAF\u2039\x7A", "\xAF\u2019\x7A", "\xF9\x7A", "\xF9\xAB\x7A", "\xAF\u2039\xAC\x7A", "\xAF\u0152\x7A", "\xFE\x7A", "\xF7\x7A", "\xEB\x7A", "\x4B\u201A", "\x50\u201A", "\x51\u201A", "\x53\u201A", "\x55\u201A", "\x56\u201A", "\x57\u201A", "\x58\u201A", "\x5A\u201A", "\x64\u201A", "\x66\u201A", "\xA4\xA2\u201A", "\xB5\u201A", "\u2122\xA2\u201A", "\xAF\u2019\u201A", "\u0161\u2019\u201A", "\x4B\u2026", "\x4C\u2026", "\x51\u2026", "\x53\u2026", "\x55\u2026", "\x56\u2026", "\x57\u2026", "\x58\u2026", "\x5A\u2026", "\x64\u2026", "\x66\u2026", "\x79\xA8", "\x56\x7A", "\x50\x7A", "\xB6\x7A", "\xCA\x7A", "\x64\xAB", "\x4D\xD6", "\x63\xD6", "\x6B\xD6", "\xFA\xD6", "\x4D\xD6\u201C", "\x4D\xD6\u0192", "\x60\xAA\u201C", "\x60\xAA\u0192", "\x61\xAA\u201C", "\x61\xAA\u0192", "\x63\xD6\u201C", "\x63\xD6\u0192", "\x65\xAA\u201C", "\x65\xAA\u0192", "\xE5\u201C", "\xE5\u0192", "\x6B\xD6\u201C", "\x6B\xD6\u0192", "\x6D\xAA\u201C", "\x6D\xAA\u0192", "\xDC\xAB", "\xB0\u201A", "\xB1\u201A", "\x4B\xE8\u201A", "\x4B\xAC\u201A", "\xFF\u201A", "\xB3\u201A", "\xFF\xE8\u201A", "\xBB\u201A", "\x4F\u201A", "\xBC\u201A", "\xBC\xAB\u201A", "\u2022\xFF\u201A", "\u201D\x50\u201A", "\u201D\x51\u201A", "\u201D\x54\u201A", "\xC0\u201A", "\xC1\u201A", "\xC2\u201A", "\xC3\u201A", "\xC6\u201A", "\xC7\u201A", "\xC8\u201A", "\xC9\u201A", "\xD0\u201A", "\xCB\u201A", "\xD7\u201A", "\u203A\x55\u201A", "\xDB\u201A", "\xDA\u201A", "\xDC\u201A", "\xDC\xAB\u201A", "\xDF\u201A", "\xDE\u201A", "\x64\xAB\u201A", "\x64\xAC\u201A", "\xE4\u201A", "\xE7\u201A", "\xE9\u201A", "\xEE\u201A", "\xF0\u201A", "\xF1\u201A", "\xAE\u2039\u201A", "\xF3\u201A", "\xF4\u201A", "\xAE\u0152\u201A", "\xF2\u201A", "\xAF\u2039\u201A", "\xF9\u201A", "\xF9\xAB\u201A", "\xAF\u2039\xAC\u201A", "\xAF\u0152\u201A", "\xFE\u201A", "\xF7\u201A", "\xEB\u201A", "\xA4\xA2\x7A", "\xB6\u201A", "\xCA\u201A", "\xB0\u2026", "\xB1\u2026", "\x4B\xE8\u2026", "\xB5\u2026", "\x4B\xAC\u2026", "\xFF\u2026", "\xB3\u2026", "\xFF\xE8\u2026", "\xBB\u2026", "\x4F\u2026", "\xBC\u2026", "\xBC\xAB\u2026", "\u2022\xFF\u2026", "\u201D\x50\u2026", "\u201D\x51\u2026", "\u201D\x54\u2026", "\xC0\u2026", "\xC1\u2026", "\xC2\u2026", "\xC3\u2026", "\xC6\u2026", "\xC7\u2026", "\xC8\u2026", "\xC9\u2026", "\xD0\u2026", "\xCB\u2026", "\xD7\u2026", "\u2122\xA2\u2026", "\u203A\x55\u2026", "\xDB\u2026", "\xDA\u2026", "\u0161\u2019\u2026", "\xDC\u2026", "\xDC\xAB\u2026", "\xDF\u2026", "\xDE\u2026", "\x64\xAB\u2026", "\x64\xAC\u2026", "\xE4\u2026", "\xE7\u2026", "\xE9\u2026", "\xEE\u2026", "\xF0\u2026", "\xF1\u2026", "\xAE\u2039\u2026", "\xF3\u2026", "\xF4\u2026", "\xAE\u0152\u2026", "\xF2\u2026", "\xAF\u2039\u2026", "\xAF\u2019\u2026", "\xF9\u2026", "\xF9\xAB\u2026", "\xAF\u2039\xAC\u2026", "\xAF\u0152\u2026", "\xFE\u2026", "\xF7\u2026", "\xEB\u2026", "\x50\u2026", "\xB6\u2026", "\xCA\u2026", "\x6E\xAB", "\xB3\xAB", "\x51\xAB", "\xEE\xAB", "\xF9\xAB", "\x20\u02C6", "\x77\x6F", "\u2021\x6F", "\u2030\x6F", "\x77\x70", "\u2021\x70", "\u2030\x70", "\x77\x71", "\u2021\x71", "\u2030\x71", "\x6F\u2013", "\x5F\xAA\u201C", "\x5F\xAA\u0192", "\x69\u201C", "\x69\u0192", "\x27\u2020", "\x27\u02C6", "\xD2\u2020", "\xD2\u02C6", "\x22\u2020", "\x22\u02C6", "\xD4\u2020", "\xD4\u02C6", "\x0A\u2020", "\x0A\u02C6", "\xB5", "\xCE", "\x63\x68\x61\x72\x41\x74", "\u2021", "\u2020", "\u2030", "\u02C6", "\x6F\x6E\x69\x6E\x70\x75\x74", "\x75\x6E\x69\x54\x65\x78\x74", "\x62\x69\x6A\x6F\x79", "", "\x66\x75\x6E\x63\x46\x61\x69\x6C\x65\x64", "\x74\x6F\x61\x73\x74\x53\x68\x6F\x77", "\x61\x64\x64", "\x63\x6C\x61\x73\x73\x4C\x69\x73\x74", "\x72\x65\x6D\x6F\x76\x65", "\x63\x6C\x65\x61\x72\x53\x75\x63\x63\x65\x73\x73", "\x63\x6F\x70\x79\x53\x75\x63\x63\x65\x73\x73", "\x73\x65\x6C\x65\x63\x74", "\x73\x65\x74\x53\x65\x6C\x65\x63\x74\x69\x6F\x6E\x52\x61\x6E\x67\x65", "\x63\x6F\x70\x79", "\x65\x78\x65\x63\x43\x6F\x6D\x6D\x61\x6E\x64", "\x63\x6C\x69\x63\x6B", "\x70\x61\x73\x74\x65\x46\x61\x69\x6C\x65\x64", "\x63\x61\x74\x63\x68", "\x70\x61\x73\x74\x65\x45\x6D\x70\x74\x79", "\x70\x61\x73\x74\x65\x53\x75\x63\x63\x65\x73\x73", "\x74\x68\x65\x6E", "\x72\x65\x61\x64\x54\x65\x78\x74", "\x63\x6C\x69\x70\x62\x6F\x61\x72\x64", "\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72", "\x70\x61\x73\x74\x65\x55\x6E\x69", "\x70\x61\x73\x74\x65\x41\x6E\x73\x69"];
+function finishingTouch() {
+    var _0xb552x2 = document[_0x9c43[2]](_0x9c43[1])[_0x9c43[0]];
+    var _0xb552x3 = _0xb552x2[_0x9c43[4]](/ ‡/g, _0x9c43[3]);
+    var _0xb552x4 = _0xb552x3[_0x9c43[4]](/Ky/g, _0x9c43[5]);
+    var _0xb552x5 = _0xb552x4[_0x9c43[4]](/°y/g, _0x9c43[6]);
+    var _0xb552x6 = _0xb552x5[_0x9c43[4]](/±y/g, _0x9c43[7]);
+    var _0xb552x7 = _0xb552x6[_0x9c43[4]](/Kèy/g, _0x9c43[8]);
+    var _0xb552x8 = _0xb552x7[_0x9c43[4]](/µy/g, _0x9c43[9]);
+    var _0xb552x9 = _0xb552x8[_0x9c43[4]](/K¬y/g, _0x9c43[10]);
+    var _0xb552xa = _0xb552x9[_0x9c43[4]](/ÿy/g, _0x9c43[11]);
+    var _0xb552xb = _0xb552xa[_0x9c43[4]](/³y/g, _0x9c43[12]);
+    var _0xb552xc = _0xb552xb[_0x9c43[4]](/ÿèy/g, _0x9c43[13]);
+    var _0xb552xd = _0xb552xc[_0x9c43[4]](/»y/g, _0x9c43[14]);
+    var _0xb552xe = _0xb552xd[_0x9c43[4]](/Oy/g, _0x9c43[15]);
+    var _0xb552xf = _0xb552xe[_0x9c43[4]](/¼y/g, _0x9c43[16]);
+    var _0xb552x10 = _0xb552xf[_0x9c43[4]](/¼«y/g, _0x9c43[17]);
+    var _0xb552x11 = _0xb552x10[_0x9c43[4]](/•ÿy/g, _0x9c43[18]);
+    var _0xb552x12 = _0xb552x11[_0x9c43[4]](/”Py/g, _0x9c43[19]);
+    var _0xb552x13 = _0xb552x12[_0x9c43[4]](/”Qy/g, _0x9c43[20]);
+    var _0xb552x14 = _0xb552x13[_0x9c43[4]](/”Ty/g, _0x9c43[21]);
+    var _0xb552x15 = _0xb552x14[_0x9c43[4]](/Qy/g, _0x9c43[22]);
+    var _0xb552x16 = _0xb552x15[_0x9c43[4]](/Ày/g, _0x9c43[23]);
+    var _0xb552x17 = _0xb552x16[_0x9c43[4]](/Áy/g, _0x9c43[24]);
+    var _0xb552x18 = _0xb552x17[_0x9c43[4]](/Sy/g, _0x9c43[25]);
+    var _0xb552x19 = _0xb552x18[_0x9c43[4]](/Ây/g, _0x9c43[26]);
+    var _0xb552x1a = _0xb552x19[_0x9c43[4]](/Ãy/g, _0x9c43[27]);
+    var _0xb552x1b = _0xb552x1a[_0x9c43[4]](/Uy/g, _0x9c43[28]);
+    var _0xb552x1c = _0xb552x1b[_0x9c43[4]](/Æy/g, _0x9c43[29]);
+    var _0xb552x1d = _0xb552x1c[_0x9c43[4]](/Wy/g, _0x9c43[30]);
+    var _0xb552x1e = _0xb552x1d[_0x9c43[4]](/Çy/g, _0x9c43[31]);
+    var _0xb552x1f = _0xb552x1e[_0x9c43[4]](/Xy/g, _0x9c43[32]);
+    var _0xb552x20 = _0xb552x1f[_0x9c43[4]](/Èy/g, _0x9c43[33]);
+    var _0xb552x21 = _0xb552x20[_0x9c43[4]](/Éy/g, _0x9c43[34]);
+    var _0xb552x22 = _0xb552x21[_0x9c43[4]](/Ðy/g, _0x9c43[35]);
+    var _0xb552x23 = _0xb552x22[_0x9c43[4]](/Zy/g, _0x9c43[36]);
+    var _0xb552x24 = _0xb552x23[_0x9c43[4]](/Ëy/g, _0x9c43[37]);
+    var _0xb552x25 = _0xb552x24[_0x9c43[4]](/×y/g, _0x9c43[38]);
+    var _0xb552x26 = _0xb552x25[_0x9c43[4]](/™¢y/g, _0x9c43[39]);
+    var _0xb552x27 = _0xb552x26[_0x9c43[4]](/›Uy/g, _0x9c43[40]);
+    var _0xb552x28 = _0xb552x27[_0x9c43[4]](/Ûy/g, _0x9c43[41]);
+    var _0xb552x29 = _0xb552x28[_0x9c43[4]](/Úy/g, _0x9c43[42]);
+    var _0xb552x2a = _0xb552x29[_0x9c43[4]](/š’y/g, _0x9c43[43]);
+    var _0xb552x2b = _0xb552x2a[_0x9c43[4]](/Üy/g, _0x9c43[44]);
+    var _0xb552x2c = _0xb552x2b[_0x9c43[4]](/Ü«y/g, _0x9c43[45]);
+    var _0xb552x2d = _0xb552x2c[_0x9c43[4]](/ßy/g, _0x9c43[46]);
+    var _0xb552x2e = _0xb552x2d[_0x9c43[4]](/Þy/g, _0x9c43[47]);
+    var _0xb552x2f = _0xb552x2e[_0x9c43[4]](/dy/g, _0x9c43[48]);
+    var _0xb552x30 = _0xb552x2f[_0x9c43[4]](/d«y/g, _0x9c43[49]);
+    var _0xb552x31 = _0xb552x30[_0x9c43[4]](/d¬y/g, _0x9c43[50]);
+    var _0xb552x32 = _0xb552x31[_0x9c43[4]](/äy/g, _0x9c43[51]);
+    var _0xb552x33 = _0xb552x32[_0x9c43[4]](/fy/g, _0x9c43[52]);
+    var _0xb552x34 = _0xb552x33[_0x9c43[4]](/çy/g, _0x9c43[53]);
+    var _0xb552x35 = _0xb552x34[_0x9c43[4]](/éy/g, _0x9c43[54]);
+    var _0xb552x36 = _0xb552x35[_0x9c43[4]](/îy/g, _0x9c43[55]);
+    var _0xb552x37 = _0xb552x36[_0x9c43[4]](/ðy/g, _0x9c43[56]);
+    var _0xb552x38 = _0xb552x37[_0x9c43[4]](/ñy/g, _0x9c43[57]);
+    var _0xb552x39 = _0xb552x38[_0x9c43[4]](/®‹y/g, _0x9c43[58]);
+    var _0xb552x3a = _0xb552x39[_0x9c43[4]](/óy/g, _0x9c43[59]);
+    var _0xb552x3b = _0xb552x3a[_0x9c43[4]](/ôy/g, _0x9c43[60]);
+    var _0xb552x3c = _0xb552x3b[_0x9c43[4]](/®Œy/g, _0x9c43[61]);
+    var _0xb552x3d = _0xb552x3c[_0x9c43[4]](/òy/g, _0x9c43[62]);
+    var _0xb552x3e = _0xb552x3d[_0x9c43[4]](/¯‹y/g, _0x9c43[63]);
+    var _0xb552x3f = _0xb552x3e[_0x9c43[4]](/¯’y/g, _0x9c43[64]);
+    var _0xb552x40 = _0xb552x3f[_0x9c43[4]](/ùy/g, _0x9c43[65]);
+    var _0xb552x41 = _0xb552x40[_0x9c43[4]](/ù«y/g, _0x9c43[66]);
+    var _0xb552x42 = _0xb552x41[_0x9c43[4]](/¯‹¬y/g, _0x9c43[67]);
+    var _0xb552x43 = _0xb552x42[_0x9c43[4]](/¯Œy/g, _0x9c43[68]);
+    var _0xb552x44 = _0xb552x43[_0x9c43[4]](/þy/g, _0x9c43[69]);
+    var _0xb552x45 = _0xb552x44[_0x9c43[4]](/÷y/g, _0x9c43[70]);
+    var _0xb552x46 = _0xb552x45[_0x9c43[4]](/ëy/g, _0x9c43[71]);
+    var _0xb552x47 = _0xb552x46[_0x9c43[4]](/K~/g, _0x9c43[72]);
+    var _0xb552x48 = _0xb552x47[_0x9c43[4]](/P~/g, _0x9c43[73]);
+    var _0xb552x49 = _0xb552x48[_0x9c43[4]](/Q~/g, _0x9c43[74]);
+    var _0xb552x4a = _0xb552x49[_0x9c43[4]](/S~/g, _0x9c43[75]);
+    var _0xb552x4b = _0xb552x4a[_0x9c43[4]](/U~/g, _0x9c43[76]);
+    var _0xb552x4c = _0xb552x4b[_0x9c43[4]](/V~/g, _0x9c43[77]);
+    var _0xb552x4d = _0xb552x4c[_0x9c43[4]](/W~/g, _0x9c43[78]);
+    var _0xb552x4e = _0xb552x4d[_0x9c43[4]](/X~/g, _0x9c43[79]);
+    var _0xb552x4f = _0xb552x4e[_0x9c43[4]](/Z~/g, _0x9c43[80]);
+    var _0xb552x50 = _0xb552x4f[_0x9c43[4]](/d~/g, _0x9c43[81]);
+    var _0xb552x51 = _0xb552x50[_0x9c43[4]](/f~/g, _0x9c43[82]);
+    var _0xb552x52 = _0xb552x51[_0x9c43[4]](/¤¢~/g, _0x9c43[83]);
+    var _0xb552x53 = _0xb552x52[_0x9c43[4]](/µ~/g, _0x9c43[84]);
+    var _0xb552x54 = _0xb552x53[_0x9c43[4]](/™¢~/g, _0x9c43[85]);
+    var _0xb552x55 = _0xb552x54[_0x9c43[4]](/¯’~/g, _0x9c43[86]);
+    var _0xb552x56 = _0xb552x55[_0x9c43[4]](/š’~/g, _0x9c43[87]);
+    var _0xb552x57 = _0xb552x56[_0x9c43[4]](/K„/g, _0x9c43[88]);
+    var _0xb552x58 = _0xb552x57[_0x9c43[4]](/L„/g, _0x9c43[89]);
+    var _0xb552x59 = _0xb552x58[_0x9c43[4]](/Q„/g, _0x9c43[90]);
+    var _0xb552x5a = _0xb552x59[_0x9c43[4]](/S„/g, _0x9c43[91]);
+    var _0xb552x5b = _0xb552x5a[_0x9c43[4]](/U„/g, _0x9c43[92]);
+    var _0xb552x5c = _0xb552x5b[_0x9c43[4]](/V„/g, _0x9c43[93]);
+    var _0xb552x5d = _0xb552x5c[_0x9c43[4]](/W„/g, _0x9c43[94]);
+    var _0xb552x5e = _0xb552x5d[_0x9c43[4]](/X„/g, _0x9c43[95]);
+    var _0xb552x5f = _0xb552x5e[_0x9c43[4]](/Z„/g, _0x9c43[96]);
+    var _0xb552x60 = _0xb552x5f[_0x9c43[4]](/d„/g, _0x9c43[97]);
+    var _0xb552x61 = _0xb552x60[_0x9c43[4]](/f„/g, _0x9c43[98]);
+    var _0xb552x62 = _0xb552x61[_0x9c43[4]](/¨y/g, _0x9c43[99]);
+    var _0xb552x63 = _0xb552x62[_0x9c43[4]](/Vy/g, _0x9c43[100]);
+    var _0xb552x64 = _0xb552x63[_0x9c43[4]](/Py/g, _0x9c43[101]);
+    var _0xb552x65 = _0xb552x64[_0x9c43[4]](/¶y/g, _0x9c43[102]);
+    var _0xb552x66 = _0xb552x65[_0x9c43[4]](/Êy/g, _0x9c43[103]);
+    var _0xb552x67 = _0xb552x66[_0x9c43[4]](/dª/g, _0x9c43[104]);
+    var _0xb552x68 = _0xb552x67[_0x9c43[4]](/d«y/g, _0x9c43[49]);
+    var _0xb552x69 = _0xb552x68[_0x9c43[4]](/Mª/g, _0x9c43[105]);
+    var _0xb552x6a = _0xb552x69[_0x9c43[4]](/cª/g, _0x9c43[106]);
+    var _0xb552x6b = _0xb552x6a[_0x9c43[4]](/kª/g, _0x9c43[107]);
+    var _0xb552x6c = _0xb552x6b[_0x9c43[4]](/úª/g, _0x9c43[108]);
+    var _0xb552x6d = _0xb552x6c[_0x9c43[4]](/MÖy/g, _0x9c43[109]);
+    var _0xb552x6e = _0xb552x6d[_0x9c43[4]](/MÖ~/g, _0x9c43[110]);
+    var _0xb552x6f = _0xb552x6e[_0x9c43[4]](/`ªy/g, _0x9c43[111]);
+    var _0xb552x70 = _0xb552x6f[_0x9c43[4]](/`ª~/g, _0x9c43[112]);
+    var _0xb552x71 = _0xb552x70[_0x9c43[4]](/aªy/g, _0x9c43[113]);
+    var _0xb552x72 = _0xb552x71[_0x9c43[4]](/aª~/g, _0x9c43[114]);
+    var _0xb552x73 = _0xb552x72[_0x9c43[4]](/cÖy/g, _0x9c43[115]);
+    var _0xb552x74 = _0xb552x73[_0x9c43[4]](/cÖ~/g, _0x9c43[116]);
+    var _0xb552x75 = _0xb552x74[_0x9c43[4]](/eªy/g, _0x9c43[117]);
+    var _0xb552x76 = _0xb552x75[_0x9c43[4]](/eª~/g, _0x9c43[118]);
+    var _0xb552x77 = _0xb552x76[_0x9c43[4]](/åy/g, _0x9c43[119]);
+    var _0xb552x78 = _0xb552x77[_0x9c43[4]](/å~/g, _0x9c43[120]);
+    var _0xb552x79 = _0xb552x78[_0x9c43[4]](/kÖy/g, _0x9c43[121]);
+    var _0xb552x7a = _0xb552x79[_0x9c43[4]](/kÖ~/g, _0x9c43[122]);
+    var _0xb552x7b = _0xb552x7a[_0x9c43[4]](/mªy/g, _0x9c43[123]);
+    var _0xb552x7c = _0xb552x7b[_0x9c43[4]](/mª~/g, _0x9c43[124]);
+    var _0xb552x7d = _0xb552x7c[_0x9c43[4]](/Üª/g, _0x9c43[125]);
+    var _0xb552x7e = _0xb552x7d[_0x9c43[4]](/°~/g, _0x9c43[126]);
+    var _0xb552x7f = _0xb552x7e[_0x9c43[4]](/±~/g, _0x9c43[127]);
+    var _0xb552x80 = _0xb552x7f[_0x9c43[4]](/Kè~/g, _0x9c43[128]);
+    var _0xb552x81 = _0xb552x80[_0x9c43[4]](/K¬~/g, _0x9c43[129]);
+    var _0xb552x82 = _0xb552x81[_0x9c43[4]](/ÿ~/g, _0x9c43[130]);
+    var _0xb552x83 = _0xb552x82[_0x9c43[4]](/³~/g, _0x9c43[131]);
+    var _0xb552x84 = _0xb552x83[_0x9c43[4]](/ÿè~/g, _0x9c43[132]);
+    var _0xb552x85 = _0xb552x84[_0x9c43[4]](/»~/g, _0x9c43[133]);
+    var _0xb552x86 = _0xb552x85[_0x9c43[4]](/O~/g, _0x9c43[134]);
+    var _0xb552x87 = _0xb552x86[_0x9c43[4]](/¼~/g, _0x9c43[135]);
+    var _0xb552x88 = _0xb552x87[_0x9c43[4]](/¼«~/g, _0x9c43[136]);
+    var _0xb552x89 = _0xb552x88[_0x9c43[4]](/•ÿ~/g, _0x9c43[137]);
+    var _0xb552x8a = _0xb552x89[_0x9c43[4]](/”P~/g, _0x9c43[138]);
+    var _0xb552x8b = _0xb552x8a[_0x9c43[4]](/”Q~/g, _0x9c43[139]);
+    var _0xb552x8c = _0xb552x8b[_0x9c43[4]](/”T~/g, _0x9c43[140]);
+    var _0xb552x8d = _0xb552x8c[_0x9c43[4]](/À~/g, _0x9c43[141]);
+    var _0xb552x8e = _0xb552x8d[_0x9c43[4]](/Á~/g, _0x9c43[142]);
+    var _0xb552x8f = _0xb552x8e[_0x9c43[4]](/Â~/g, _0x9c43[143]);
+    var _0xb552x90 = _0xb552x8f[_0x9c43[4]](/Ã~/g, _0x9c43[144]);
+    var _0xb552x91 = _0xb552x90[_0x9c43[4]](/Æ~/g, _0x9c43[145]);
+    var _0xb552x92 = _0xb552x91[_0x9c43[4]](/Ç~/g, _0x9c43[146]);
+    var _0xb552x93 = _0xb552x92[_0x9c43[4]](/È~/g, _0x9c43[147]);
+    var _0xb552x94 = _0xb552x93[_0x9c43[4]](/É~/g, _0x9c43[148]);
+    var _0xb552x95 = _0xb552x94[_0x9c43[4]](/Ð~/g, _0x9c43[149]);
+    var _0xb552x96 = _0xb552x95[_0x9c43[4]](/Ë~/g, _0x9c43[150]);
+    var _0xb552x97 = _0xb552x96[_0x9c43[4]](/×~/g, _0x9c43[151]);
+    var _0xb552x98 = _0xb552x97[_0x9c43[4]](/›U~/g, _0x9c43[152]);
+    var _0xb552x99 = _0xb552x98[_0x9c43[4]](/Û~/g, _0x9c43[153]);
+    var _0xb552x9a = _0xb552x99[_0x9c43[4]](/Ú~/g, _0x9c43[154]);
+    var _0xb552x9b = _0xb552x9a[_0x9c43[4]](/Ü~/g, _0x9c43[155]);
+    var _0xb552x9c = _0xb552x9b[_0x9c43[4]](/Ü«~/g, _0x9c43[156]);
+    var _0xb552x9d = _0xb552x9c[_0x9c43[4]](/ß~/g, _0x9c43[157]);
+    var _0xb552x9e = _0xb552x9d[_0x9c43[4]](/Þ~/g, _0x9c43[158]);
+    var _0xb552x9f = _0xb552x9e[_0x9c43[4]](/d«~/g, _0x9c43[159]);
+    var _0xb552xa0 = _0xb552x9f[_0x9c43[4]](/d¬~/g, _0x9c43[160]);
+    var _0xb552xa1 = _0xb552xa0[_0x9c43[4]](/ä~/g, _0x9c43[161]);
+    var _0xb552xa2 = _0xb552xa1[_0x9c43[4]](/ç~/g, _0x9c43[162]);
+    var _0xb552xa3 = _0xb552xa2[_0x9c43[4]](/é~/g, _0x9c43[163]);
+    var _0xb552xa4 = _0xb552xa3[_0x9c43[4]](/î~/g, _0x9c43[164]);
+    var _0xb552xa5 = _0xb552xa4[_0x9c43[4]](/ð~/g, _0x9c43[165]);
+    var _0xb552xa6 = _0xb552xa5[_0x9c43[4]](/ñ~/g, _0x9c43[166]);
+    var _0xb552xa7 = _0xb552xa6[_0x9c43[4]](/®‹~/g, _0x9c43[167]);
+    var _0xb552xa8 = _0xb552xa7[_0x9c43[4]](/ó~/g, _0x9c43[168]);
+    var _0xb552xa9 = _0xb552xa8[_0x9c43[4]](/ô~/g, _0x9c43[169]);
+    var _0xb552xaa = _0xb552xa9[_0x9c43[4]](/®Œ~/g, _0x9c43[170]);
+    var _0xb552xab = _0xb552xaa[_0x9c43[4]](/ò~/g, _0x9c43[171]);
+    var _0xb552xac = _0xb552xab[_0x9c43[4]](/¯‹~/g, _0x9c43[172]);
+    var _0xb552xad = _0xb552xac[_0x9c43[4]](/ù~/g, _0x9c43[173]);
+    var _0xb552xae = _0xb552xad[_0x9c43[4]](/ù«~/g, _0x9c43[174]);
+    var _0xb552xaf = _0xb552xae[_0x9c43[4]](/¯‹¬~/g, _0x9c43[175]);
+    var _0xb552xb0 = _0xb552xaf[_0x9c43[4]](/¯Œ~/g, _0x9c43[176]);
+    var _0xb552xb1 = _0xb552xb0[_0x9c43[4]](/þ~/g, _0x9c43[177]);
+    var _0xb552xb2 = _0xb552xb1[_0x9c43[4]](/÷~/g, _0x9c43[178]);
+    var _0xb552xb3 = _0xb552xb2[_0x9c43[4]](/ë~/g, _0x9c43[179]);
+    var _0xb552xb4 = _0xb552xb3[_0x9c43[4]](/¤¢y/g, _0x9c43[180]);
+    var _0xb552xb5 = _0xb552xb4[_0x9c43[4]](/¶~/g, _0x9c43[181]);
+    var _0xb552xb6 = _0xb552xb5[_0x9c43[4]](/Ê~/g, _0x9c43[182]);
+    var _0xb552xb7 = _0xb552xb6[_0x9c43[4]](/°„/g, _0x9c43[183]);
+    var _0xb552xb8 = _0xb552xb7[_0x9c43[4]](/±„/g, _0x9c43[184]);
+    var _0xb552xb9 = _0xb552xb8[_0x9c43[4]](/Kè„/g, _0x9c43[185]);
+    var _0xb552xba = _0xb552xb9[_0x9c43[4]](/µ„/g, _0x9c43[186]);
+    var _0xb552xbb = _0xb552xba[_0x9c43[4]](/K¬„/g, _0x9c43[187]);
+    var _0xb552xbc = _0xb552xbb[_0x9c43[4]](/ÿ„/g, _0x9c43[188]);
+    var _0xb552xbd = _0xb552xbc[_0x9c43[4]](/³„/g, _0x9c43[189]);
+    var _0xb552xbe = _0xb552xbd[_0x9c43[4]](/ÿè„/g, _0x9c43[190]);
+    var _0xb552xbf = _0xb552xbe[_0x9c43[4]](/»„/g, _0x9c43[191]);
+    var _0xb552xc0 = _0xb552xbf[_0x9c43[4]](/O„/g, _0x9c43[192]);
+    var _0xb552xc1 = _0xb552xc0[_0x9c43[4]](/¼„/g, _0x9c43[193]);
+    var _0xb552xc2 = _0xb552xc1[_0x9c43[4]](/¼«„/g, _0x9c43[194]);
+    var _0xb552xc3 = _0xb552xc2[_0x9c43[4]](/•ÿ„/g, _0x9c43[195]);
+    var _0xb552xc4 = _0xb552xc3[_0x9c43[4]](/”P„/g, _0x9c43[196]);
+    var _0xb552xc5 = _0xb552xc4[_0x9c43[4]](/”Q„/g, _0x9c43[197]);
+    var _0xb552xc6 = _0xb552xc5[_0x9c43[4]](/”T„/g, _0x9c43[198]);
+    var _0xb552xc7 = _0xb552xc6[_0x9c43[4]](/À„/g, _0x9c43[199]);
+    var _0xb552xc8 = _0xb552xc7[_0x9c43[4]](/Á„/g, _0x9c43[200]);
+    var _0xb552xc9 = _0xb552xc8[_0x9c43[4]](/Â„/g, _0x9c43[201]);
+    var _0xb552xca = _0xb552xc9[_0x9c43[4]](/Ã„/g, _0x9c43[202]);
+    var _0xb552xcb = _0xb552xca[_0x9c43[4]](/Æ„/g, _0x9c43[203]);
+    var _0xb552xcc = _0xb552xcb[_0x9c43[4]](/Ç„/g, _0x9c43[204]);
+    var _0xb552xcd = _0xb552xcc[_0x9c43[4]](/È„/g, _0x9c43[205]);
+    var _0xb552xce = _0xb552xcd[_0x9c43[4]](/É„/g, _0x9c43[206]);
+    var _0xb552xcf = _0xb552xce[_0x9c43[4]](/Ð„/g, _0x9c43[207]);
+    var _0xb552xd0 = _0xb552xcf[_0x9c43[4]](/Ë„/g, _0x9c43[208]);
+    var _0xb552xd1 = _0xb552xd0[_0x9c43[4]](/×„/g, _0x9c43[209]);
+    var _0xb552xd2 = _0xb552xd1[_0x9c43[4]](/™¢„/g, _0x9c43[210]);
+    var _0xb552xd3 = _0xb552xd2[_0x9c43[4]](/›U„/g, _0x9c43[211]);
+    var _0xb552xd4 = _0xb552xd3[_0x9c43[4]](/Û„/g, _0x9c43[212]);
+    var _0xb552xd5 = _0xb552xd4[_0x9c43[4]](/Ú„/g, _0x9c43[213]);
+    var _0xb552xd6 = _0xb552xd5[_0x9c43[4]](/š’„/g, _0x9c43[214]);
+    var _0xb552xd7 = _0xb552xd6[_0x9c43[4]](/Ü„/g, _0x9c43[215]);
+    var _0xb552xd8 = _0xb552xd7[_0x9c43[4]](/Ü«„/g, _0x9c43[216]);
+    var _0xb552xd9 = _0xb552xd8[_0x9c43[4]](/ß„/g, _0x9c43[217]);
+    var _0xb552xda = _0xb552xd9[_0x9c43[4]](/Þ„/g, _0x9c43[218]);
+    var _0xb552xdb = _0xb552xda[_0x9c43[4]](/d«„/g, _0x9c43[219]);
+    var _0xb552xdc = _0xb552xdb[_0x9c43[4]](/d¬„/g, _0x9c43[220]);
+    var _0xb552xdd = _0xb552xdc[_0x9c43[4]](/ä„/g, _0x9c43[221]);
+    var _0xb552xde = _0xb552xdd[_0x9c43[4]](/ç„/g, _0x9c43[222]);
+    var _0xb552xdf = _0xb552xde[_0x9c43[4]](/é„/g, _0x9c43[223]);
+    var _0xb552xe0 = _0xb552xdf[_0x9c43[4]](/î„/g, _0x9c43[224]);
+    var _0xb552xe1 = _0xb552xe0[_0x9c43[4]](/ð„/g, _0x9c43[225]);
+    var _0xb552xe2 = _0xb552xe1[_0x9c43[4]](/ñ„/g, _0x9c43[226]);
+    var _0xb552xe3 = _0xb552xe2[_0x9c43[4]](/®‹„/g, _0x9c43[227]);
+    var _0xb552xe4 = _0xb552xe3[_0x9c43[4]](/ó„/g, _0x9c43[228]);
+    var _0xb552xe5 = _0xb552xe4[_0x9c43[4]](/ô„/g, _0x9c43[229]);
+    var _0xb552xe6 = _0xb552xe5[_0x9c43[4]](/®Œ„/g, _0x9c43[230]);
+    var _0xb552xe7 = _0xb552xe6[_0x9c43[4]](/ò„/g, _0x9c43[231]);
+    var _0xb552xe8 = _0xb552xe7[_0x9c43[4]](/¯‹„/g, _0x9c43[232]);
+    var _0xb552xe9 = _0xb552xe8[_0x9c43[4]](/¯’„/g, _0x9c43[233]);
+    var _0xb552xea = _0xb552xe9[_0x9c43[4]](/ù„/g, _0x9c43[234]);
+    var _0xb552xeb = _0xb552xea[_0x9c43[4]](/ù«„/g, _0x9c43[235]);
+    var _0xb552xec = _0xb552xeb[_0x9c43[4]](/¯‹¬„/g, _0x9c43[236]);
+    var _0xb552xed = _0xb552xec[_0x9c43[4]](/¯Œ„/g, _0x9c43[237]);
+    var _0xb552xee = _0xb552xed[_0x9c43[4]](/þ„/g, _0x9c43[238]);
+    var _0xb552xef = _0xb552xee[_0x9c43[4]](/÷„/g, _0x9c43[239]);
+    var _0xb552xf0 = _0xb552xef[_0x9c43[4]](/ë„/g, _0x9c43[240]);
+    var _0xb552xf1 = _0xb552xf0[_0x9c43[4]](/P„/g, _0x9c43[241]);
+    var _0xb552xf2 = _0xb552xf1[_0x9c43[4]](/¶„/g, _0x9c43[242]);
+    var _0xb552xf3 = _0xb552xf2[_0x9c43[4]](/Ê„/g, _0x9c43[243]);
+    var _0xb552xf4 = _0xb552xf3[_0x9c43[4]](/nª/g, _0x9c43[244]);
+    var _0xb552xf5 = _0xb552xf4[_0x9c43[4]](/³ª/g, _0x9c43[245]);
+    var _0xb552xf6 = _0xb552xf5[_0x9c43[4]](/Qª/g, _0x9c43[246]);
+    var _0xb552xf7 = _0xb552xf6[_0x9c43[4]](/îª/g, _0x9c43[247]);
+    var _0xb552xf8 = _0xb552xf7[_0x9c43[4]](/ùª/g, _0x9c43[248]);
+    var _0xb552xf9 = _0xb552xf8[_0x9c43[4]](/ ‰/g, _0x9c43[249]);
+    var _0xb552xfa = _0xb552xf9[_0x9c43[4]](/Ww়/g, _0x9c43[250]);
+    var _0xb552xfb = _0xb552xfa[_0x9c43[4]](/W‡়/g, _0x9c43[251]);
+    var _0xb552xfc = _0xb552xfb[_0x9c43[4]](/W‰়/g, _0x9c43[252]);
+    var _0xb552xfd = _0xb552xfc[_0x9c43[4]](/Xw়/g, _0x9c43[253]);
+    var _0xb552xfe = _0xb552xfd[_0x9c43[4]](/X‡়/g, _0x9c43[254]);
+    var _0xb552xff = _0xb552xfe[_0x9c43[4]](/X‰়/g, _0x9c43[255]);
+    var _0xb552x100 = _0xb552xff[_0x9c43[4]](/hw়/g, _0x9c43[256]);
+    var _0xb552x101 = _0xb552x100[_0x9c43[4]](/h‡়/g, _0x9c43[257]);
+    var _0xb552x102 = _0xb552x101[_0x9c43[4]](/h‰়/g, _0x9c43[258]);
+    var _0xb552x103 = _0xb552x102[_0x9c43[4]](/oy/g, _0x9c43[259]);
+    var _0xb552x104 = _0xb552x103[_0x9c43[4]](/_ªy/g, _0x9c43[260]);
+    var _0xb552x105 = _0xb552x104[_0x9c43[4]](/_ª~/g, _0x9c43[261]);
+    var _0xb552x106 = _0xb552x105[_0x9c43[4]](/iy/g, _0x9c43[262]);
+    var _0xb552x107 = _0xb552x106[_0x9c43[4]](/i~/g, _0x9c43[263]);
+    var _0xb552x108 = _0xb552x107[_0x9c43[4]](/'‡/g, _0x9c43[264]);
+    var _0xb552x109 = _0xb552x108[_0x9c43[4]](/'‰/g, _0x9c43[265]);
+    var _0xb552x10a = _0xb552x109[_0x9c43[4]](/Ò‡/g, _0x9c43[266]);
+    var _0xb552x10b = _0xb552x10a[_0x9c43[4]](/Ò‰/g, _0x9c43[267]);
+    var _0xb552x10c = _0xb552x10b[_0x9c43[4]](/\"‡/g, _0x9c43[268]);
+    var _0xb552x10d = _0xb552x10c[_0x9c43[4]](/\"‰/g, _0x9c43[269]);
+    var _0xb552x10e = _0xb552x10d[_0x9c43[4]](/Ô‡/g, _0x9c43[270]);
+    var _0xb552x10f = _0xb552x10e[_0x9c43[4]](/Ô‰/g, _0x9c43[271]);
+    var _0xb552x110 = _0xb552x10f[_0x9c43[4]](/\n‡/g, _0x9c43[272]);
+    var _0xb552x111 = _0xb552x110[_0x9c43[4]](/\n‰/g, _0x9c43[273]);
+    var _0xb552x112 = _0xb552x111[_0x9c43[4]](/Kª/g, _0x9c43[274]);
+    var _0xb552x113 = _0xb552x112[_0x9c43[4]](/Zª/g, _0x9c43[275]);
+    if (_0xb552x113[_0x9c43[276]](0) == _0x9c43[277]) {
+        var _0xb552x114 = _0xb552x113[_0x9c43[4]](_0x9c43[277], _0x9c43[278])
+    } else {
+        if (_0xb552x113[_0x9c43[276]](0) == _0x9c43[279]) {
+            var _0xb552x114 = _0xb552x113[_0x9c43[4]](_0x9c43[279], _0x9c43[280])
+        } else {
+            var _0xb552x114 = _0xb552x113
+        }
+    }
+    ;document[_0x9c43[2]](_0x9c43[1])[_0x9c43[0]] = _0xb552x114
+}
+document[_0x9c43[2]](_0x9c43[1])[_0x9c43[281]] = function() {
+    var _0xb552x115 = document[_0x9c43[2]](_0x9c43[1])[_0x9c43[0]];
+    document[_0x9c43[2]](_0x9c43[282])[_0x9c43[0]] = ConvertToUnicode(_0x9c43[283], _0xb552x115)
+}
+;
+document[_0x9c43[2]](_0x9c43[282])[_0x9c43[281]] = function() {
+    var _0xb552x115 = document[_0x9c43[2]](_0x9c43[282])[_0x9c43[0]];
+    document[_0x9c43[2]](_0x9c43[1])[_0x9c43[0]] = ConvertToASCII(_0x9c43[283], _0xb552x115);
+    finishingTouch()
+}
+;
+function clearText() {
+    textTest = document[_0x9c43[2]](_0x9c43[282])[_0x9c43[0]];
+    if (textTest == _0x9c43[284]) {
+        var _0xb552x117 = document[_0x9c43[2]](_0x9c43[285]);
+        _0xb552x117[_0x9c43[288]][_0x9c43[287]](_0x9c43[286]);
+        setTimeout(function() {
+            _0xb552x117[_0x9c43[288]][_0x9c43[289]](_0x9c43[286])
+        }, 3000)
+    } else {
+        var _0xb552x117 = document[_0x9c43[2]](_0x9c43[290]);
+        _0xb552x117[_0x9c43[288]][_0x9c43[287]](_0x9c43[286]);
+        setTimeout(function() {
+            _0xb552x117[_0x9c43[288]][_0x9c43[289]](_0x9c43[286])
+        }, 3000);
+        document[_0x9c43[2]](_0x9c43[282])[_0x9c43[0]] = _0x9c43[284];
+        document[_0x9c43[2]](_0x9c43[1])[_0x9c43[0]] = _0x9c43[284]
+    }
+}
+function doCopy(_0xb552x119) {
+    textTest = document[_0x9c43[2]](_0x9c43[282])[_0x9c43[0]];
+    if (textTest == _0x9c43[284]) {
+        var _0xb552x117 = document[_0x9c43[2]](_0x9c43[285]);
+        _0xb552x117[_0x9c43[288]][_0x9c43[287]](_0x9c43[286]);
+        setTimeout(function() {
+            _0xb552x117[_0x9c43[288]][_0x9c43[289]](_0x9c43[286])
+        }, 3000)
+    } else {
+        var _0xb552x117 = document[_0x9c43[2]](_0x9c43[291]);
+        _0xb552x117[_0x9c43[288]][_0x9c43[287]](_0x9c43[286]);
+        setTimeout(function() {
+            _0xb552x117[_0x9c43[288]][_0x9c43[289]](_0x9c43[286])
+        }, 3000);
+        var _0xb552x11a = document[_0x9c43[2]](_0xb552x119);
+        _0xb552x11a[_0x9c43[292]]();
+        _0xb552x11a[_0x9c43[293]](0, 99999);
+        document[_0x9c43[295]](_0x9c43[294])
+    }
+}
+document[_0x9c43[2]](_0x9c43[305])[_0x9c43[304]](_0x9c43[296], () => {
+    navigator[_0x9c43[303]][_0x9c43[302]]()[_0x9c43[301]]( (_0xb552x115) => {
+        if (_0xb552x115 == _0x9c43[284]) {
+            var _0xb552x117 = document[_0x9c43[2]](_0x9c43[299]);
+            _0xb552x117[_0x9c43[288]][_0x9c43[287]](_0x9c43[286]);
+            setTimeout(function() {
+                _0xb552x117[_0x9c43[288]][_0x9c43[289]](_0x9c43[286])
+            }, 3000)
+        } else {
+            let _0xb552x11c = document[_0x9c43[2]](_0x9c43[282]);
+            _0xb552x11c[_0x9c43[0]] = _0xb552x115;
+            document[_0x9c43[2]](_0x9c43[1])[_0x9c43[0]] = ConvertToASCII(_0x9c43[283], _0xb552x115);
+            finishingTouch();
+            var _0xb552x117 = document[_0x9c43[2]](_0x9c43[300]);
+            _0xb552x117[_0x9c43[288]][_0x9c43[287]](_0x9c43[286]);
+            setTimeout(function() {
+                _0xb552x117[_0x9c43[288]][_0x9c43[289]](_0x9c43[286])
+            }, 3000)
+        }
+    }
+    )[_0x9c43[298]]( (_0xb552x11b) => {
+        var _0xb552x117 = document[_0x9c43[2]](_0x9c43[297]);
+        _0xb552x117[_0x9c43[288]][_0x9c43[287]](_0x9c43[286]);
+        setTimeout(function() {
+            _0xb552x117[_0x9c43[288]][_0x9c43[289]](_0x9c43[286])
+        }, 3000)
+    }
+    )
+}
+);
+document[_0x9c43[2]](_0x9c43[306])[_0x9c43[304]](_0x9c43[296], () => {
+    navigator[_0x9c43[303]][_0x9c43[302]]()[_0x9c43[301]]( (_0xb552x115) => {
+        if (_0xb552x115 == _0x9c43[284]) {
+            var _0xb552x117 = document[_0x9c43[2]](_0x9c43[299]);
+            _0xb552x117[_0x9c43[288]][_0x9c43[287]](_0x9c43[286]);
+            setTimeout(function() {
+                _0xb552x117[_0x9c43[288]][_0x9c43[289]](_0x9c43[286])
+            }, 3000)
+        } else {
+            let _0xb552x11c = document[_0x9c43[2]](_0x9c43[1]);
+            _0xb552x11c[_0x9c43[0]] = _0xb552x115;
+            document[_0x9c43[2]](_0x9c43[282])[_0x9c43[0]] = ConvertToUnicode(_0x9c43[283], _0xb552x115);
+            var _0xb552x117 = document[_0x9c43[2]](_0x9c43[300]);
+            _0xb552x117[_0x9c43[288]][_0x9c43[287]](_0x9c43[286]);
+            setTimeout(function() {
+                _0xb552x117[_0x9c43[288]][_0x9c43[289]](_0x9c43[286])
+            }, 3000)
+        }
+    }
+    )[_0x9c43[298]]( (_0xb552x11b) => {
+        var _0xb552x117 = document[_0x9c43[2]](_0x9c43[297]);
+        _0xb552x117[_0x9c43[288]][_0x9c43[287]](_0x9c43[286]);
+        setTimeout(function() {
+            _0xb552x117[_0x9c43[288]][_0x9c43[289]](_0x9c43[286])
+        }, 3000)
+    }
+    )
+}
+)
+</script>
+
+<script>
+/* converter.js ফাইলের সম্পূর্ণ কোড এখানে */
+var _0xe759 = ["\u09B0\u200C\u09CD\u09AF", "\u09CD\u09B0\u09CD\u09AF", "\u0995\u09CD\u09B7\u09CD\u09AE", "\u0995\u09CD\u0995", "\u0995\u09CD\u099F", "\u0995\u09CD\u09A4\u09CD\u09AC", "\u0995\u09CD\u09A4", "\u0995\u09CD\u09AC", "\u09B8\u09CD\u0995\u09CD\u09B0", "\u0995\u09CD\u09B0", "\u09B8\u09CD\u0995\u09CD\u09B2", "\u0995\u09CD\u09B2", "\u0995\u09CD\u09A8", "\u0995\u09CD\u09AE", "\u0995\u09CD\u09B7\u09CD\u09A3", "\u0995\u09CD\u09B7\u09CD\u09AC", "\u0999\u09CD\u0995\u09CD\u09B7", "\u0995\u09CD\u09B7", "\u0995\u09CD\u09B8", "\u0996\u09CD\u09AC", "\u0997\u09C1", "\u0997\u09CD\u09A6", "\u0997\u09CD\u09AC", "\u0997\u09CD\u09A7", "\u0997\u09CD\u09A8", "\u0997\u09CD\u09AE", "\u0997\u09CD\u09B2", "\u0998\u09CD\u09AC", "\u0998\u09CD\u09A8", "\u0999\u09CD\u0995", "\u0999\u09CD\u09AE", "\u0999\u09CD\u0996", "\u0999\u09CD\u0997", "\u0999\u09CD\u0998", "\u099A\u09CD\u099B\u09CD\u09AC", "\u099A\u09CD\u099A", "\u099A\u09CD\u099B", "\u099A\u09CD\u099E", "\u099B\u09CD\u09AC", "\u099C\u09CD\u099C\u09CD\u09AC", "\u099C\u09CD\u099C", "\u099C\u09CD\u099D", "\u099C\u09CD\u099E", "\u099C\u09CD\u09AC", "\u099E\u09CD\u099A", "\u099E\u09CD\u099B", "\u099E\u09CD\u099C", "\u099E\u09CD\u099D", "\u099F\u09CD\u099F", "\u099F\u09CD\u09AC", "\u099F\u09CD\u09AE", "\u09A1\u09CD\u09A1", "\u09A3\u09CD\u099F", "\u09A3\u09CD\u09A0", "\u09A3\u09CD\u09A2", "\u09A3\u09CD\u09A3", "\u09A3\u09CD\u09AE", "\u09A8\u09CD\u09B8", "\u09A3\u09CD\u09A1", "\u09A8\u09CD\u09A4\u09C1", "\u09A3\u09CD\u09AC", "\u09A4\u09CD\u09A4\u09CD\u09AC", "\u09A4\u09CD\u09A4", "\u09A4\u09CD\u09A5", "\u09A4\u09CD\u09A8", "\u09A4\u09CD\u09AE", "\u09A4\u09CD\u09B2", "\u09A8\u09CD\u09A4\u09CD\u09AC", "\u09B8\u09CD\u09A4\u09CD\u09AC", "\u09A4\u09CD\u09AC", "\u09A4\u09CD\u09B0", "\u09A5\u09CD\u09B2", "\u09A5\u09CD\u09AC", "\u09A8\u09CD\u09A6\u09CD\u09AC", "\u09A6\u09CD\u0997", "\u09A6\u09CD\u0998", "\u09A6\u09CD\u09A6\u09CD\u09AC", "\u09A6\u09CD\u09A6", "\u09A6\u09CD\u09A7\u09CD\u09AC", "\u09A6\u09CD\u09A7", "\u09A6\u09CD\u09A8", "\u09A6\u09CD\u09AC", "\u09A6\u09CD\u09AD\u09CD\u09B0", "\u09A6\u09CD\u09AD", "\u09A6\u09CD\u09AE", "\u09A7\u09CD\u09A8", "\u09A7\u09CD\u09AC", "\u09A7\u09CD\u09AE", "\u09A8\u09CD\u099F", "\u09A8\u09CD\u09A0", "\u09A8\u09CD\u09A1", "\u09A8\u09CD\u09A4", "\u09A8\u09CD\u09A4\u09CD\u09B0", "\u09A8\u09CD\u09A5", "\u09A8\u09CD\u09A6", "\u09A8\u09CD\u09A7", "\u09A8\u09CD\u09A8", "\u09A8\u09CD\u09AC", "\u09A8\u09CD\u09AE", "\u09AA\u09CD\u099F", "\u09AA\u09CD\u09A4", "\u09AA\u09CD\u09A8", "\u09AA\u09CD\u09AA", "\u09AA\u09CD\u09AE", "\u09AA\u09CD\u09B2", "\u09AA\u09CD\u09B8", "\u09AB\u09CD\u09B2", "\u09AC\u09CD\u099C", "\u09AC\u09CD\u09A6", "\u09AC\u09CD\u09A7", "\u09AC\u09CD\u09AC", "\u09AC\u09CD\u09B2", "\u09AD\u09CD\u09B2", "\u09AD\u09CD\u09B0", "\u09AE\u09CD\u09A8", "\u09AE\u09CD\u09AA", "\u09AE\u09CD\u09AB", "\u09B7\u09CD\u09AC", "\u09AE\u09CD\u09AC", "\u09AE\u09CD\u09AD", "\u09AE\u09CD\u09AD\u09CD\u09B0", "\u09AE\u09CD\u09AE", "\u09AE\u09CD\u09B0", "\u09AE\u09CD\u09B2", "\u09B2\u09CD\u0995", "\u09B2\u09CD\u0997", "\u09B2\u09CD\u099F", "\u09B2\u09CD\u09A1", "\u09B2\u09CD\u09AA", "\u09B2\u09CD\u09AB", "\u09B2\u09CD\u09AC", "\u09B2\u09CD\u09AE", "\u09B2\u09CD\u09B2", "\u09B6\u09C1", "\u09B6\u09CD\u099A", "\u09B6\u09CD\u099B", "\u09B6\u09CD\u09A8", "\u09B6\u09CD\u09AC", "\u09B6\u09CD\u09AE", "\u09B6\u09CD\u09B2", "\u09B7\u09CD\u0995", "\u09B7\u09CD\u0995\u09CD\u09B0", "\u09B7\u09CD\u099F", "\u09B7\u09CD\u09A0", "\u09B7\u09CD\u09A3", "\u09B7\u09CD\u09AA", "\u09B7\u09CD\u09AB", "\u09B7\u09CD\u09AE", "\u09B7\u09CD\u09B0", "\u09B8\u09CD\u0995", "\u09B8\u09CD\u099F", "\u09B8\u09CD\u0996", "\u09B8\u09CD\u09A4", "\u09B8\u09CD\u09A4\u09C1", "\u09B8\u09CD\u09A4\u09CD\u09B0", "\u09B8\u09CD\u09A5", "\u09B8\u09CD\u09A8", "\u09B8\u09CD\u09AA", "\u09B8\u09CD\u09AB", "\u09B8\u09CD\u09AC", "\u09B8\u09CD\u09AE", "\u09B8\u09CD\u09B0", "\u09B8\u09CD\u09B2", "\u09B9\u09C1", "\u09B9\u09CD\u09A3", "\u09B9\u09CD\u09AC", "\u09B9\u09CD\u09A8", "\u09B9\u09CD\u09AE", "\u09B9\u09CD\u09B2", "\u09B9\u09C3", "\u09DC\u09CD\u0997", "\u09B0\u09CD", "\u0986", "\u0985", "\u0987", "\u0988", "\u0989", "\u098A", "\u098B", "\u098F", "\u0990", "\u0993", "\u0994", "\u0995", "\u0996", "\u0997", "\u0998", "\u0999", "\u099A", "\u099B", "\u099C", "\u099D", "\u099E", "\u099F", "\u09A0", "\u09A1", "\u09A2", "\u09A3", "\u09A4", "\u09A5", "\u09A6", "\u09A7", "\u09A8", "\u09AA", "\u09AB", "\u09AC", "\u09AD", "\u09AE", "\u09AF", "\u09B0", "\u09B2", "\u09B6", "\u09B7", "\u09B8", "\u09B9", "\u09DC", "\u09DD", "\u09DF", "\u09CE", "\u09F3", "\u098D", "\u098E", "\u09E6", "\u09E7", "\u09E8", "\u09E9", "\u09EA", "\u09EB", "\u09EC", "\u09ED", "\u09EE", "\u09EF", "\u09BE", "\u09BF", "\u09C0", "\u09C1", "\u09C2", "\u09C3", "\u09C7", "\u09C8", "\u09D7", "\x2D", "\u2018", "\u2019", "\u0964", "\u0965", "\u201C", "\u201D", "\u0982", "\u0983", "\u0981", "\u09CD\u09B0", "\u09CD\u09AF", "\u09CD\u09AC", "\u09CD\u09B2", "\u09CD\u09A8", "\u09CD", "\x6C\x65\x6E\x67\x74\x68", "\x63\x68\x61\x72\x41\x74", "\x73\x75\x62\x73\x74\x72\x69\x6E\x67", "\u09CB", "\u09CC", "\x26\x23\x28\x5B\x30\x2D\x39\x41\x2D\x46\x61\x2D\x66\x5D\x7B\x34\x7D\x29\x3B", "\x65\x78\x65\x63", "\x26\x23", "\x3B", "\x67", "\x66\x72\x6F\x6D\x43\x68\x61\x72\x43\x6F\x64\x65", "\x72\x65\x70\x6C\x61\x63\x65", "\u0985\u09BE"];
+var bijoy_string_conversion_map = {
+    "\x69\xA8": _0xe759[0],
+    "\xAA\xA8": _0xe759[1],
+    "\xB2": _0xe759[2],
+    "\xB0": _0xe759[3],
+    "\xB1": _0xe759[4],
+    "\xB3\xA1": _0xe759[5],
+    "\xB3": _0xe759[6],
+    "\x4B\xA1": _0xe759[7],
+    "\xAF\u0152": _0xe759[8],
+    "\xB5": _0xe759[9],
+    "\xAF\u2039\xAC": _0xe759[10],
+    "\x4B\xAC": _0xe759[11],
+    "\x4B\xE8": _0xe759[12],
+    "\xB4": _0xe759[13],
+    "\xB6\xE8": _0xe759[14],
+    "\xB6\xA1": _0xe759[15],
+    "\u2022\xB6": _0xe759[16],
+    "\xB6": _0xe759[17],
+    "\xB7": _0xe759[18],
+    "\x4C\xA1": _0xe759[19],
+    "\xB8": _0xe759[20],
+    "\xBA": _0xe759[21],
+    "\x4D\xA6": _0xe759[22],
+    "\xBB": _0xe759[23],
+    "\x4D\u0153": _0xe759[24],
+    "\x4D\xA5": _0xe759[25],
+    "\x4D\xAD": _0xe759[26],
+    "\x4E\xA1": _0xe759[27],
+    "\x4E\u0153": _0xe759[28],
+    "\xBC": _0xe759[29],
+    "\u2022\x67": _0xe759[30],
+    "\u2022\x4C": _0xe759[31],
+    "\xBD": _0xe759[32],
+    "\u2022\x4E": _0xe759[33],
+    "\u2022": _0xe759[18],
+    "\u201D\x51\xA1": _0xe759[34],
+    "\u201D\x51\xA6": _0xe759[34],
+    "\u201D\x50": _0xe759[35],
+    "\u201D\x51": _0xe759[36],
+    "\u201D\x54": _0xe759[37],
+    "\x51\xA1": _0xe759[38],
+    "\xBE\xA1": _0xe759[39],
+    "\xBE": _0xe759[40],
+    "\xC0": _0xe759[41],
+    "\xC1": _0xe759[42],
+    "\x52\xA1": _0xe759[43],
+    "\xC2": _0xe759[44],
+    "\xC3": _0xe759[45],
+    "\xC4": _0xe759[46],
+    "\xC5": _0xe759[47],
+    "\xC6": _0xe759[48],
+    "\x55\xA1": _0xe759[49],
+    "\x55\xA5": _0xe759[50],
+    "\xC7": _0xe759[51],
+    "\xC8": _0xe759[52],
+    "\xC9": _0xe759[53],
+    "\u2212": _0xe759[54],
+    "\x59\u0153": _0xe759[55],
+    "\x59\xA5": _0xe759[56],
+    "\xDD": _0xe759[57],
+    "\xCA": _0xe759[58],
+    "\u0161\u2018": _0xe759[59],
+    "\x59\x5C\x5E": _0xe759[60],
+    "\xCB\xA1": _0xe759[61],
+    "\xCB": _0xe759[62],
+    "\xCC": _0xe759[63],
+    "\x5A\u0153": _0xe759[64],
+    "\xCD": _0xe759[65],
+    "\x5A\xAC": _0xe759[66],
+    "\u0161\u2014\xA1": _0xe759[67],
+    "\xAF\u2014\xA1": _0xe759[68],
+    "\x5A\xA1": _0xe759[69],
+    "\xCE": _0xe759[70],
+    "\x5F\xAD": _0xe759[71],
+    "\x5F\xA1": _0xe759[72],
+    "\u203A\xD8": _0xe759[73],
+    "\u02DC\x4D": _0xe759[74],
+    "\u02DC\x4E": _0xe759[75],
+    "\xCF\xA1": _0xe759[76],
+    "\xCF": _0xe759[77],
+    "\xD7\xA1": _0xe759[78],
+    "\xD7": _0xe759[79],
+    "\x60\u0153": _0xe759[80],
+    "\xD8": _0xe759[81],
+    "\u2122\xA3": _0xe759[82],
+    "\u2122\xA2": _0xe759[83],
+    "\xD9": _0xe759[84],
+    "\x61\u0153": _0xe759[85],
+    "\x61\u0178": _0xe759[86],
+    "\x61\xA5": _0xe759[87],
+    "\u203A\x55": _0xe759[88],
+    "\xDA": _0xe759[89],
+    "\xDB": _0xe759[90],
+    "\u0161\xCD": _0xe759[91],
+    "\u0161\u2014": _0xe759[91],
+    "\u0161\xBF": _0xe759[92],
+    "\u0161\u2019": _0xe759[93],
+    "\u203A\x60": _0xe759[94],
+    "\xDC": _0xe759[95],
+    "\x62\u0153": _0xe759[96],
+    "\u0161\x5C\x5E": _0xe759[97],
+    "\x62\xA5": _0xe759[98],
+    "\xDE": _0xe759[99],
+    "\xDF": _0xe759[100],
+    "\x63\u0153": _0xe759[101],
+    "\xE0": _0xe759[102],
+    "\x63\xA5": _0xe759[103],
+    "\x63\xAD": _0xe759[104],
+    "\xE1": _0xe759[105],
+    "\x64\xAC": _0xe759[106],
+    "\xE2": _0xe759[107],
+    "\xE3": _0xe759[108],
+    "\xE4": _0xe759[109],
+    "\x65\u0178": _0xe759[110],
+    "\x65\xAD": _0xe759[111],
+    "\x66\xAC": _0xe759[112],
+    "\xE5": _0xe759[113],
+    "\xE6": _0xe759[114],
+    "\xA4\xFA": _0xe759[115],
+    "\xA4\x63": _0xe759[115],
+    "\xE7": _0xe759[116],
+    "\xAE\x5C\x5E": _0xe759[117],
+    "\xA4\x5C\x5E": _0xe759[118],
+    "\xA4\xA2": _0xe759[119],
+    "\xA4\xA3": _0xe759[120],
+    "\xA4\xA7": _0xe759[121],
+    "\xA4\xAA": _0xe759[122],
+    "\xA4\xAD": _0xe759[123],
+    "\xA4\xAC": _0xe759[123],
+    "\xE9": _0xe759[124],
+    "\xEA": _0xe759[125],
+    "\xEB": _0xe759[126],
+    "\xEC": _0xe759[127],
+    "\xED": _0xe759[128],
+    "\xEE": _0xe759[129],
+    "\x6A\xA6": _0xe759[130],
+    "\x6A\xA5": _0xe759[131],
+    "\x6A\xAD": _0xe759[132],
+    "\xEF": _0xe759[133],
+    "\xF0": _0xe759[134],
+    "\xF1": _0xe759[135],
+    "\x6B\u0153": _0xe759[136],
+    "\x6B\xA6": _0xe759[137],
+    "\x6B\x5C\x5E": _0xe759[137],
+    "\x6B\xA5": _0xe759[138],
+    "\x6B\xAD": _0xe759[139],
+    "\xAE\u2039": _0xe759[140],
+    "\xAE\u0152": _0xe759[141],
+    "\xF3": _0xe759[142],
+    "\xF4": _0xe759[143],
+    "\xF2": _0xe759[144],
+    "\xAE\xFA": _0xe759[145],
+    "\xAE\x63": _0xe759[145],
+    "\xF5": _0xe759[146],
+    "\xAE\xA7": _0xe759[147],
+    "\xAE\xAA": _0xe759[148],
+    "\xAF\u2039": _0xe759[149],
+    "\xF7": _0xe759[150],
+    "\xF6": _0xe759[151],
+    "\xAF\u2014": _0xe759[152],
+    "\xAF\xCD": _0xe759[152],
+    "\xAF\u2018": _0xe759[153],
+    "\xAF\xBF": _0xe759[154],
+    "\xAF\u2019": _0xe759[155],
+    "\xF8": _0xe759[156],
+    "\xAF\xFA": _0xe759[157],
+    "\xAF\x63": _0xe759[157],
+    "\xF9": _0xe759[158],
+    "\xAF\x5C\x5E": _0xe759[159],
+    "\xAF\xA7": _0xe759[160],
+    "\xAF\xAA": _0xe759[161],
+    "\xAF\xAD": _0xe759[162],
+    "\xAF\xAC": _0xe759[162],
+    "\xFB": _0xe759[163],
+    "\x6E\xE8": _0xe759[164],
+    "\x6E\u0178": _0xe759[165],
+    "\xFD": _0xe759[166],
+    "\xFE": _0xe759[167],
+    "\x6E\xAC": _0xe759[168],
+    "\xFC": _0xe759[169],
+    "\xFF": _0xe759[170],
+    "\xA9": _0xe759[171],
+    "\x41\x76": _0xe759[172],
+    "\x41": _0xe759[173],
+    "\x42": _0xe759[174],
+    "\x43": _0xe759[175],
+    "\x44": _0xe759[176],
+    "\x45": _0xe759[177],
+    "\x46": _0xe759[178],
+    "\x47": _0xe759[179],
+    "\x48": _0xe759[180],
+    "\x49": _0xe759[181],
+    "\x4A": _0xe759[182],
+    "\x4B": _0xe759[183],
+    "\x4C": _0xe759[184],
+    "\x4D": _0xe759[185],
+    "\x4E": _0xe759[186],
+    "\x4F": _0xe759[187],
+    "\x50": _0xe759[188],
+    "\x51": _0xe759[189],
+    "\x52": _0xe759[190],
+    "\x53": _0xe759[191],
+    "\x54": _0xe759[192],
+    "\x55": _0xe759[193],
+    "\x56": _0xe759[194],
+    "\x57": _0xe759[195],
+    "\x58": _0xe759[196],
+    "\x59": _0xe759[197],
+    "\x5A": _0xe759[198],
+    "\x5F": _0xe759[199],
+    "\x60": _0xe759[200],
+    "\x61": _0xe759[201],
+    "\x62": _0xe759[202],
+    "\x63": _0xe759[203],
+    "\x64": _0xe759[204],
+    "\x65": _0xe759[205],
+    "\x66": _0xe759[206],
+    "\x67": _0xe759[207],
+    "\x68": _0xe759[208],
+    "\x69": _0xe759[209],
+    "\x6A": _0xe759[210],
+    "\x6B": _0xe759[211],
+    "\x6C": _0xe759[212],
+    "\x6D": _0xe759[213],
+    "\x6E": _0xe759[214],
+    "\x6F": _0xe759[215],
+    "\x70": _0xe759[216],
+    "\x71": _0xe759[217],
+    "\x72": _0xe759[218],
+    "\x5C\x24": _0xe759[219],
+    "\x3C\x3C": _0xe759[220],
+    "\x3E\x3E": _0xe759[221],
+    "\x30": _0xe759[222],
+    "\x31": _0xe759[223],
+    "\x32": _0xe759[224],
+    "\x33": _0xe759[225],
+    "\x34": _0xe759[226],
+    "\x35": _0xe759[227],
+    "\x36": _0xe759[228],
+    "\x37": _0xe759[229],
+    "\x38": _0xe759[230],
+    "\x39": _0xe759[231],
+    "\x76": _0xe759[232],
+    "\x77": _0xe759[233],
+    "\x78": _0xe759[234],
+    "\x79": _0xe759[235],
+    "\x7A": _0xe759[235],
+    "\x7E": _0xe759[236],
+    "\u201A": _0xe759[236],
+    "\u0192": _0xe759[236],
+    "\u201E": _0xe759[237],
+    "\u201C": _0xe759[235],
+    "\u2021": _0xe759[238],
+    "\u2020": _0xe759[238],
+    "\u2030": _0xe759[239],
+    "\x5C\u02C6": _0xe759[239],
+    "\u0160": _0xe759[240],
+    "\xD0": _0xe759[241],
+    "\xD4": _0xe759[242],
+    "\xD5": _0xe759[243],
+    "\x5C\x7C": _0xe759[244],
+    "\x5C\x5C": _0xe759[245],
+    "\xD2": _0xe759[246],
+    "\xD3": _0xe759[247],
+    "\x73": _0xe759[248],
+    "\x74": _0xe759[249],
+    "\x75": _0xe759[250],
+    "\xAA": _0xe759[251],
+    "\xD6": _0xe759[251],
+    "\xAB": _0xe759[251],
+    "\xA8": _0xe759[252],
+    "\xA6": _0xe759[253],
+    "\xA1": _0xe759[253],
+    "\xAC": _0xe759[254],
+    "\xAD": _0xe759[254],
+    "\xE8": _0xe759[255],
+    "\u0153": _0xe759[255],
+    "\x5C\x26": _0xe759[256],
+    "\u2026": _0xe759[237]
+};
+function ReArrangeUnicodeConvertedText(_0x5576x3) {
+    for (var _0x5576x4 = 0; _0x5576x4 < _0x5576x3[_0xe759[257]]; _0x5576x4++) {
+        if (_0x5576x4 > 0 && _0x5576x3[_0xe759[258]](_0x5576x4) == _0xe759[256] && (IsBanglaKar(_0x5576x3[_0xe759[258]](_0x5576x4 - 1)) || IsBanglaNukta(_0x5576x3[_0xe759[258]](_0x5576x4 - 1))) && _0x5576x4 < _0x5576x3[_0xe759[257]] - 1) {
+            var _0x5576x5 = _0x5576x3[_0xe759[259]](0, _0x5576x4 - 1);
+            _0x5576x5 += _0x5576x3[_0xe759[258]](_0x5576x4);
+            _0x5576x5 += _0x5576x3[_0xe759[258]](_0x5576x4 + 1);
+            _0x5576x5 += _0x5576x3[_0xe759[258]](_0x5576x4 - 1);
+            _0x5576x5 += _0x5576x3[_0xe759[259]](_0x5576x4 + 2, _0x5576x3[_0xe759[257]]);
+            _0x5576x3 = _0x5576x5
+        }
+        ;if (_0x5576x4 > 0 && _0x5576x4 < _0x5576x3[_0xe759[257]] - 1 && _0x5576x3[_0xe759[258]](_0x5576x4) == _0xe759[256] && _0x5576x3[_0xe759[258]](_0x5576x4 - 1) == _0xe759[209] && _0x5576x3[_0xe759[258]](_0x5576x4 - 2) != _0xe759[256] && IsBanglaKar(_0x5576x3[_0xe759[258]](_0x5576x4 + 1))) {
+            var _0x5576x5 = _0x5576x3[_0xe759[259]](0, _0x5576x4 - 1);
+            _0x5576x5 += _0x5576x3[_0xe759[258]](_0x5576x4 + 1);
+            _0x5576x5 += _0x5576x3[_0xe759[258]](_0x5576x4 - 1);
+            _0x5576x5 += _0x5576x3[_0xe759[258]](_0x5576x4);
+            _0x5576x5 += _0x5576x3[_0xe759[259]](_0x5576x4 + 2, _0x5576x3[_0xe759[257]]);
+            _0x5576x3 = _0x5576x5
+        }
+        ;if (_0x5576x4 < _0x5576x3[_0xe759[257]] - 1 && _0x5576x3[_0xe759[258]](_0x5576x4) == _0xe759[209] && IsBanglaHalant(_0x5576x3[_0xe759[258]](_0x5576x4 + 1)) && !IsBanglaHalant(_0x5576x3[_0xe759[258]](_0x5576x4 - 1))) {
+            var _0x5576x6 = 1;
+            while (true) {
+                if (_0x5576x4 - _0x5576x6 < 0) {
+                    break
+                }
+                ;if (IsBanglaBanjonborno(_0x5576x3[_0xe759[258]](_0x5576x4 - _0x5576x6)) && IsBanglaHalant(_0x5576x3[_0xe759[258]](_0x5576x4 - _0x5576x6 - 1))) {
+                    _0x5576x6 += 2
+                } else {
+                    if (_0x5576x6 == 1 && IsBanglaKar(_0x5576x3[_0xe759[258]](_0x5576x4 - _0x5576x6))) {
+                        _0x5576x6++
+                    } else {
+                        break
+                    }
+                }
+            }
+            ;var _0x5576x5 = _0x5576x3[_0xe759[259]](0, _0x5576x4 - _0x5576x6);
+            _0x5576x5 += _0x5576x3[_0xe759[258]](_0x5576x4);
+            _0x5576x5 += _0x5576x3[_0xe759[258]](_0x5576x4 + 1);
+            _0x5576x5 += _0x5576x3[_0xe759[259]](_0x5576x4 - _0x5576x6, _0x5576x4);
+            _0x5576x5 += _0x5576x3[_0xe759[259]](_0x5576x4 + 2, _0x5576x3[_0xe759[257]]);
+            _0x5576x3 = _0x5576x5;
+            _0x5576x4 += 1;
+            continue
+        }
+        ;if (_0x5576x4 < _0x5576x3[_0xe759[257]] - 1 && IsBanglaPreKar(_0x5576x3[_0xe759[258]](_0x5576x4)) && IsSpace(_0x5576x3[_0xe759[258]](_0x5576x4 + 1)) == false) {
+            var _0x5576x5 = _0x5576x3[_0xe759[259]](0, _0x5576x4);
+            var _0x5576x6 = 1;
+            while (IsBanglaBanjonborno(_0x5576x3[_0xe759[258]](_0x5576x4 + _0x5576x6))) {
+                if (IsBanglaHalant(_0x5576x3[_0xe759[258]](_0x5576x4 + _0x5576x6 + 1))) {
+                    _0x5576x6 += 2
+                } else {
+                    break
+                }
+            }
+            ;_0x5576x5 += _0x5576x3[_0xe759[259]](_0x5576x4 + 1, _0x5576x4 + _0x5576x6 + 1);
+            var _0x5576x7 = 0;
+            if (_0x5576x3[_0xe759[258]](_0x5576x4) == _0xe759[238] && _0x5576x3[_0xe759[258]](_0x5576x4 + _0x5576x6 + 1) == _0xe759[232]) {
+                _0x5576x5 += _0xe759[260];
+                _0x5576x7 = 1
+            } else {
+                if (_0x5576x3[_0xe759[258]](_0x5576x4) == _0xe759[238] && _0x5576x3[_0xe759[258]](_0x5576x4 + _0x5576x6 + 1) == _0xe759[240]) {
+                    _0x5576x5 += _0xe759[261];
+                    _0x5576x7 = 1
+                } else {
+                    _0x5576x5 += _0x5576x3[_0xe759[258]](_0x5576x4)
+                }
+            }
+            ;_0x5576x5 += _0x5576x3[_0xe759[259]](_0x5576x4 + _0x5576x6 + _0x5576x7 + 1, _0x5576x3[_0xe759[257]]);
+            _0x5576x3 = _0x5576x5;
+            _0x5576x4 += _0x5576x6
+        }
+        ;if (_0x5576x4 < _0x5576x3[_0xe759[257]] - 1 && _0x5576x3[_0xe759[258]](_0x5576x4) == _0xe759[250] && IsBanglaPostKar(_0x5576x3[_0xe759[258]](_0x5576x4 + 1))) {
+            var _0x5576x5 = _0x5576x3[_0xe759[259]](0, _0x5576x4);
+            _0x5576x5 += _0x5576x3[_0xe759[258]](_0x5576x4 + 1);
+            _0x5576x5 += _0x5576x3[_0xe759[258]](_0x5576x4);
+            _0x5576x5 += _0x5576x3[_0xe759[259]](_0x5576x4 + 2, _0x5576x3[_0xe759[257]]);
+            _0x5576x3 = _0x5576x5
+        }
+    }
+    ;return _0x5576x3
+}
+function h2d(_0x5576x9) {
+    return parseInt(_0x5576x9, 16)
+}
+function HTMLSafeToUnicode(_0x5576xb) {
+    var _0x5576xc = new RegExp(_0xe759[262]);
+    var _0x5576xd = _0x5576xc[_0xe759[263]](_0x5576xb);
+    while (_0x5576xd != null) {
+        var _0x5576xe = new RegExp(_0xe759[264] + _0x5576xd[1] + _0xe759[265],_0xe759[266]);
+        _0x5576xb = _0x5576xb[_0xe759[268]](_0x5576xe, String[_0xe759[267]](h2d(_0x5576xd[1])));
+        _0x5576xd = _0x5576xc[_0xe759[263]](_0x5576xb)
+    }
+    ;return _0x5576xb
+}
+function ConvertToUnicode(_0x5576x10, _0x5576xb) {
+    var _0x5576x11 = bijoy_string_conversion_map;
+    for (var _0x5576x12 in _0x5576x11) {
+        var _0x5576x13 = new RegExp(_0x5576x12,_0xe759[266]);
+        _0x5576xb = _0x5576xb[_0xe759[268]](_0x5576x13, _0x5576x11[_0x5576x12])
+    }
+    ;_0x5576xb = ReArrangeUnicodeConvertedText(_0x5576xb);
+    var _0x5576x13 = new RegExp(_0xe759[269],_0xe759[266]);
+    _0x5576xb = _0x5576xb[_0xe759[268]](_0x5576x13, _0xe759[172]);
+    return _0x5576xb
+}
+</script>
+
+<script>
+/* rconverter.js ফাইলের সম্পূর্ণ কোড এখানে */
+var _0x19a6 = ["\x7C", "\x5C", "\xD4", "\xD5", "\xD2", "\xD3", "\xAA\xA8", "\x69\xA8", "\x6F", "\x70", "\x71", "\xB6\xA1", "\xB2", "\xB6\xE8", "\xB0", "\xB1", "\xB3\xA1", "\xB3", "\x4B\xA1", "\xBC\xAB", "\xAF\u0152", "\xAE\u0152", "\xB5", "\xAF\u2039\xAC", "\x4B\xAC", "\x4B\xE8", "\xB4", "\u2022\xB6", "\xB6", "\xB7", "\x4C\xA1", "\xBD", "\u02DC\x4D", "\xEA", "\xFF", "\xB8", "\x4D\xA6", "\xBB", "\xBA", "\x4D\u0153", "\x4D\xA5", "\x4D\xAC", "\x4E\xA1", "\x4E\u0153", "\xBC", "\u2022\x67", "\u2022\x4C", "\u2022\x4E", "\u201D\x51\xA1", "\u201D\x50", "\u201D\x51", "\x51\xA1", "\u201D\x54", "\x52", "\xBE\xA1", "\xBE", "\xC0", "\xC1", "\x52\xA1", "\xC2", "\xC3", "\xC4", "\xC5", "\xC6", "\x55\xA1", "\x55\xA5", "\xC7", "\xC8", "\xC9", "\u2212", "\x59\u0153", "\x59\xA5", "\xDD", "\xCA", "\u0161\u2018", "\x59\x5E", "\xCB\xA1", "\xCB", "\xCC", "\x5A\u0153", "\xCD", "\x5A\xAC", "\u0161\u2014\xA1", "\xAF\u2014\xA1", "\x5A\xA1", "\x5F\xAC", "\x5F\xA1", "\u02DC\x4E", "\xCF\xA1", "\xCF", "\xD7\xA1", "\xD7", "\x60\u0153", "\u203A\xD8", "\xD8", "\u2122\xA3", "\u2122\xA2", "\xD9", "\x61\u0153", "\x61\u0178", "\x61\xA5", "\u203A\x55", "\xDA", "\xDB", "\u0161\xBF", "\u0161\u2014", "\xAF\xBF", "\xCE", "\u0161\u2019", "\u203A\x60", "\xDC", "\x62\u0153", "\u0161\x5E", "\x62\xA5", "\xDE", "\xDF", "\x63\u0153", "\xE0", "\x63\xA5", "\x63\xAC", "\xE1", "\x64\xAC", "\xE2", "\xE3", "\xE4", "\x65\u0178", "\x65\xAC", "\xA4\xA3", "\xE5", "\x66\xAC", "\xE6", "\xA4\xFA", "\xE7", "\xA4\x5E", "\xA4\xA2", "\xA4\xA7", "\xA4\xAC", "\xE9", "\xEB", "\xEC", "\xED", "\xEE", "\x6A\xA6", "\x6A\xA5", "\x6A\xAC", "\xEF", "\xF0", "\xF1", "\x6B\u0153", "\x6B\xA6", "\x6B\xA5", "\x6B\xAC", "\xAE\u2039", "\xAE\x5E", "\xF3", "\xF4", "\xF2", "\xAE\xFA", "\xF5", "\xAE\xA7", "\xAF\u2039", "\xF7", "\xF6", "\xAF\u2018", "\xAF\u2014", "\xAF\u2019", "\xF8", "\xAF\xFA", "\xF9", "\xAF\x5E", "\xAF\xA7", "\xAF\xAC", "\xFB", "\x6E\xE8", "\x6E\u0178", "\xFD", "\xFE", "\x6E\xAC", "\xFC", "\xA9", "\xAA", "\xA8", "\xA1", "\xAC", "\u0153", "\x26", "\x41\x76", "\x41", "\x42", "\x43", "\x44", "\x45", "\x46", "\x47", "\x48", "\x49", "\x4A", "\x4B", "\x4C", "\x4D", "\x4E", "\x4F", "\x50", "\x51", "\x53", "\x54", "\x55", "\x56", "\x57", "\x58", "\x59", "\x5A", "\x5F", "\x60", "\x61", "\x62", "\x63", "\x64", "\x65", "\x66", "\x67", "\x68", "\x69", "\x6A", "\x6B", "\x6C", "\x6D", "\x6E", "\x72", "\x24", "\x3C\x3C", "\x3E\x3E", "\x30", "\x31", "\x32", "\x33", "\x34", "\x35", "\x36", "\x37", "\x38", "\x39", "\x76", "\x77", "\x78", "\x79", "\x7E", "\u201E", "\u2021", "\u2030", "\u0160", "\x73", "\x74", "\x75", "\x6C\x65\x6E\x67\x74\x68", "\x63\x68\x61\x72\x41\x74", "\x73\x75\x62\x73\x74\x72\x69\x6E\x67", "\u09B0", "\x30\x31\x32\x33\x34\x35\x36\x37\x38\x39\x41\x42\x43\x44\x45\x46", "\x73\x75\x62\x73\x74\x72", "", "\x63\x68\x61\x72\x43\x6F\x64\x65\x41\x74", "\x26\x23", "\x3B", "\u09CB", "\u09C7\u09BE", "\x72\x65\x70\x6C\x61\x63\x65", "\u09CC", "\u09C7\u09D7"];
+var uni2bijoy_string_conversion_map = {
+    "\u0964": _0x19a6[0],
+    "\u0965": _0x19a6[1],
+    "\u2018": _0x19a6[2],
+    "\u2019": _0x19a6[3],
+    "\u201C": _0x19a6[4],
+    "\u201D": _0x19a6[5],
+    "\u09CD\u09B0\u09CD\u09AF": _0x19a6[6],
+    "\u09B0\u200C\u09CD\u09AF": _0x19a6[7],
+    "\u09A1\u09BC": _0x19a6[8],
+    "\u09A2\u09BC": _0x19a6[9],
+    "\u09AF\u09BC": _0x19a6[10],
+    "\u0995\u09CD\u09B7\u09CD\u09AC": _0x19a6[11],
+    "\u0995\u09CD\u09B7\u09CD\u09AE": _0x19a6[12],
+    "\u0995\u09CD\u09B7\u09CD\u09A3": _0x19a6[13],
+    "\u0995\u09CD\u0995": _0x19a6[14],
+    "\u0995\u09CD\u099F": _0x19a6[15],
+    "\u0995\u09CD\u09A4\u09CD\u09AC": _0x19a6[16],
+    "\u0995\u09CD\u09A4": _0x19a6[17],
+    "\u0995\u09CD\u09AC": _0x19a6[18],
+    "\u0999\u09CD\u0995\u09CD\u09B0": _0x19a6[19],
+    "\u09B8\u09CD\u0995\u09CD\u09B0": _0x19a6[20],
+    "\u09B7\u09CD\u0995\u09CD\u09B0": _0x19a6[21],
+    "\u0995\u09CD\u09B0": _0x19a6[22],
+    "\u09B8\u09CD\u0995\u09CD\u09B2": _0x19a6[23],
+    "\u0995\u09CD\u09B2": _0x19a6[24],
+    "\u0995\u09CD\u09A8": _0x19a6[25],
+    "\u0995\u09CD\u09AE": _0x19a6[26],
+    "\u0999\u09CD\u0995\u09CD\u09B7": _0x19a6[27],
+    "\u0995\u09CD\u09B7": _0x19a6[28],
+    "\u0995\u09CD\u09B8": _0x19a6[29],
+    "\u0996\u09CD\u09AC": _0x19a6[30],
+    "\u0999\u09CD\u0997": _0x19a6[31],
+    "\u09A6\u09CD\u0997": _0x19a6[32],
+    "\u09B2\u09CD\u0997": _0x19a6[33],
+    "\u09DC\u09CD\u0997": _0x19a6[34],
+    "\u0997\u09C1": _0x19a6[35],
+    "\u0997\u09CD\u09AC": _0x19a6[36],
+    "\u0997\u09CD\u09A7": _0x19a6[37],
+    "\u0997\u09CD\u09A6": _0x19a6[38],
+    "\u0997\u09CD\u09A8": _0x19a6[39],
+    "\u0997\u09CD\u09AE": _0x19a6[40],
+    "\u0997\u09CD\u09B2": _0x19a6[41],
+    "\u0998\u09CD\u09AC": _0x19a6[42],
+    "\u0998\u09CD\u09A8": _0x19a6[43],
+    "\u0999\u09CD\u0995": _0x19a6[44],
+    "\u0999\u09CD\u09AE": _0x19a6[45],
+    "\u0999\u09CD\u0996": _0x19a6[46],
+    "\u0999\u09CD\u0998": _0x19a6[47],
+    "\u099A\u09CD\u099B\u09CD\u09AC": _0x19a6[48],
+    "\u099A\u09CD\u099A": _0x19a6[49],
+    "\u099A\u09CD\u099B": _0x19a6[50],
+    "\u099B\u09CD\u09AC": _0x19a6[51],
+    "\u099A\u09CD\u099E": _0x19a6[52],
+    "\u099C\u09BC": _0x19a6[53],
+    "\u099C\u09CD\u099C\u09CD\u09AC": _0x19a6[54],
+    "\u099C\u09CD\u099C": _0x19a6[55],
+    "\u099C\u09CD\u099D": _0x19a6[56],
+    "\u099C\u09CD\u099E": _0x19a6[57],
+    "\u099C\u09CD\u09AC": _0x19a6[58],
+    "\u099E\u09CD\u099A": _0x19a6[59],
+    "\u099E\u09CD\u099B": _0x19a6[60],
+    "\u099E\u09CD\u099C": _0x19a6[61],
+    "\u099E\u09CD\u099D": _0x19a6[62],
+    "\u099F\u09CD\u099F": _0x19a6[63],
+    "\u099F\u09CD\u09AC": _0x19a6[64],
+    "\u099F\u09CD\u09AE": _0x19a6[65],
+    "\u09A1\u09CD\u09A1": _0x19a6[66],
+    "\u09A3\u09CD\u099F": _0x19a6[67],
+    "\u09A3\u09CD\u09A0": _0x19a6[68],
+    "\u09A3\u09CD\u09A2": _0x19a6[69],
+    "\u09A3\u09CD\u09A3": _0x19a6[70],
+    "\u09A3\u09CD\u09AE": _0x19a6[71],
+    "\u09A8\u09CD\u09B8": _0x19a6[72],
+    "\u09A3\u09CD\u09A1": _0x19a6[73],
+    "\u09A8\u09CD\u09A4\u09C1": _0x19a6[74],
+    "\u09A3\u09CD\u09AC": _0x19a6[75],
+    "\u09A4\u09CD\u09A4\u09CD\u09AC": _0x19a6[76],
+    "\u09A4\u09CD\u09A4": _0x19a6[77],
+    "\u09A4\u09CD\u09A5": _0x19a6[78],
+    "\u09A4\u09CD\u09A8": _0x19a6[79],
+    "\u09A4\u09CD\u09AE": _0x19a6[80],
+    "\u09A4\u09CD\u09B2": _0x19a6[81],
+    "\u09A8\u09CD\u09A4\u09CD\u09AC": _0x19a6[82],
+    "\u09B8\u09CD\u09A4\u09CD\u09AC": _0x19a6[83],
+    "\u09A4\u09CD\u09AC": _0x19a6[84],
+    "\u09A5\u09CD\u09B2": _0x19a6[85],
+    "\u09A5\u09CD\u09AC": _0x19a6[86],
+    "\u09A6\u09CD\u0998": _0x19a6[87],
+    "\u09A6\u09CD\u09A6\u09CD\u09AC": _0x19a6[88],
+    "\u09A6\u09CD\u09A6": _0x19a6[89],
+    "\u09A6\u09CD\u09A7\u09CD\u09AC": _0x19a6[90],
+    "\u09A6\u09CD\u09A7": _0x19a6[91],
+    "\u09A6\u09CD\u09A8": _0x19a6[92],
+    "\u09A8\u09CD\u09A6\u09CD\u09AC": _0x19a6[93],
+    "\u09A6\u09CD\u09AC": _0x19a6[94],
+    "\u09A6\u09CD\u09AD\u09CD\u09B0": _0x19a6[95],
+    "\u09A6\u09CD\u09AD": _0x19a6[96],
+    "\u09A6\u09CD\u09AE": _0x19a6[97],
+    "\u09A7\u09CD\u09A8": _0x19a6[98],
+    "\u09A7\u09CD\u09AC": _0x19a6[99],
+    "\u09A7\u09CD\u09AE": _0x19a6[100],
+    "\u09A8\u09CD\u099F": _0x19a6[101],
+    "\u09A8\u09CD\u09A0": _0x19a6[102],
+    "\u09A8\u09CD\u09A1": _0x19a6[103],
+    "\u09A8\u09CD\u09A4\u09CD\u09B0": _0x19a6[104],
+    "\u09A8\u09CD\u09A4": _0x19a6[105],
+    "\u09B8\u09CD\u09A4\u09CD\u09B0": _0x19a6[106],
+    "\u09A4\u09CD\u09B0": _0x19a6[107],
+    "\u09A8\u09CD\u09A5": _0x19a6[108],
+    "\u09A8\u09CD\u09A6": _0x19a6[109],
+    "\u09A8\u09CD\u09A7": _0x19a6[110],
+    "\u09A8\u09CD\u09A8": _0x19a6[111],
+    "\u09A8\u09CD\u09AC": _0x19a6[112],
+    "\u09A8\u09CD\u09AE": _0x19a6[113],
+    "\u09AA\u09CD\u099F": _0x19a6[114],
+    "\u09AA\u09CD\u09A4": _0x19a6[115],
+    "\u09AA\u09CD\u09A8": _0x19a6[116],
+    "\u09AA\u09CD\u09AA": _0x19a6[117],
+    "\u09AA\u09CD\u09AE": _0x19a6[118],
+    "\u09AA\u09CD\u09B2": _0x19a6[119],
+    "\u09AA\u09CD\u09B8": _0x19a6[120],
+    "\u09AB\u09CD\u09B2": _0x19a6[121],
+    "\u09AC\u09CD\u099C": _0x19a6[122],
+    "\u09AC\u09CD\u09A6": _0x19a6[123],
+    "\u09AC\u09CD\u09A7": _0x19a6[124],
+    "\u09AC\u09CD\u09AC": _0x19a6[125],
+    "\u09AC\u09CD\u09B2": _0x19a6[126],
+    "\u09AE\u09CD\u09AD\u09CD\u09B0": _0x19a6[127],
+    "\u09AD\u09CD\u09B0": _0x19a6[128],
+    "\u09AD\u09CD\u09B2": _0x19a6[129],
+    "\u09AE\u09CD\u09A8": _0x19a6[130],
+    "\u09AE\u09CD\u09AA": _0x19a6[131],
+    "\u09AE\u09CD\u09AB": _0x19a6[132],
+    "\u09AE\u09CD\u09AC": _0x19a6[133],
+    "\u09AE\u09CD\u09AD": _0x19a6[134],
+    "\u09AE\u09CD\u09AE": _0x19a6[135],
+    "\u09AE\u09CD\u09B2": _0x19a6[136],
+    "\u09B2\u09CD\u0995": _0x19a6[137],
+    "\u09B2\u09CD\u099F": _0x19a6[138],
+    "\u09B2\u09CD\u09A1": _0x19a6[139],
+    "\u09B2\u09CD\u09AA": _0x19a6[140],
+    "\u09B2\u09CD\u09AB": _0x19a6[141],
+    "\u09B2\u09CD\u09AC": _0x19a6[142],
+    "\u09B2\u09CD\u09AE": _0x19a6[143],
+    "\u09B2\u09CD\u09B2": _0x19a6[144],
+    "\u09B6\u09C1": _0x19a6[145],
+    "\u09B6\u09CD\u099A": _0x19a6[146],
+    "\u09B6\u09CD\u099B": _0x19a6[147],
+    "\u09B6\u09CD\u09A8": _0x19a6[148],
+    "\u09B6\u09CD\u09AC": _0x19a6[149],
+    "\u09B6\u09CD\u09AE": _0x19a6[150],
+    "\u09B6\u09CD\u09B2": _0x19a6[151],
+    "\u09B7\u09CD\u0995": _0x19a6[152],
+    "\u09B7\u09CD\u09AC": _0x19a6[153],
+    "\u09B7\u09CD\u099F": _0x19a6[154],
+    "\u09B7\u09CD\u09A0": _0x19a6[155],
+    "\u09B7\u09CD\u09A3": _0x19a6[156],
+    "\u09B7\u09CD\u09AA": _0x19a6[157],
+    "\u09B7\u09CD\u09AB": _0x19a6[158],
+    "\u09B7\u09CD\u09AE": _0x19a6[159],
+    "\u09B8\u09CD\u0995": _0x19a6[160],
+    "\u09B8\u09CD\u099F": _0x19a6[161],
+    "\u09B8\u09CD\u0996": _0x19a6[162],
+    "\u09B8\u09CD\u09A4\u09C1": _0x19a6[163],
+    "\u09B8\u09CD\u09A4": _0x19a6[164],
+    "\u09B8\u09CD\u09A5": _0x19a6[165],
+    "\u09B8\u09CD\u09A8": _0x19a6[166],
+    "\u09B8\u09CD\u09AA": _0x19a6[167],
+    "\u09B8\u09CD\u09AB": _0x19a6[168],
+    "\u09B8\u09CD\u09AC": _0x19a6[169],
+    "\u09B8\u09CD\u09AE": _0x19a6[170],
+    "\u09B8\u09CD\u09B2": _0x19a6[171],
+    "\u09B9\u09C1": _0x19a6[172],
+    "\u09B9\u09CD\u09A3": _0x19a6[173],
+    "\u09B9\u09CD\u09AC": _0x19a6[174],
+    "\u09B9\u09CD\u09A8": _0x19a6[175],
+    "\u09B9\u09CD\u09AE": _0x19a6[176],
+    "\u09B9\u09CD\u09B2": _0x19a6[177],
+    "\u09B9\u09C3": _0x19a6[178],
+    "\u09B0\u09CD": _0x19a6[179],
+    "\u09CD\u09B0": _0x19a6[180],
+    "\u09CD\u09AF": _0x19a6[181],
+    "\u09CD\u09AC": _0x19a6[182],
+    "\u09CD\u09B2": _0x19a6[183],
+    "\u09CD\u09A8": _0x19a6[184],
+    "\u09CD": _0x19a6[185],
+    "\u0986": _0x19a6[186],
+    "\u0985": _0x19a6[187],
+    "\u0987": _0x19a6[188],
+    "\u0988": _0x19a6[189],
+    "\u0989": _0x19a6[190],
+    "\u098A": _0x19a6[191],
+    "\u098B": _0x19a6[192],
+    "\u098F": _0x19a6[193],
+    "\u0990": _0x19a6[194],
+    "\u0993": _0x19a6[195],
+    "\u0994": _0x19a6[196],
+    "\u0995": _0x19a6[197],
+    "\u0996": _0x19a6[198],
+    "\u0997": _0x19a6[199],
+    "\u0998": _0x19a6[200],
+    "\u0999": _0x19a6[201],
+    "\u099A": _0x19a6[202],
+    "\u099B": _0x19a6[203],
+    "\u099C": _0x19a6[53],
+    "\u099D": _0x19a6[204],
+    "\u099E": _0x19a6[205],
+    "\u099F": _0x19a6[206],
+    "\u09A0": _0x19a6[207],
+    "\u09A1": _0x19a6[208],
+    "\u09A2": _0x19a6[209],
+    "\u09A3": _0x19a6[210],
+    "\u09A4": _0x19a6[211],
+    "\u09A5": _0x19a6[212],
+    "\u09A6": _0x19a6[213],
+    "\u09A7": _0x19a6[214],
+    "\u09A8": _0x19a6[215],
+    "\u09AA": _0x19a6[216],
+    "\u09AB": _0x19a6[217],
+    "\u09AC": _0x19a6[218],
+    "\u09AD": _0x19a6[219],
+    "\u09AE": _0x19a6[220],
+    "\u09AF": _0x19a6[221],
+    "\u09B0": _0x19a6[222],
+    "\u09B2": _0x19a6[223],
+    "\u09B6": _0x19a6[224],
+    "\u09B7": _0x19a6[225],
+    "\u09B8": _0x19a6[226],
+    "\u09B9": _0x19a6[227],
+    "\u09DC": _0x19a6[8],
+    "\u09DD": _0x19a6[9],
+    "\u09DF": _0x19a6[10],
+    "\u09CE": _0x19a6[228],
+    "\u09F3": _0x19a6[229],
+    "\u098D": _0x19a6[230],
+    "\u098E": _0x19a6[231],
+    "\u09E6": _0x19a6[232],
+    "\u09E7": _0x19a6[233],
+    "\u09E8": _0x19a6[234],
+    "\u09E9": _0x19a6[235],
+    "\u09EA": _0x19a6[236],
+    "\u09EB": _0x19a6[237],
+    "\u09EC": _0x19a6[238],
+    "\u09ED": _0x19a6[239],
+    "\u09EE": _0x19a6[240],
+    "\u09EF": _0x19a6[241],
+    "\u09BE": _0x19a6[242],
+    "\u09BF": _0x19a6[243],
+    "\u09C0": _0x19a6[244],
+    "\u09C1": _0x19a6[245],
+    "\u09C2": _0x19a6[246],
+    "\u09C3": _0x19a6[247],
+    "\u09C7": _0x19a6[248],
+    "\u09C8": _0x19a6[249],
+    "\u09D7": _0x19a6[250],
+    "\u0982": _0x19a6[251],
+    "\u0983": _0x19a6[252],
+    "\u0981": _0x19a6[253]
+};
+function ReArrangeUnicodeText(_0x6840x3) {
+    var _0x6840x4 = 0;
+    for (var _0x6840x5 = 0; _0x6840x5 < _0x6840x3[_0x19a6[254]]; _0x6840x5++) {
+        if (_0x6840x5 < _0x6840x3[_0x19a6[254]] && IsBanglaPreKar(_0x6840x3[_0x19a6[255]](_0x6840x5))) {
+            var _0x6840x6 = 1;
+            while (IsBanglaBanjonborno(_0x6840x3[_0x19a6[255]](_0x6840x5 - _0x6840x6))) {
+                if (_0x6840x5 - _0x6840x6 < 0) {
+                    break
+                }
+                ;if (_0x6840x5 - _0x6840x6 <= _0x6840x4) {
+                    break
+                }
+                ;if (IsBanglaHalant(_0x6840x3[_0x19a6[255]](_0x6840x5 - _0x6840x6 - 1))) {
+                    _0x6840x6 += 2
+                } else {
+                    break
+                }
+            }
+            ;var _0x6840x7 = _0x6840x3[_0x19a6[256]](0, _0x6840x5 - _0x6840x6);
+            _0x6840x7 += _0x6840x3[_0x19a6[255]](_0x6840x5);
+            _0x6840x7 += _0x6840x3[_0x19a6[256]](_0x6840x5 - _0x6840x6, _0x6840x5);
+            _0x6840x7 += _0x6840x3[_0x19a6[256]](_0x6840x5 + 1, _0x6840x3[_0x19a6[254]]);
+            _0x6840x3 = _0x6840x7;
+            _0x6840x4 = _0x6840x5 + 1;
+            continue
+        }
+        ;if (_0x6840x5 < _0x6840x3[_0x19a6[254]] - 1 && IsBanglaHalant(_0x6840x3[_0x19a6[255]](_0x6840x5)) && _0x6840x3[_0x19a6[255]](_0x6840x5 - 1) == _0x19a6[257] && !IsBanglaHalant(_0x6840x3[_0x19a6[255]](_0x6840x5 - 2))) {
+            var _0x6840x6 = 1;
+            var _0x6840x8 = 0;
+            while (true) {
+                if (IsBanglaBanjonborno(_0x6840x3[_0x19a6[255]](_0x6840x5 + _0x6840x6)) && IsBanglaHalant(_0x6840x3[_0x19a6[255]](_0x6840x5 + _0x6840x6 + 1))) {
+                    _0x6840x6 += 2
+                } else {
+                    if (IsBanglaBanjonborno(_0x6840x3[_0x19a6[255]](_0x6840x5 + _0x6840x6)) && IsBanglaPreKar(_0x6840x3[_0x19a6[255]](_0x6840x5 + _0x6840x6 + 1))) {
+                        _0x6840x8 = 1;
+                        break
+                    } else {
+                        break
+                    }
+                }
+            }
+            ;var _0x6840x7 = _0x6840x3[_0x19a6[256]](0, _0x6840x5 - 1);
+            _0x6840x7 += _0x6840x3[_0x19a6[256]](_0x6840x5 + _0x6840x6 + 1, _0x6840x5 + _0x6840x6 + _0x6840x8 + 1);
+            _0x6840x7 += _0x6840x3[_0x19a6[256]](_0x6840x5 + 1, _0x6840x5 + _0x6840x6 + 1);
+            _0x6840x7 += _0x6840x3[_0x19a6[255]](_0x6840x5 - 1);
+            _0x6840x7 += _0x6840x3[_0x19a6[255]](_0x6840x5);
+            _0x6840x7 += _0x6840x3[_0x19a6[256]](_0x6840x5 + _0x6840x6 + _0x6840x8 + 1, _0x6840x3[_0x19a6[254]]);
+            _0x6840x3 = _0x6840x7;
+            _0x6840x5 += (_0x6840x6 + _0x6840x8);
+            _0x6840x4 = _0x6840x5 + 1;
+            continue
+        }
+    }
+    ;return _0x6840x3
+}
+var hD = _0x19a6[258];
+function d2h(_0x6840xb) {
+    var _0x6840xc = hD[_0x19a6[259]](_0x6840xb & 15, 1);
+    while (_0x6840xb > 15) {
+        _0x6840xb >>= 4;
+        _0x6840xc = hD[_0x19a6[259]](_0x6840xb & 15, 1) + _0x6840xc
+    }
+    ;while (_0x6840xc[_0x19a6[254]] < 4) {
+        _0x6840xc = _0x19a6[232] + _0x6840xc
+    }
+    ;return _0x6840xc
+}
+function UnicodeToHTMLSafe(_0x6840xe) {
+    var _0x6840xf = _0x19a6[260];
+    for (i = 0; i < _0x6840xe[_0x19a6[254]]; i++) {
+        if (IsASCII(_0x6840xe[_0x19a6[261]](i))) {
+            _0x6840xf += _0x6840xe[_0x19a6[255]](i)
+        } else {
+            _0x6840xf += _0x19a6[262] + d2h(_0x6840xe[_0x19a6[261]](i), 16) + _0x19a6[263]
+        }
+    }
+    ;return _0x6840xf
+}
+function ConvertToASCII(_0x6840x11, _0x6840xe) {
+    var _0x6840x12 = uni2bijoy_string_conversion_map;
+    var _0x6840x13;
+    _0x6840x13 = new RegExp(_0x19a6[264],_0x19a6[220]);
+    _0x6840xe = _0x6840xe[_0x19a6[266]](_0x6840x13, _0x19a6[265]);
+    _0x6840x13 = new RegExp(_0x19a6[267],_0x19a6[220]);
+    _0x6840xe = _0x6840xe[_0x19a6[266]](_0x6840x13, _0x19a6[268]);
+    _0x6840xe = ReArrangeUnicodeText(_0x6840xe);
+    for (var _0x6840x14 in _0x6840x12) {
+        _0x6840x13 = new RegExp(_0x6840x14,_0x19a6[220]);
+        _0x6840xe = _0x6840xe[_0x19a6[266]](_0x6840x13, _0x6840x12[_0x6840x14])
+    }
+    ;return _0x6840xe
+}
+</script>
+
+<!-- ===== JAVASCRIPT CODE END ===== -->
+		<script>
+function openNav() {
+    document.getElementById("mySidenav").classList.add("open");
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").classList.remove("open");
+}
+</script>
+</body>
+</html> 
